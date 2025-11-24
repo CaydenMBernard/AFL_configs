@@ -1,0 +1,5350 @@
+{
+    "25/23/03 22:31:35.208039": {},
+    "25/23/03 22:31:35.208065": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": [],
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "grid_use_agent": false
+    },
+    "25/23/03 22:31:35.215019": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "grid_use_agent": false
+    },
+    "25/23/03 22:33:06.866245": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "grid_use_agent": false
+    },
+    "25/24/03 10:12:02.937616": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "grid_use_agent": false
+    },
+    "25/24/03 10:13:01.205199": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:00:30.432378": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:00:52.647590": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:02:33.435950": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:04:06.777195": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:04:13.067491": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:04:53.098759": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:16:46.079947": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:18:15.181970": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:18:51.061031": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:39:55.334428": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:41:03.311555": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:42:20.498562": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "./",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:44:14.024214": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebookds/2503_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503_runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 11:46:25.780142": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 12:27:23.867830": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 12:34:24.132486": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 12:40:30.201883": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 12:51:07.862497": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/24/03 12:51:10.066168": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "testing",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250323_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 10:55:56.708562": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 11:12:22.568127": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 11:56:57.572877": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 11:57:09.107613": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 11:57:22.331902": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v3",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 12:14:34.578474": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v4",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 12:15:20.160597": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v4",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 12:17:53.670735": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_v4",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 13:25:10.293303": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 13:26:47.742953": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 13:26:54.852297": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:36:24.405151": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:36:33.809710": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:37:32.159035": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:37:40.186820": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:40:08.864088": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:41:24.592816": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 14:41:40.047281": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_v3",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 16:01:20.079826": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 16:07:31.916979": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 16:07:52.767365": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 18:25:58.855038": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 18:30:33.956469": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_comp1_2temps_simil_3phase_gpflow",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constvol_comp1_U66v2.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 21:43:26.794670": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_comp1_2temps_simil_3phase_gpflow",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constvol_comp1_U66v2.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/25/03 21:43:57.855693": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": -1,
+                    "x_offset": -1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow_v5",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 12:44:30.654688": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": -1,
+                    "x_offset": -1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow_v5",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 12:45:27.788496": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "usaxscontrol:5051"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": -1,
+                    "x_offset": -1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_comp2_4temps_simil_3phase_gpflow_v5",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 12:49:07.699426": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": -1,
+                    "x_offset": -1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_constmass_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constmass_comp1_U66v2.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 13:00:53.156812": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_constmass_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constmass_comp1_U66v2.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 15:10:29.738902": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_constmass_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constmass_comp1_U66v2.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 15:10:49.118130": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_constmass_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constmass_comp1_U66v2_partial.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 23:15:02.329267": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66v2_constmass_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_constmass_comp1_U66v2_partial.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/26/03 23:15:22.411406": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_cast1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/12/06 11:59:42.811724": {
+        "client": {
+            "APSUSAXS": "usaxscontrol:5000",
+            "agent": "164.54.122.180:5055"
+        },
+        "instrument": [
+            {
+                "client_name": "APSUSAXS",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "select_sample_base_kw": {
+                    "task_name": "setPosition",
+                    "y_offset": 1,
+                    "x_offset": 1
+                },
+                "sample_select_kwargs": [
+                    "plate",
+                    "row",
+                    "col"
+                ],
+                "sample_comps_variable": "sample_spec",
+                "data": [
+                    {
+                        "data_name": "USAXS_sub",
+                        "tiled_array_name": "USAXS_sub",
+                        "data_dim": "q"
+                    },
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "q"
+                    }
+                ],
+                "sample_dim": "sample"
+            }
+        ],
+        "ternary": false,
+        "data_tag": "U66_cast1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/sample_server_data",
+        "components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "AL_components": [
+            "frac_MOF",
+            "frac_H2O",
+            "temperature"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "custom_stock_settings": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_sample",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false
+    },
+    "25/12/06 16:04:28.998110": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_SLES",
+            "stock_CAPB"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 16:17:55.162722": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 16:34:30.719183": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 17:39:39.943221": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 17:50:02.935275": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 17:57:10.086929": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 18:39:47.549912": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "surfactant_grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 18:40:04.791244": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 18:56:30.797130": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 18:56:37.207415": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 19:03:42.185536": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 19:09:01.230013": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 19:26:46.270860": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/12/06 19:29:26.516599": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v1",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/13/06 00:00:19.573088": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    },
+    "25/14/06 12:23:17.381092": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2506/sample_server_data",
+        "components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "AL_components": [
+            "H2O",
+            "SLES",
+            "CAPB",
+            "NaCl"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [
+            "stock_H2O",
+            "stock_NaCl",
+            "stock_CAPB",
+            "stock_SLES"
+        ],
+        "custom_stock_settings": {
+            "2B3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A3": {
+                "post_aspirate_delay": 5,
+                "post_dispense_delay": 5,
+                "aspirate_rate": 150,
+                "dispense_rate": 150
+            },
+            "2A2": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            },
+            "2B1": {
+                "post_aspirate_delay": 10,
+                "post_dispense_delay": 10,
+                "aspirate_rate": 50,
+                "dispense_rate": 50,
+                "aspirate_equilibration_delay": 15
+            }
+        },
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "grid_file": "/home/beams/USAXS/Apps/AFL/notebooks/2503/runmanifests/250325_runmanifest_sample_comp2_U66.nc",
+        "grid_blank_interval": 10,
+        "grid_blank_sample": {
+            "plate": "SlotA",
+            "row": "H",
+            "col": 12
+        },
+        "grid_use_agent": false,
+        "tiled_exclusion_list": []
+    }
+}

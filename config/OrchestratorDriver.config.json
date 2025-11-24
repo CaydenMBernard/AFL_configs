@@ -1,0 +1,2725 @@
+{
+    "25/20/11 09:53:47.092047": {},
+    "25/20/11 09:53:47.092073": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": [],
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 09:53:47.096388": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:03:08.118935": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:04:13.012996": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:04:39.028349": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:06:14.367646": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:06:22.532061": {
+        "client": {},
+        "instrument": {},
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:08:43.893065": {
+        "client": {},
+        "instrument": [],
+        "ternary": false,
+        "data_tag": "default",
+        "data_path": "./",
+        "components": [],
+        "AL_components": [],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.6,
+        "mix_order": [],
+        "composition_var_name": "comps",
+        "concat_dim": "sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:10:17.032373": {
+        "client": {},
+        "instrument": [],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:10:35.725584": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/20/11 21:43:17.301255": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 07:36:18.538740": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 07:50:48.401607": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose____rrrrr"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose___rrrrr"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 08:15:08.415364": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "agent": "usaxscontrol:5051",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose____rrrrr"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose___rrrrr"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 08:30:46.636234": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose____rrrrr"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose___rrrrr"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 08:32:43.600139": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose____rrrrr"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose___rrrrr"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 08:42:55.283856": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 08:43:06.350376": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 09:00:55.797796": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 12:18:47.693272": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 15:59:51.436625": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul"
+    },
+    "25/21/11 16:31:43.193833": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "MT-"
+    },
+    "25/21/11 16:31:43.198806": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "MT-"
+    },
+    "25/21/11 16:35:23.412690": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "MT-"
+    },
+    "25/21/11 16:59:54.986202": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "MT-"
+    },
+    "25/21/11 17:34:36.909619": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "MT-"
+    },
+    "25/21/11 17:34:57.508272": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_int",
+                        "tiled_array_name": "USAXS_int",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "blank-"
+    },
+    "25/21/11 17:58:14.657076": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "blank-"
+    },
+    "25/21/11 18:07:12.817036": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1000 ul",
+        "empty_prefix": "blank-"
+    },
+    "25/21/11 19:48:17.329208": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-SiO2-0.008-balanced"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "SiO2-0.008-balanced"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "test",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "SiO2"
+        ],
+        "AL_components": [
+            "H2O",
+            "SiO2"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/21/11 21:58:34.553061": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-SiO2-0.213-balanced"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "SiO2-0.213-balanced"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "LudoxMixtures",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "HS40",
+            "TM50"
+        ],
+        "AL_components": [
+            "H2O",
+            "HS40",
+            "TM50"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/21/11 22:11:07.407132": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-SiO2-0.213-balanced"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "SiO2-0.213-balanced"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "LudoxMixtures",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "HS40",
+            "TM50"
+        ],
+        "AL_components": [
+            "H2O",
+            "HS40",
+            "TM50"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 08:35:26.140977": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-TMHS-0.078-0.151"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "TMHS-0.078-0.151"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "LudoxHS40",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "HS40",
+            "TM50"
+        ],
+        "AL_components": [
+            "H2O",
+            "HS40",
+            "TM50"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 09:42:45.285523": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-HS40-0.117"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "HS40-0.117"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "LudoxHS40",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "HS40"
+        ],
+        "AL_components": [
+            "H2O",
+            "HS40"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 09:43:17.608043": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-HS40-0.117"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "HS40-0.117"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "LudoxHS40",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "HS40"
+        ],
+        "AL_components": [
+            "H2O",
+            "HS40"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 13:31:07.173435": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-HS40-0.117"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "HS40-0.117"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "LudoxHS40",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "HS40"
+        ],
+        "AL_components": [
+            "H2O",
+            "HS40"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 13:37:29.778634": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-HS40-0.117"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "HS40-0.117"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 15:52:36.921245": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "TM50_PEG6k_grid",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "AL_components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 16:23:00.625349": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "TM50_PEG6k_grid",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "AL_components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 16:40:54.800979": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "TM50_PEG6k_grid",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "AL_components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 20:21:45.912122": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "TM50_PEG6k_grid",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "AL_components": [
+            "H2O",
+            "TM50",
+            "PEG6k"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 21:03:46.246974": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 21:26:14.701272": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 21:58:25.084067": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 22:46:16.055504": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/22/11 22:59:14.933631": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/24/11 10:21:57.976285": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    },
+    "25/24/11 12:48:13.494449": {
+        "client": {
+            "prep": "usaxscontrol:5002",
+            "load": "afl-loader:5000",
+            "inst": "usaxscontrol:5000"
+        },
+        "instrument": [
+            {
+                "name": "APSUSAXS",
+                "client_name": "inst",
+                "load_dest_label": "afterUSAXS",
+                "sample_dim": "saxs_sample",
+                "sample_comps_variable": "saxs_comps",
+                "empty_base_kw": {
+                    "task_name": "expose",
+                    "name": "blank-NaC8-038mgml-HC8-267ul"
+                },
+                "measure_base_kw": {
+                    "task_name": "expose",
+                    "name": "NaC8-038mgml-HC8-267ul"
+                },
+                "data": [
+                    {
+                        "data_name": "USAXS_I",
+                        "tiled_array_name": "USAXS_I",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "USAXS_dI",
+                        "tiled_array_name": "USAXS_dI",
+                        "data_dim": "USAXS_q",
+                        "tiled_metadata_dim": "USAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_I",
+                        "tiled_array_name": "SAXS_I",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    },
+                    {
+                        "data_name": "SAXS_dI",
+                        "tiled_array_name": "SAXS_dI",
+                        "data_dim": "SAXS_q",
+                        "tiled_metadata_dim": "SAXS_q"
+                    }
+                ]
+            }
+        ],
+        "ternary": false,
+        "data_tag": "NaC8_grid_v2",
+        "data_path": "/home/beams/USAXS/Apps/AFL/notebooks/2511/sample_server_data",
+        "components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "AL_components": [
+            "H2O",
+            "NaC8",
+            "HC8"
+        ],
+        "snapshot_directory": "/home/afl642/snaps",
+        "max_sample_transmission": 0.7,
+        "mix_order": [],
+        "composition_var_name": "saxs_comps",
+        "concat_dim": "saxs_sample",
+        "sample_composition_tol": 0.0,
+        "next_samples_variable": "next_samples_saxs",
+        "camera_urls": [],
+        "tiled_exclusion_list": [],
+        "grid_file": null,
+        "grid_blank_interval": null,
+        "grid_blank_sample": null,
+        "prepare_volume": "1200ul",
+        "empty_prefix": "blank-"
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "25/24/03 11:53:02.059395": {},
+    "25/24/03 11:53:02.059421": {
+        "save_path": "/home/AFL/"
+    },
+    "25/24/03 12:27:10.889965": {
+        "save_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/agent_data"
+    },
+    "25/22/11 10:40:27.942640": {
+        "save_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/agent_data",
+        "pipeline": {}
+    },
+    "25/22/11 16:13:19.527379": {
+        "save_path": "/home/beams/USAXS/Apps/AFL/notebooks/2503/agent_data",
+        "pipeline": {
+            "name": "PipelineBuilder Pipeline",
+            "date": "11/22/25 16:13:19-426443",
+            "description": "None",
+            "ops": [
+                {
+                    "class": "AFL.double_agent.Preprocessor.SavgolFilter",
+                    "args": {
+                        "input_variable": "USAXS_I",
+                        "output_variable": "derivative",
+                        "dim": "x",
+                        "xlo": "null",
+                        "xhi": "null",
+                        "xlo_isel": "null",
+                        "xhi_isel": "null",
+                        "pedestal": "null",
+                        "npts": "250",
+                        "derivative": "1",
+                        "window_length": "31",
+                        "polyorder": "2",
+                        "apply_log_scale": "true",
+                        "name": "SavgolFilter"
+                    },
+                    "docstring": "Smooth and take derivatives of input data via a Savitsky-Golay filter\n\nThis `PipelineOp` cleans measurement data and takes smoothed derivatives using `scipy.signal.savgol_filter`. Below\nis a summary of the steps taken.\n\nParameters\n----------\ninput_variable : str\n    The name of the `xarray.Dataset` data variable to extract from the input dataset\noutput_variable : str\n    The name of the variable to be inserted into the `xarray.Dataset` by this `PipelineOp`\ndim: str\n    The dimension in the `xarray.Dataset` to apply this filter over\nxlo, xhi: Optional[Number]\n    The values of the input dimension (dim, above) to trim the data to\nxlo_isel, xhi_isel: Optional[int]\n    The integer indices of the input dimension (dim, above) to trim the data to\npedestal: Optional[Number]\n    This value is added to the input_variable to establish a fixed data 'floor'\nnpts: int\n    The size of the grid to interpolate onto\nderivative: int\n    The order of the derivative to return. If derivative=0, the data is smoothed with no derivative taken.\nwindow_length: int\n    The width of the window used in the savgol smoothing. See `scipy.signal.savgol_filter` for more information.\npolyorder: int\n    The order of polynomial used in the savgol smoothing. See `scipy.signal.savgol_filter` for more information.\napply_log_scale: bool\n    If True, the `input_variable` and associated `dim` coordinated are scaled with `numpy.log10`\nname: str\n    The name to use when added to a Pipeline. This name is used when calling Pipeline.search()\n\nNotes\n-----\nThis `PipelineOp` performs the following steps:\n\n1. Data is trimmed to `(xlo, xhi)` and then `(xlo_isel, xhi_isel)` in that order. The former trims the data to a\nnumerical while the latter trims to integer indices. It is generally not advisable to supply both varieties and a\nwarning will be raised if this is attempted.\n\n2. If `apply_log_scale = True`, both the `input_variable` and `dim` data will be scaled with `numpy.log10`. A new\n`xarray` dimension and coordinate will be created with the name `log_{dim}`.\n\n3. All duplicate data (multiple data values at the same `dim` coordinates) are removed by taking the average of the\nduplicates.\n\n4. If `pedestal` is specified, the pedestal value is added to the data and all NaNs are filled with the pedestal\n\n5. The data is interpolated onto a constant grid with `npts` values from the trimmed minimum to the trimmed maximum.  If `apply_log_scale=True`, the grid is geometrically rather than linearly spaced.\n\n6. All remaining NaN values are dropped along `dim`\n\n7. Finally, `scipy.signal.savgol_filter` is applied with the `window_length`, `polyorder`, and `derivative`\nparameters specified in the constructor."
+                },
+                {
+                    "class": "AFL.double_agent.PairMetric.Similarity",
+                    "args": {
+                        "input_variable": "derivative",
+                        "output_variable": "similarity",
+                        "sample_dim": "sample",
+                        "params": {
+                            "gamma": 0.0001,
+                            "metric": "laplacian"
+                        },
+                        "constrain_same": [],
+                        "constrain_different": [],
+                        "name": "SimilarityMetric"
+                    },
+                    "docstring": "Computes pairwise similarity between samples using kernel functions\n\nThis class uses scikit-learn's pairwise_kernels to compute similarity matrices\nbetween samples. Various kernel functions can be specified through the params\ndictionary (e.g., 'linear', 'rbf', 'polynomial').\n\nFor details on available kernel functions and their parameters, see:\nhttps://scikit-learn.org/stable/modules/metrics.html#metrics\n\nParameters\n----------\ninput_variable : str\n    The name of the data variable to extract from the input dataset\noutput_variable : str\n    The name of the variable to be inserted into the dataset\nsample_dim : str\n    The dimension containing different samples\nparams : Optional[Dict[str, Any]], default=None\n    Parameters for the kernel function, including 'metric' to specify the kernel type\nconstrain_same : Optional[List], default=None\n    List of pairs that should have perfect similarity\nconstrain_different : Optional[List], default=None\n    List of pairs that should have zero similarity\nname : str, default=\"SimilarityMetric\"\n    The name to use when added to a Pipeline"
+                },
+                {
+                    "class": "AFL.double_agent.Preprocessor.Standardize",
+                    "args": {
+                        "input_variable": "composition_grid",
+                        "output_variable": "normalized_composition_grid",
+                        "dim": "grid",
+                        "component_dim": "component",
+                        "scale_variable": "null",
+                        "min_val": {
+                            "A": 0,
+                            "B": 0
+                        },
+                        "max_val": {
+                            "A": 10,
+                            "B": 25
+                        },
+                        "name": "Standardize"
+                    },
+                    "docstring": "Standardize the data to have min 0 and max 1\n\nParameters\n----------\ninput_variable : str\n    The name of the `xarray.Dataset` data variable to extract from the input dataset\noutput_variable : str\n    The name of the variable to be inserted into the `xarray.Dataset` by this `PipelineOp`\ndim : str\n    The dimension used for calculating the data minimum\ncomponent_dim : str | None, default=\"component\"\n    The dimension for component-wise operations\nscale_variable : str | None, default=None\n    If specified, the min/max of this data variable in the supplied `xarray.Dataset` will be used to scale the\n    data rather than min/max of the `input_variable` or the supplied `min_val` or `max_val`\nmin_val : dict | Number | None, default=None\n    Value used to scale the data minimum\nmax_val : dict | Number | None, default=None\n    Value used to scale the data maximum\nname : str, default=\"Standardize\"\n    The name to use when added to a Pipeline"
+                },
+                {
+                    "class": "AFL.double_agent.Preprocessor.Standardize",
+                    "args": {
+                        "input_variable": "composition",
+                        "output_variable": "normalized_composition",
+                        "dim": "sample",
+                        "component_dim": "component",
+                        "scale_variable": "null",
+                        "min_val": {
+                            "A": 0,
+                            "B": 0
+                        },
+                        "max_val": {
+                            "A": 10,
+                            "B": 25
+                        },
+                        "name": "Standardize"
+                    },
+                    "docstring": "Standardize the data to have min 0 and max 1\n\nParameters\n----------\ninput_variable : str\n    The name of the `xarray.Dataset` data variable to extract from the input dataset\noutput_variable : str\n    The name of the variable to be inserted into the `xarray.Dataset` by this `PipelineOp`\ndim : str\n    The dimension used for calculating the data minimum\ncomponent_dim : str | None, default=\"component\"\n    The dimension for component-wise operations\nscale_variable : str | None, default=None\n    If specified, the min/max of this data variable in the supplied `xarray.Dataset` will be used to scale the\n    data rather than min/max of the `input_variable` or the supplied `min_val` or `max_val`\nmin_val : dict | Number | None, default=None\n    Value used to scale the data minimum\nmax_val : dict | Number | None, default=None\n    Value used to scale the data maximum\nname : str, default=\"Standardize\"\n    The name to use when added to a Pipeline"
+                },
+                {
+                    "class": "AFL.double_agent.Labeler.SpectralClustering",
+                    "args": {
+                        "input_variable": "similarity",
+                        "output_variable": "labels",
+                        "dim": "sample",
+                        "params": {
+                            "n_phases": 2
+                        },
+                        "name": "SpectralClustering",
+                        "use_silhouette": "false"
+                    },
+                    "docstring": "Spectral clustering for phase identification.\n\nUses spectral clustering to identify phases based on a similarity matrix.\nParticularly effective for non-spherical clusters and when working with\nsimilarity rather than distance metrics.\n\nParameters\n----------\ninput_variable : str\n    The name of the variable containing the similarity matrix\n\noutput_variable : str\n    The name of the variable where labels will be stored\n\ndim : str\n    The dimension name for samples in the dataset\n\nparams : dict, optional\n    Additional parameters for spectral clustering\n\nname : str, default='SpectralClustering'\n    The name to use when added to a Pipeline\n\nuse_silhouette : bool, default=False\n    Whether to use silhouette analysis to determine optimal number of phases"
+                },
+                {
+                    "class": "AFL.double_agent.Extrapolator.GaussianProcessClassifier",
+                    "args": {
+                        "feature_input_variable": "normalized_composition",
+                        "predictor_input_variable": "labels",
+                        "output_prefix": "extrap",
+                        "grid_variable": "normalized_composition_grid",
+                        "grid_dim": "grid",
+                        "sample_dim": "sample",
+                        "kernel": "Matern",
+                        "kernel_kwargs": {
+                            "length_scale": 1,
+                            "nu": 1.5
+                        },
+                        "optimizer": "fmin_l_bfgs_b",
+                        "name": "GaussianProcessClassifier"
+                    },
+                    "docstring": "Gaussian Process classifier for extrapolating class labels.\n\nThis extrapolator uses scikit-learn's GaussianProcessClassifier to predict class\nprobabilities across the grid based on discrete labeled samples. It provides both\nclass predictions and uncertainty estimates through entropy.\n\nParameters\n----------\nfeature_input_variable : str\n    The name of the `xarray.Dataset` data variable to use as the input to the model that will be extrapolating\n    the discrete data. This is typically a sample composition variable.\n\npredictor_input_variable : str\n    The name of the `xarray.Dataset` data variable to use as the output of the model that will be extrapolating\n    the discrete data. For this `PipelineOp` this should be a class label vector.\n\noutput_prefix: str\n    The string prefix to apply to each output variable before inserting into the output `xarray.Dataset`\n\ngrid_variable: str\n    The name of the `xarray.Dataset` data variable to use as an evaluation grid.\n\ngrid_dim: str\n    The xarray dimension over each grid_point. Grid equivalent to sample.\n\nsample_dim: str\n    The `xarray` dimension over the discrete 'samples' in the `feature_input_variable`. This is typically\n    a variant of `sample` e.g., `saxs_sample`.\n\nkernel: str\n    The name of the sklearn.gaussian_process.kernel to use the classifier. If not provided, will default to\n    `Matern`.\n\nkernel_kwargs: dict\n    Additional keyword arguments to pass to the sklearn.gaussian_process.kernel\n\noptimizer: str\n    The name of the optimizer to use in optimizer the gaussian process parameters\n\nname: str\n    The name to use when added to a Pipeline. This name is used when calling Pipeline.search()"
+                },
+                {
+                    "class": "AFL.double_agent.AcquisitionFunction.MaxValueAF",
+                    "args": {
+                        "input_variables": [
+                            "extrap_entropy"
+                        ],
+                        "grid_variable": "composition_grid",
+                        "grid_dim": "grid",
+                        "combine_coeffs": "null",
+                        "output_prefix": "null",
+                        "output_variable": "next_sample",
+                        "decision_rtol": "0.05",
+                        "excluded_comps_variables": "null",
+                        "excluded_comps_dim": "null",
+                        "exclusion_radius": "0.001",
+                        "count": "1",
+                        "name": "MaxValueAF"
+                    },
+                    "docstring": "Acquisition function that selects points based on maximum values.\n\nThis acquisition function chooses points by finding the maximum values in the decision surface.\nIt can combine multiple input variables with optional scaling coefficients and supports\nexclusion of previously measured points.\n\nParameters\n----------\ninput_variables : List[str]\n    The name of the `xarray.Dataset` data variables to extract from the input `xarray.Dataset`\n\ngrid_variable: str\n    The name of the `xarray.Dataset` data variable to use as a evaluation grid.\n\ngrid_dim: str\n    The xarray dimension over each grid_point. Grid equivalent to sample.\n\ncombine_coeffs: Optional[List[float]]\n    If provided, the `self.input_variables` will be scaled by these coefficients before being summed.\n\noutput_prefix: Optional[str]\n    If provided, all outputs of this `PipelineOp` will be prefixed with this string\n\noutput_variable : str\n    The name of the variable to be inserted into the `xarray.Dataset` by this `PipelineOp`\n\ndecision_rtol: float\n    The next sample will be randomly chosen from all grid points that are within `decision_rtol` percent of the\n    maximum of the decision surface. This\n\nexcluded_comps_variables: Optional[List[str]]\n    A list of `xarray.Dataset` composition variables to use in building an exclusion surface that is added to\n    the decision surface. This exclusion surface is built but placing multidimensional inverted Gaussians at\n    every composition point specified in the `excluded_comps_variables`. This is done using the `GaussianPoints`\n    generator.\n\nexcluded_comps_dim: str\n    The `xarray` dimension over the components of a composition.\n\nexclusion_radius: float\n    The width of the Gaussian placed by the `GaussianPoints` generator. See that documentation for more details.\n\ncount: int\n    The number of samples to pull from the grid.\n\nname: str\n    The name to use when added to a Pipeline. This name is used when calling Pipeline.search()"
+                }
+            ]
+        }
+    }
+}

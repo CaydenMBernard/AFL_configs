@@ -1,0 +1,42 @@
+{
+    "H2O": {
+        "name": "H2O",
+        "formula": "H2O",
+        "density": "1.0 gram / milliliter",
+        "preptype": "PrepType.Solvent",
+        "sld": "None",
+        "description": "water"
+    },
+    "SLES": {
+        "name": "SLES",
+        "formula": "None",
+        "density": "None",
+        "preptype": "PrepType.Solute",
+        "sld": "None",
+        "description": ""
+    },
+    "CAPB": {
+        "name": "CAPB",
+        "formula": "None",
+        "density": "None",
+        "preptype": "PrepType.Solute",
+        "sld": "None",
+        "description": ""
+    },
+    "NaCl": {
+        "name": "NaCl",
+        "formula": "None",
+        "density": "None",
+        "preptype": "PrepType.Solute",
+        "sld": "None",
+        "description": ""
+    },
+    "xanthan": {
+        "name": "xanthan",
+        "formula": "None",
+        "density": "None",
+        "preptype": "PrepType.Solute",
+        "sld": "None",
+        "description": ""
+    }
+}

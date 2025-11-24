@@ -1,0 +1,58 @@
+import pathlib
+import re
+import copy
+import uuid
+
+import tqdm
+
+import sympy 
+import numpy as np
+import pandas as pd
+import xarray as xr  
+xr.set_options(display_expand_data=False)
+
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set(context='notebook',palette='bright',style='ticks')
+
+%matplotlib inline
+%config InlineBackend.figure_formats = ['svg']
+
+from AFL.double_agent import *
+
+from AFL.automation.shared.units import units,is_concentration,is_volume,is_mass
+from AFL.automation.APIServer.Client import Client
+from AFL.automation.mixing.Solution import Solution
+from AFL.automation.mixing.TargetSolution import TargetSolution
+from AFL.automation.mixing.MassBalance import MassBalance
+
+
+## Make AFL Clients
+# These will fail if the servers are not started yet
+def make_client(host,port,name,client_name):
+    try:
+        client = Client(ip=host,port=port)
+        client.login('notebook')
+    except:
+        warnings.warn(f'Unable to connect to {name} at http://{host}:{port}. Is the {name} server up on the AFL-Andon screen? (two green lights)?',stacklevel=2)
+        client = None
+    else:
+        print(f'Set up AFL client for {name} under variable {client_name}')
+    return client
+
+robot_client = make_client('usaxscontrol',5002,'Robot OT2','robot_client')
+orch_client = make_client('usaxscontrol',5050,'Orchestrator','orch_client')
+inst_client = make_client('usaxscontrol',5000,'APSUSAXS','inst_client')
+agent_client = make_client('usaxscontrol',5051,'AFL Agent','agent_client')
+load_client = make_client('afl-loader',5000,'Loader','load_client')
+
+## Make the AFL Tiled Client
+from tiled.client import from_uri
+from tiled.queries import Eq,Contains, NotIn, Regex
+print('Starting connection to the AFL tiled server...')
+tiled_client = from_uri(
+    'http://usaxscontrol:8007',
+    api_key='c8404a06029223c1126ccb5136d1556a4b0dcf6514a2ff196cb9372264384a90'
+)
+                      

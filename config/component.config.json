@@ -1,0 +1,2538 @@
+{
+    "25/19/11 16:51:55.880872": {},
+    "25/19/11 16:51:55.880889": {},
+    "25/19/11 17:28:19.075857": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd"
+        }
+    },
+    "25/19/11 17:28:19.080034": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd"
+        }
+    },
+    "25/19/11 17:28:27.255006": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "name": "H2O"
+        }
+    },
+    "25/19/11 17:28:27.258507": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "name": "H2O"
+        }
+    },
+    "25/19/11 17:28:32.996376": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "density": "1.0 g/ml"
+        }
+    },
+    "25/19/11 17:28:33.000326": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "density": "1.0 g/ml"
+        }
+    },
+    "25/19/11 17:28:46.473367": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "density": "1.0 g/ml"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979"
+        }
+    },
+    "25/19/11 17:28:46.478456": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "density": "1.0 g/ml"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979"
+        }
+    },
+    "25/19/11 17:28:47.908850": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979"
+        }
+    },
+    "25/19/11 17:28:47.917460": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979"
+        }
+    },
+    "25/19/11 17:28:55.853277": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        }
+    },
+    "25/19/11 17:28:55.856545": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        }
+    },
+    "25/19/11 17:29:01.233865": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607"
+        }
+    },
+    "25/19/11 17:29:01.237183": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607"
+        }
+    },
+    "25/19/11 17:29:15.381126": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        }
+    },
+    "25/19/11 17:29:15.385714": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        }
+    },
+    "25/19/11 17:29:25.890256": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504"
+        }
+    },
+    "25/19/11 17:29:25.894372": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504"
+        }
+    },
+    "25/19/11 17:29:31.005144": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        }
+    },
+    "25/19/11 17:29:31.009091": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        }
+    },
+    "25/19/11 18:03:14.703478": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b"
+        }
+    },
+    "25/19/11 18:03:14.707355": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b"
+        }
+    },
+    "25/19/11 18:03:18.400459": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        }
+    },
+    "25/19/11 18:03:18.405032": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        }
+    },
+    "25/19/11 18:03:20.037347": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a"
+        }
+    },
+    "25/19/11 18:03:20.041706": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a"
+        }
+    },
+    "25/19/11 18:03:24.396630": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7"
+        }
+    },
+    "25/19/11 18:03:24.400701": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7"
+        }
+    },
+    "25/19/11 18:03:26.279360": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7"
+        }
+    },
+    "25/19/11 18:03:26.283941": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7"
+        }
+    },
+    "25/19/11 18:03:33.660846": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7"
+        },
+        "07ab9dd3-7824-4e45-bfef-464079187a2b": {
+            "uid": "07ab9dd3-7824-4e45-bfef-464079187a2b"
+        }
+    },
+    "25/19/11 18:03:33.670954": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7"
+        },
+        "07ab9dd3-7824-4e45-bfef-464079187a2b": {
+            "uid": "07ab9dd3-7824-4e45-bfef-464079187a2b"
+        }
+    },
+    "25/19/11 18:03:35.271526": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "name": "NaCl"
+        },
+        "07ab9dd3-7824-4e45-bfef-464079187a2b": {
+            "uid": "07ab9dd3-7824-4e45-bfef-464079187a2b"
+        }
+    },
+    "25/19/11 18:03:35.276056": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "name": "NaCl"
+        },
+        "07ab9dd3-7824-4e45-bfef-464079187a2b": {
+            "uid": "07ab9dd3-7824-4e45-bfef-464079187a2b"
+        }
+    },
+    "25/19/11 18:03:36.525697": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "name": "NaCl"
+        }
+    },
+    "25/19/11 18:03:36.532521": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "name": "NaCl"
+        }
+    },
+    "25/19/11 18:03:40.591426": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        }
+    },
+    "25/19/11 18:03:40.597902": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "name": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        }
+    },
+    "25/19/11 18:03:50.649551": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        }
+    },
+    "25/19/11 18:03:50.656096": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        }
+    },
+    "25/21/11 12:39:49.175331": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2"
+        }
+    },
+    "25/21/11 12:39:49.182481": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2"
+        }
+    },
+    "25/21/11 12:40:03.129809": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        }
+    },
+    "25/21/11 12:40:03.135585": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        }
+    },
+    "25/21/11 21:13:27.988680": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6"
+        }
+    },
+    "25/21/11 21:13:27.994803": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6"
+        }
+    },
+    "25/21/11 21:13:47.063111": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        }
+    },
+    "25/21/11 21:13:47.068984": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        }
+    },
+    "25/21/11 21:13:49.594380": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458"
+        }
+    },
+    "25/21/11 21:13:49.601314": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458"
+        }
+    },
+    "25/21/11 21:13:59.532949": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        }
+    },
+    "25/21/11 21:13:59.538797": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        }
+    },
+    "25/21/11 21:37:17.303346": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        }
+    },
+    "25/21/11 21:37:17.310049": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        }
+    },
+    "25/21/11 21:40:14.018529": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        }
+    },
+    "25/21/11 21:40:14.026130": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        }
+    },
+    "25/22/11 11:42:23.150002": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab"
+        }
+    },
+    "25/22/11 11:42:23.157042": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab"
+        }
+    },
+    "25/22/11 11:42:32.104558": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        }
+    },
+    "25/22/11 11:42:32.111376": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        }
+    },
+    "25/22/11 11:42:33.563443": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c"
+        }
+    },
+    "25/22/11 11:42:33.571106": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c"
+        }
+    },
+    "25/22/11 11:42:38.926079": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "name": "HC8"
+        }
+    },
+    "25/22/11 11:42:38.934069": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "name": "HC8"
+        }
+    },
+    "25/22/11 11:56:47.326584": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "name": "HC8",
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "density": "0.910 g/ml"
+        }
+    },
+    "25/22/11 11:56:47.334314": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "name": "HC8",
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "density": "0.910 g/ml"
+        }
+    },
+    "25/22/11 15:34:10.253338": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "name": "HC8",
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "density": "0.910 g/ml"
+        },
+        "6bdec4bb-597d-4fe2-b0ce-10e4667ee201": {
+            "uid": "6bdec4bb-597d-4fe2-b0ce-10e4667ee201"
+        }
+    },
+    "25/22/11 15:34:19.162209": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "name": "HC8",
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "density": "0.910 g/ml"
+        },
+        "6bdec4bb-597d-4fe2-b0ce-10e4667ee201": {
+            "uid": "6bdec4bb-597d-4fe2-b0ce-10e4667ee201"
+        },
+        "61031d70-3fa1-4781-9fb6-8091c381678d": {
+            "uid": "61031d70-3fa1-4781-9fb6-8091c381678d"
+        }
+    },
+    "25/22/11 15:34:22.358061": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "name": "HC8",
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "density": "0.910 g/ml"
+        },
+        "6bdec4bb-597d-4fe2-b0ce-10e4667ee201": {
+            "uid": "6bdec4bb-597d-4fe2-b0ce-10e4667ee201",
+            "name": "PEG6k"
+        },
+        "61031d70-3fa1-4781-9fb6-8091c381678d": {
+            "uid": "61031d70-3fa1-4781-9fb6-8091c381678d"
+        }
+    },
+    "25/22/11 15:34:27.022926": {
+        "b7224538-e054-41a3-9bb5-d97d153e46dd": {
+            "density": "1.0 g/ml",
+            "name": "H2O",
+            "uid": "b7224538-e054-41a3-9bb5-d97d153e46dd",
+            "formula": "H2O"
+        },
+        "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979": {
+            "name": "SiO2",
+            "uid": "bfdcbc37-9fe7-4237-9a1a-98f7edb2f979",
+            "formula": "SiO2"
+        },
+        "2c696763-9999-478b-938d-c438e97a4607": {
+            "uid": "2c696763-9999-478b-938d-c438e97a4607",
+            "name": "Blue"
+        },
+        "1effeb9e-7f2f-465e-8b4f-39ae3f154504": {
+            "uid": "1effeb9e-7f2f-465e-8b4f-39ae3f154504",
+            "name": "PEO"
+        },
+        "8404652f-91df-4043-a577-9ee03ff5578b": {
+            "uid": "8404652f-91df-4043-a577-9ee03ff5578b",
+            "name": "SLES"
+        },
+        "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a": {
+            "uid": "1c91b6ab-15ac-4e21-8d1a-dd8bb081ad9a",
+            "name": "CAPB"
+        },
+        "0522f9a5-0b6a-4331-82a6-48e07915c4c7": {
+            "name": "NaCl",
+            "uid": "0522f9a5-0b6a-4331-82a6-48e07915c4c7",
+            "formula": "NaCl"
+        },
+        "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2": {
+            "uid": "a1341a9e-9ea3-49f2-a04e-b3bbce11eec2",
+            "name": "Octanoate"
+        },
+        "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6": {
+            "uid": "c6f871c5-4fcd-41ad-a2cf-7bc5f4f73fb6",
+            "name": "Ludox_TM50"
+        },
+        "0fb7f99f-277b-4ff9-a486-d2374a2b6458": {
+            "uid": "0fb7f99f-277b-4ff9-a486-d2374a2b6458",
+            "name": "Ludox_HS40"
+        },
+        "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d": {
+            "uid": "de8bfc56-f5cf-4ab4-bb62-aecd7a38695d",
+            "name": "TM50",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c": {
+            "uid": "a462b5d5-2f0f-4a30-b3eb-5baa247ffb1c",
+            "name": "HS40",
+            "formula": null,
+            "density": null,
+            "sld": null
+        },
+        "87ea213a-54b3-4f0c-a171-4d756f201dab": {
+            "uid": "87ea213a-54b3-4f0c-a171-4d756f201dab",
+            "name": "NaC8"
+        },
+        "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c": {
+            "name": "HC8",
+            "uid": "4d5ed56c-8637-4d2c-b0e5-6f74b7e5518c",
+            "density": "0.910 g/ml"
+        },
+        "6bdec4bb-597d-4fe2-b0ce-10e4667ee201": {
+            "uid": "6bdec4bb-597d-4fe2-b0ce-10e4667ee201",
+            "name": "PEG6k"
+        },
+        "61031d70-3fa1-4781-9fb6-8091c381678d": {
+            "uid": "61031d70-3fa1-4781-9fb6-8091c381678d",
+            "name": "PEG20k"
+        }
+    }
+}

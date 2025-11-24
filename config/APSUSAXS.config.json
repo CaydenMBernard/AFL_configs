@@ -1,0 +1,2556 @@
+{
+    "25/22/03 15:54:02.408594": {},
+    "25/22/03 15:54:02.408621": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE"
+    },
+    "25/22/03 16:00:54.556787": {
+        "data_dir_basepath": "/mnt/",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/mnt//share1/USAXS_data/2025-03/03_22_Greg"
+    },
+    "25/22/03 16:01:32.712622": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/mnt//share1/USAXS_data/2025-03/03_22_Greg"
+    },
+    "25/22/03 16:01:50.416806": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_22_Greg"
+    },
+    "25/23/03 14:48:11.118794": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_22_Greg",
+        "empty_uuid": ""
+    },
+    "25/23/03 14:48:11.264729": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_uuid": ""
+    },
+    "25/23/03 16:33:46.726635": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_uuid": ""
+    },
+    "25/23/03 17:50:45.221822": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_uuid": "",
+        "empty_scan_title": ""
+    },
+    "25/23/03 17:50:45.397006": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_uuid": "",
+        "empty_scan_title": ""
+    },
+    "25/23/03 17:51:50.765169": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2022-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_uuid": "",
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 17:52:07.420560": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/mnt/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "reduced_data_key": "flyScan_reduced_250",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_uuid": "",
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 17:52:13.644170": {
+        "data_dir_basepath": "",
+        "data_dir_pv": "usxLAX:userDir",
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "move_mode": "MOVE_SAMPLE",
+        "data_dir": "/share1/USAXS_data/2025-03/03_23_NIST_AFL",
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 17:54:22.787267": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 18:02:35.637120": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-01/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 18:16:39.810495": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 0,
+                    "y0": 0,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.5,
+                    "y_per_x_skew": -0.3333333333333333
+                },
+                "SlotB": {
+                    "x0": -150,
+                    "y0": -150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 1,
+                    "y_per_x_skew": -0.6666666666666666
+                },
+                "SlotC": {
+                    "x0": 150,
+                    "y0": 150,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": -8,
+                    "y_per_x_skew": 5.333333333333333
+                }
+            }
+        },
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 19:48:58.200164": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 0,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.75,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -62,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -46,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -61.7,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.8,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.05,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.6,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.75,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.1,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 61.1,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 19:59:37.215692": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -62.6,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.75,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -62,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -46,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -61.7,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.8,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.05,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.6,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.75,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.1,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 61.1,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "rotator_tape_blank_220_fly"
+    },
+    "25/23/03 20:02:39.671113": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -62.6,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.75,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -62,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -46,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -61.7,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.8,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.05,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.6,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.75,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.1,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 61.1,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "SlotA_blank_real"
+    },
+    "25/25/03 10:32:45.117791": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127.38,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -62.45,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.75,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -61.75,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -41.16,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": -61.26,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.49,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 60.02,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.6,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 61.03,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.1,
+                    "x_per_y_skew": 0,
+                    "x_step": 9,
+                    "y0": 61.45,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "SlotA_blank_real"
+    },
+    "25/26/03 12:47:06.052942": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127.18,
+                    "y0": -62.35,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.45,
+                    "y0": -61.6,
+                    "x_step": 9,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -46.3,
+                    "y0": -61.05,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.69,
+                    "y0": 60.27,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.75,
+                    "y0": 61.18,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.2,
+                    "y0": 61.7,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "SlotA_blank_real"
+    },
+    "25/27/03 15:13:42.120336": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127.18,
+                    "y0": -62.35,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.45,
+                    "y0": -61.6,
+                    "x_step": 9,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -46.3,
+                    "y0": -61.05,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.69,
+                    "y0": 60.27,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.75,
+                    "y0": 61.18,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.2,
+                    "y0": 61.7,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "SlotA_blank_real",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05
+    },
+    "25/27/03 15:53:24.862999": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 127.18,
+                    "y0": -62.35,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotB": {
+                    "x0": 40.45,
+                    "y0": -61.6,
+                    "x_step": 9,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "y_step": 9
+                },
+                "SlotC": {
+                    "x0": -46.3,
+                    "y0": -61.05,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotE": {
+                    "x0": 128.69,
+                    "y0": 60.27,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotF": {
+                    "x0": 41.75,
+                    "y0": 61.18,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                },
+                "SlotG": {
+                    "x0": -45.2,
+                    "y0": 61.7,
+                    "x_per_y_skew": 0,
+                    "y_per_x_skew": 0,
+                    "x_step": 9,
+                    "y_step": 9
+                }
+            }
+        },
+        "empty_scan_title": "SlotA_blank_real",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 15:53:53.416981": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "SlotA_blank_real",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 16:44:55.587789": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 16:45:25.134991": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 17:02:07.559369": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 17:06:01.017068": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 17:07:06.721390": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 17:10:16.328792": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 17:16:14.389215": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 18:19:17.631364": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 18:22:26.733196": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 22:35:24.071537": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 22:47:02.312191": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/27/03 23:25:58.621931": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/28/03 15:12:03.431454": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/28/03 15:17:11.763608": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/28/03 19:10:17.664012": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/28/03 22:53:45.689256": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/29/03 11:18:42.925600": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-03/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/12/06 13:37:07.382883": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBackground",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/12/06 15:34:58.940557": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "AFL_EmptyCapillary",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/12/06 15:42:35.584382": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "AirBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/12/06 16:15:59.538849": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/12/06 16:17:18.841687": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        }
+    },
+    "25/21/11 12:26:13.807865": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-06/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "file_read_max_retries": 20,
+        "file_read_retry_sleep": 15.0,
+        "file_data_check_key": "CalibratedData",
+        "file_blank_check_key": "BlankData",
+        "userdir_pv": "usxLAX:userDir",
+        "datadir_pv": "usxLAX:sampleDir",
+        "next_fs_order_n_pv": "usxLAX:USAXS:FS_OrderNumber"
+    },
+    "25/21/11 12:27:16.421185": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-11/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "file_read_max_retries": 20,
+        "file_read_retry_sleep": 15.0,
+        "file_data_check_key": "CalibratedData",
+        "file_blank_check_key": "BlankData",
+        "userdir_pv": "usxLAX:userDir",
+        "datadir_pv": "usxLAX:sampleDir",
+        "next_fs_order_n_pv": "usxLAX:USAXS:FS_OrderNumber"
+    },
+    "25/21/11 14:54:51.499567": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-11/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "file_read_max_retries": 10,
+        "file_read_retry_sleep": 15.0,
+        "file_data_check_key": "CalibratedData",
+        "file_blank_check_key": "BlankData",
+        "userdir_pv": "usxLAX:userDir",
+        "datadir_pv": "usxLAX:sampleDir",
+        "next_fs_order_n_pv": "usxLAX:USAXS:FS_OrderNumber"
+    },
+    "25/21/11 14:54:54.114823": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-11/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "file_read_max_retries": 10,
+        "file_read_retry_sleep": 15.0,
+        "file_data_check_key": "CalibratedData",
+        "file_blank_check_key": "BlankData",
+        "userdir_pv": "usxLAX:userDir",
+        "datadir_pv": "usxLAX:sampleDir",
+        "next_fs_order_n_pv": "usxLAX:USAXS:FS_OrderNumber"
+    },
+    "25/21/11 17:41:15.947031": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-11/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "file_read_max_retries": 10,
+        "file_read_retry_sleep": 15.0,
+        "file_data_check_key": "CalibratedData",
+        "file_blank_check_key": "QRS_data",
+        "userdir_pv": "usxLAX:userDir",
+        "datadir_pv": "usxLAX:sampleDir",
+        "next_fs_order_n_pv": "usxLAX:USAXS:FS_OrderNumber"
+    },
+    "25/22/11 13:31:07.067554": {
+        "sample_thickness": 1.58,
+        "run_initiate_pv": "usxLAX:AutoCollectionStart",
+        "script_name_pv": "usxLAX:AutoCollectionStrInput",
+        "instrument_status_pv": "usxLAX:state",
+        "script_path": "/share1/USAXS_data/2025-11/",
+        "instrument_running_pv": "usxLAX:dataColInProgress",
+        "script_template_file": "AFL-template.mac",
+        "script_file": "AFL.mac",
+        "magic_project_key": "!!AFL-SETNAME!!",
+        "magic_filename_key": "!!AFLREPLACEME!!",
+        "magic_xpos_key": "!!AFLXPOS!!",
+        "magic_ypos_key": "!!AFLYPOS!!",
+        "active_holder": "6A",
+        "script_write_cooldown": 1,
+        "platemap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "empty_scan_title": "WaterBlank",
+        "USAXS_mode": "Flyscan",
+        "USAXS_npts": 400,
+        "USAXS_signal_cutoff": 1.05,
+        "platmap": {
+            "6A": {
+                "SlotA": {
+                    "x0": 198.2,
+                    "y0": 35.5,
+                    "x_step": 9,
+                    "y_step": 9,
+                    "x_per_y_skew": 0.0,
+                    "y_per_x_skew": 0.0
+                }
+            }
+        },
+        "file_read_max_retries": 10,
+        "file_read_retry_sleep": 15.0,
+        "file_data_check_key": "CalibratedData",
+        "file_blank_check_key": "QRS_data",
+        "userdir_pv": "usxLAX:userDir",
+        "datadir_pv": "usxLAX:sampleDir",
+        "next_fs_order_n_pv": "usxLAX:USAXS:FS_OrderNumber",
+        "data_autocollection_permit_pv": "usxLAX:AutoCollectionPermit"
+    }
+}

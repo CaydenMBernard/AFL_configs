@@ -1,0 +1,125 @@
+{
+  "USAXS": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5000,
+    "screen_name": "AFL-USAXSServer",
+    "shell": "bash",
+    "active": true,
+    "server_module": "AFL.automation.instrument.APSUSAXS -i",
+    "conda_env": "AFL_agent",
+    "device": false
+  },
+  "SampleServer": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5050,
+    "screen_name": "AFL-SampleServer",
+    "shell": "bash",
+    "active": false,
+    "server_module": "AFL.automation.sample.SampleDriver",
+    "conda_env": "AFL_agent",
+    "device": false
+  },
+  "Agent": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5051,
+    "screen_name": "AFL-agent",
+    "shell": "bash",
+    "active": true,
+    "server_module": "AFL.double_agent.AgentDriver",
+    "conda_env": "AFL_agent",
+    "device": false
+  },
+  "Loader": {
+    "host": "afl-loader",
+    "username": "pi",
+    "httpPort": 5000,
+    "screen_name": "AFL-loader",
+    "shell": "bash",
+    "active": true,
+    "server_module": "AFL.automation.loading.PneumaticPressureSampleCell -i",
+    "device": false
+  },
+  "OT2": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5002,
+    "screen_name": "AFL-OT2Driver",
+    "shell": "bash",
+    "active": false,
+    "server_module": "AFL.automation.prepare.OT2HTTPDriver",
+    "conda_env": "AFL_agent",
+    "device": false
+  },
+  "Tiled Server (AFL)": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 8007,
+    "screen_name": "AFL-tiled",
+    "shell": "bash",
+    "active": true,
+    "server_script": "~/Apps/AFL/AFL-tiled/start-tiled.sh",
+    "conda_env": "AFL_agent",
+    "device": true,
+    "status_url": "http://usaxscontrol:8007"
+  },
+  "Robot (old)": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5002,
+    "screen_name": "OT2Driver",
+    "shell": "bash",
+    "active": false,
+    "server_module": "AFL.automation.prepare.OT2HTTPDriver",
+    "conda_env": "AFL_agent",
+    "device": false
+  },
+  "Robot OT2": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5002,
+    "screen_name": "AFL-OT2Prepare",
+    "shell": "bash",
+    "active": true,
+    "device": false,
+    "server_module": "AFL.automation.mixing.OT2Prepare -i",
+    "conda_env": "AFL_agent"
+  },
+  "Orchestrator": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5050,
+    "screen_name": "AFL-Orchestrator",
+    "shell": "bash",
+    "active": true,
+    "device": false,
+    "server_module": "AFL.automation.orchestrator.OrchestratorDriver",
+    "conda_env": "AFL_agent"
+  },
+  "Phantom USAXS": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 5000,
+    "screen_name": "AFL-PhantomAPSUSAXS",
+    "shell": "bash",
+    "active": false,
+    "device": false,
+    "server_module": "AFL.automation.instrument.APSUSAXS_Phantom",
+    "conda_env": "AFL_agent"
+  },
+  "Jupyter": {
+    "host": "usaxscontrol",
+    "username": "usaxs",
+    "httpPort": 8888,
+    "screen_name": "AFL-Jupyter",
+    "shell": "bash",
+    "active": true,
+    "device": true,
+    "server_script": "/home/beams/USAXS/.conda/envs/AFL_agent/bin/jupyter-lab",
+    "conda_env": "AFL_agent",
+    "status_url": "http://localhost:8888",
+    "webview_url": "http://localhost:8888/lab?token=6258186717b0177b23c7714900187638c2b7d1a536a88151"
+  }
+}
