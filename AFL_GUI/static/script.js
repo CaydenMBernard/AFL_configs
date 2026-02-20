@@ -42,3 +42,16 @@ function addComponent() {
 
     container.insertBefore(div, button);
 }
+
+async function testAFL() {
+  try {
+    const res = await fetch("/api/test");
+    const data = await res.json();
+    console.log("AFL test:", data);
+
+    alert(JSON.stringify(data, null, 2));
+  } catch (err) {
+    console.error(err);
+    alert("Failed to call /api/test");
+  }
+}
