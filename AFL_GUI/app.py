@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
 from AFL_client import make_robot_client
 
-app = Flask(__name__)
+app = Flask(__name__)  
 
 @app.route('/')
 def index():
