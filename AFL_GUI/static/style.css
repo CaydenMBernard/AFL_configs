@@ -23,7 +23,7 @@ body {
 
 .sidebar {
     background-color: #f1f1f1;
-    max-height: calc(100vh - 160px) ;
+    max-height: calc(100vh - 180px) ;
 }
 
 #sidebar-solution-list{
@@ -33,7 +33,7 @@ body {
     gap: 10px;
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 160px) ;
+    max-height: calc(100vh - 180px) ;
     overflow-x: hidden;
 }
 
@@ -41,6 +41,15 @@ body {
     background-color: #333;
     margin: 0px;
     padding: 5px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-current{
+    text-decoration: underline;
 }
 
 .sidebar-tag{
@@ -102,7 +111,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     min-height: 400px;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     padding: 20px;
     overflow: auto;
 
