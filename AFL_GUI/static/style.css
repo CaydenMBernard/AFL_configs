@@ -4,25 +4,80 @@ body {
     background-color: #f4f4f4;
 }
 
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+#screen-container{
+    display: flex;
+    flex-direction: row;
 }
 
-.header {
+.template-existing-stcock-creationpage{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border: white 2px solid;
+}
+
+.template-existing-stcock-creationpage:hover{
+   border: #b1b1b1 2px solid;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    max-height: calc(100vh - 180px) ;
+}
+
+#sidebar-solution-list{
+    padding: 20px;
+    width: 22vw;
+    overflow: scroll;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 180px) ;
+    overflow-x: hidden;
+}
+
+#sidebar-solution-creator-buttons{
+    background-color: #333;
+    margin: 0px;
+    padding: 5px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-current{
+    text-decoration: underline;
+}
+
+.sidebar-tag{
+    
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.sidebar-solution-name{
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+#top-nav {
     background-color: #000000;
     padding: 15px 20px;
     display: flex;
     align-items: center;
     color: white;
+    height: 48px
 }
 
-.header h1 {
+#top-nav h1 {
     margin: 0;
     margin-right: 40px;
     font-size: 1.2rem;
@@ -52,13 +107,14 @@ body {
 }
 
 .tab-content {
-    display: none;
-    padding: 20px;
     background-color: white;
-    margin: 20px;
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     min-height: 400px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    padding: 20px;
+    overflow: auto;
+
 }
 
 .logo-area {

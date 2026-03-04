@@ -10,8 +10,8 @@
 
 <body>
     <div id="top-nav">
-        <button class="tab-button" ><a class="nav-link nav-link-current" href="/">Create & Edit Solutions</a></button>
-        <button class="tab-button"><a class="nav-link" href="/graph">Generate Graph</a></button>
+        <button class="tab-button" ><a class="nav-link" href="/">Create & Edit Solutions</a></button>
+        <button class="tab-button"><a class="nav-link nav-link-current" href="/graph">Generate Graph</a></button>
         <div class="logo-area">
             <img src="../static/Icons/logo_text_large_dark.svg" alt="AFL Icon">
         </div>
@@ -74,33 +74,9 @@
             
         </div>
 
-        <div id="Tab1" class="tab-content" >
-            <h2>Create & Edit Solutions</h2>
-
-            <div class="input-group">
-                <label class="input-label">Solution Name</label>
-                <input type="text" class="styled-input" placeholder="Enter solution name">
-            </div>
-
-            <div class="content-block">
-                <label class="input-label">Component 1</label>
-                <input type="text" id="component-1" class="styled-input" placeholder="Enter Component...">
-                <!-- add space -->
-                <div style="margin-bottom: 10px;">
-                </div>
-                <div style="display: flex;">
-                    <div class="col">
-                        <label class="input-label">Amount</label>
-                        <input type="text" id="amount-1" class="styled-input" placeholder="Enter Amount...">
-                    </div>
-                    <div class="col">
-                        <label class="input-label">Unit</label>
-                        <input type="text" id="unit-1" class="styled-input" placeholder="Enter Unit...">
-                    </div>
-                </div>
-            </div>
-            <button class="add-row-button" onclick="addComponent()"> + Add Component</button>
-            <button class="save-solution-button" onclick="saveSolution()"> Save Solution</button>
+        <div id="Tab2" class="tab-content">
+            <h2>Generate Graph</h2>
+            <p>Placeholder for graph generation interface.</p>
         </div>
     </div>
     <script src="../static/script.js"></script>
