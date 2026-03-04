@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/graph')
+def index_graph():
+    return render_template('graph-page.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
