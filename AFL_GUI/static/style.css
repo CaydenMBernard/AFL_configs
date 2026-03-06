@@ -179,6 +179,20 @@ body {
     flex: 1;
 }
 
+/* Component Header */
+.component-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.component-header .input-label {
+    margin-bottom: 0;
+}
+
+
+
 /* Add a button to add a new row */
 .add-row-button {
     display: block;
@@ -219,4 +233,84 @@ body {
 
 .save-solution-button:hover {
     background-color: #5c500b;
+}
+
+
+
+/* delete button */
+.delete-button {
+    background: none;
+    border: none;
+    color: #888888; /* Grey default state */
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.delete-button:hover {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+}
+
+.delete-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Tag Styles */
+
+/* Tag System */
+.add-tag-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.add-tag-button:hover {
+    background-color: #218838;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tag-pill {
+    background-color: #ff0000;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tag-remove {
+    color: #ffffff;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.tag-remove:hover {
+    color: #afafaf;
 }
