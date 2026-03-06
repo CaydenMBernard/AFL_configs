@@ -236,7 +236,7 @@ body {
 }
 
 #graph-page-right{
-    background-color: blue;
+    /* background-color: blue; */
     width: 25%;
 }
 
@@ -298,4 +298,29 @@ body {
     padding: 7px;
     border-radius: 10px;
     font-weight: 650;
+}
+
+.dimension-btn{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    font-weight: 650;
+}
+
+.dimension-btn-active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.dimension-btn-not-active {
+  background-color: gray;
+  color: white;
+}
+
+.dimension-setting-active {
+  visibility: visible;
+}
+
+.dimension-setting-not-active {
+  display: none;
 }
