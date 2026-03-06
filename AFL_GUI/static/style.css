@@ -15,10 +15,18 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border: white 2px solid;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .template-existing-stcock-creationpage:hover{
    border: #b1b1b1 2px solid;
+}
+
+.template-existing-stcock-creationpage.selected-solution {
+    border: #218838 2px solid;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 165, 8, 0.15);
 }
 
 .sidebar {
@@ -273,7 +281,6 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 600;
     transition: background-color 0.3s;
     white-space: nowrap;
 }
@@ -313,4 +320,169 @@ body {
 
 .tag-remove:hover {
     color: #afafaf;
+}
+
+
+
+
+/* Sidebar Header Flexbox */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the top */
+    margin-top: 5px;
+}
+
+.sidebar-solution-name {
+    margin: 0; 
+    padding-right: 10px; /* Keeps text from bumping into icons */
+}
+
+/* Hide actions by default, reveal on card hover */
+.sidebar-actions {
+    display: flex;
+    gap: 2px;
+    opacity: 0; 
+    transition: opacity 0.2s ease;
+}
+
+.template-existing-stcock-creationpage:hover .sidebar-actions {
+    opacity: 1;
+}
+
+/* Icon Button Styling */
+.icon-button {
+    background: none;
+    border: none;
+    color: #a0a0a0;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.icon-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Hover States for Icons */
+.icon-button:hover {
+    color: #333;
+    background-color: #e0e0e0;
+}
+
+.icon-button.delete-icon:hover {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar Header */
+/* Sidebar Header Stack */
+#sidebarHeaderStack {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-title {
+    color: white;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.sidebar-search-row {
+    display: flex;
+    gap: 8px; /* Space between search and button */
+    align-items: center;
+}
+
+/* Allow the search bar to stretch and fill the remaining space */
+.sidebar-search-row .styled-input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-bottom: 0; /* Overrides any default input margins */
+}
+
+/* Adjusted button styling to match the height of the search bar */
+.add-new-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background-color 0.2s;
+    white-space: nowrap; /* Prevents the "New" text from stacking */
+}
+
+.add-new-btn:hover {
+    background-color: #218838;
+}
+
+/* Horizontally scrolling tag container */
+.sidebar-filter-row {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px; /* Space for the scrollbar */
+    scrollbar-width: thin; /* Firefox */
+}
+
+.sidebar-filter-row::-webkit-scrollbar {
+    height: 4px;
+}
+.sidebar-filter-row::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 4px;
+}
+
+/* Filter Tags */
+.filter-tag {
+    background-color: #555;
+    color: #ccc;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-tag:hover {
+    background-color: #666;
+    color: white;
+}
+
+.filter-tag.active-filter {
+    background-color: #ff0000;
+    color: white;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
 }

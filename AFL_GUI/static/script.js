@@ -145,3 +145,89 @@ function handleTagEnter(event) {
         addTag();
     }
 }
+
+
+// solution selection
+function selectSidebarSolution(clickedElement) {
+    const allSolutions = document.querySelectorAll('.template-existing-stcock-creationpage');
+    
+    for (let i = 0; i < allSolutions.length; i++) {
+        allSolutions[i].classList.remove('selected-solution');
+    }
+
+    clickedElement.classList.add('selected-solution');
+}
+
+
+
+
+// sidebar solution actions
+function deleteSidebarSolution(event) {
+    event.stopPropagation(); 
+    const card = event.target.closest('.template-existing-stcock-creationpage');
+    if (card) {
+        card.remove();
+    }
+}
+
+function cloneSolution(event) {
+    event.stopPropagation();
+    console.log("Clone button clicked!");
+}
+
+
+
+
+// sidebar header actions
+
+function createNewSolution() {
+    // Un-select any active sidebar card
+    const allSolutions = document.querySelectorAll('.template-existing-stcock-creationpage');
+    allSolutions.forEach(card => card.classList.remove('selected-solution'));
+
+    // Clear the main solution name input
+    const nameInput = document.querySelector('.styled-input[placeholder="Enter solution name"]');
+    if (nameInput) nameInput.value = '';
+    
+    // Clear the tags
+    const tagInput = document.getElementById('tagInput');
+    if (tagInput) tagInput.value = '';
+    
+    const tagContainer = document.getElementById('tagContainer');
+    if (tagContainer) tagContainer.innerHTML = '';
+    
+    // Reset components to a single empty block
+    const tabContainer = document.getElementById("Tab1");
+    const contentBlocks = tabContainer.querySelectorAll('.content-block');
+    
+    if (contentBlocks.length > 0) {
+        // Keep the first block and clear its values
+        const firstBlock = contentBlocks[0];
+        const inputs = firstBlock.querySelectorAll('input, select');
+        inputs.forEach(input => input.value = '');
+        
+        // Remove any additional component blocks
+        for (let i = 1; i < contentBlocks.length; i++) {
+            contentBlocks[i].remove();
+        }
+    }
+}
+
+function toggleTagFilter(clickedTag) {
+    // Toggles the visual 'active' state on the pill
+    clickedTag.classList.toggle('active-filter');
+    
+    // Triggers the search filter function
+    filterSolutions(); 
+}
+
+function filterSolutions() {
+    const searchInput = document.getElementById('solutionSearch').value.toLowerCase();
+    
+    // Gather all currently active filter tags
+    const activeFilters = document.querySelectorAll('.filter-tag.active-filter');
+    const filterTexts = Array.from(activeFilters).map(tag => tag.textContent.toLowerCase());
+    
+    // Placeholder log - this will run every time you type or click a tag
+    console.log("Filtering by text:", searchInput, "and tags:", filterTexts);
+}
