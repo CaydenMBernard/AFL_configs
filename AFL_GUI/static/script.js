@@ -55,3 +55,33 @@ async function testAFL() {
     alert("Failed to call /api/test");
   }
 }
+
+async function saveSolution() {
+  const name = document.getElementById("solution-name").value.trim();
+  const location = document.getElementById("deck-location").value.trim();
+
+  const blocks = document.querySelectorAll("#Tab1 .content-block");
+  const masses = {};
+
+  for (let i = 1; i <= blocks.length; i++) {
+    const comp = document.getElementById(`component-${i}`)?.value?.trim() || "";
+    const amt  = document.getElementById(`amount-${i}`)?.value?.trim() || "";
+    const unit = document.getElementById(`unit-${i}`)?.value?.trim() || "";
+
+    if (!comp) continue;
+    if (!amt || !unit) continue;
+
+    masses[comp] = `${amt} ${unit}`;
+  }
+
+  const payload = { name, location, masses };
+
+  const res = await fetch("/api/add_stock", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  const data = await res.json();
+  alert(JSON.stringify(data, null, 2));
+}
