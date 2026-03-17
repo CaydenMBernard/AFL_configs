@@ -172,3 +172,7 @@ function selectSidebarSolution(clickedElement) {
 
     clickedElement.classList.add('selected-solution');
 }
+
+
+
+

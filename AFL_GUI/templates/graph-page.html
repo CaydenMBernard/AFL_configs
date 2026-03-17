@@ -74,12 +74,49 @@
             
         </div>
 
-        <div id="Tab2" class="tab-content">
-            <h2>Generate Graph</h2>
-            <p>Placeholder for graph generation this is the second page and I am being loaded.</p>
+        <div id="graph-page" class="tab-content">
+            <div id="graph-page-left">
+                <div id="graph-output-box">graph box</div>
+
+                <div id="graph-lower-left">
+                    <div id="code-output-box">
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                        <p>c</p>
+                    </div>
+
+                    <div id="graph-control-btns">
+                        <button id="gen-graph-btn">Generate Graph</button>
+                        <button id="download-graph-btn"><img height="20px" src="../static/Icons/download-arrow.png">Download Graph</button>
+                    </div>
+
+                </div>
+                
+
+            </div>
+            <div id="graph-page-right">
+                
+                <div id="dimesion-options">
+                    <button id="2d-btn" class="dimension-btn dimension-btn-active">2D</button>
+                    <button id="3d-btn" class="dimension-btn dimension-btn-not-active">3D</button>
+                </div>
+
+                <div id="2d-settings" class="dimension-setting-active"><p>2d Settings</p></div>
+                <div id="3d-settings" class="dimension-setting-not-active"><p>3d Settings</p></div>
+
+
+            </div>
         </div>
     </div>
-    <script src="../static/script.js"></script>
+    <script src="../static/graph-script.js"></script>
 </body>
 
 </html>
