@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <!-- Screen header -->
     <div id="top-nav">
         <button class="tab-button" ><a class="nav-link nav-link-current" href="/">Create & Edit Solutions</a></button>
         <button class="tab-button"><a class="nav-link" href="/graph">Generate Graph</a></button>
@@ -17,10 +19,15 @@
         </div>
     </div>
 
+
+
     <div id="screen-container">
+
+
         <div class="sidebar">
+
             <!-- header portion of the sidebar -->
-            <div id="sidebarHeaderStack">
+            <div id="sidebar-header-top">
                 <div class="sidebar-search-row">
                     <input type="text" id="solutionSearch" class="styled-input" placeholder="Search solutions..." onkeyup="filterSolutions()">
                     <button class="add-new-btn" onclick="createNewSolution()" title="Create New Solution">
@@ -30,79 +37,140 @@
                         New
                     </button>
                 </div>
-                <div class="sidebar-filter-row" id="sidebarTagFilters">
-                    <span class="filter-tag" onclick="toggleTagFilter(this)">Acidic</span>
-                    <span class="filter-tag" onclick="toggleTagFilter(this)">Buffer</span>
-                    <span class="filter-tag" onclick="toggleTagFilter(this)">Stock</span>
+                <!-- tags section in the header -->
+                <div class="tag-container tag-container-Centered" id="sidebarTagFilters">
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">Acidic</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">Buffer</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">Stock</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">sample</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">things</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">extra</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">special</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">unique</button>
+                    <button class="base-tag unselected" onclick="toggleTagFilter(this)">only</button>
                 </div>
             </div>
 
+
+            <!-- card section in solutions -->
             <div id="sidebar-solution-list">
-                <div class="template-existing-stcock-creationpage" onclick="selectSidebarSolution(this)">
-                <!-- <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p> -->
-                 <!-- test header -->
-                <div class="sidebar-header">
-                    <p class="sidebar-solution-name"><strong>[Solution Name]</strong></p>
-                    <div class="sidebar-actions">
-                        <button class="icon-button" onclick="cloneSolution(event)" title="Clone Solution">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="currentColor"/>
-                            </svg>
-                        </button>
-                        <button class="icon-button delete-icon" onclick="deleteSidebarSolution(event)" title="Delete Solution">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
-                            </svg>
-                        </button>
+
+                <div class="template-existing-stock-creationpage" onclick="selectSidebarSolution(this)">
+                    <div class="sidebar-solution-header">
+                        <p class="sidebar-solution-name"><strong>[Solution Name]</strong></p>
+                        <div class="sidebar-actions">
+                            <button class="icon-button" onclick="cloneSolution(event)" title="Clone Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                            <button class="icon-button delete-icon" onclick="deleteSidebarSolution(event)" title="Delete Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
+                    <div class="tag-container">
+                        <p class="base-tag">Tag Example</p>
+                        <p class="base-tag">Tag Example</p>
+                        <p class="base-tag">Acidic</p>
+                        <p class="base-tag">Tag Example</p>
+                        <p class="base-tag">Tag Example</p>
+                    </div>
+                
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
                 </div>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-            
-            <div class="template-existing-stcock-creationpage" onclick="selectSidebarSolution(this)">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
 
-            <div class="template-existing-stcock-creationpage" onclick="selectSidebarSolution(this)">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
+                <div class="template-existing-stock-creationpage" onclick="selectSidebarSolution(this)">
+                    <div class="sidebar-solution-header">
+                        <p class="sidebar-solution-name"><strong>[Solution Name]</strong></p>
+                        <div class="sidebar-actions">
+                            <button class="icon-button" onclick="cloneSolution(event)" title="Clone Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                            <button class="icon-button delete-icon" onclick="deleteSidebarSolution(event)" title="Delete Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tag-container">
+                        <div class="base-tag">Tag Example</div>
+                    </div>
+                
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                </div>
 
-            <div class="template-existing-stcock-creationpage" onclick="selectSidebarSolution(this)">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-
-            <div class="template-existing-stcock-creationpage" onclick="selectSidebarSolution(this)">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
+                <div class="template-existing-stock-creationpage" onclick="selectSidebarSolution(this)">
+                    <div class="sidebar-solution-header">
+                        <p class="sidebar-solution-name"><strong>[Solution Name]</strong></p>
+                        <div class="sidebar-actions">
+                            <button class="icon-button" onclick="cloneSolution(event)" title="Clone Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                            <button class="icon-button delete-icon" onclick="deleteSidebarSolution(event)" title="Delete Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tag-container">
+                        <div class="base-tag">Tag Example</div>
+                        <div class="base-tag">Tag Example</div>
+                    </div>
+                
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                </div><div class="template-existing-stock-creationpage" onclick="selectSidebarSolution(this)">
+                    <div class="sidebar-solution-header">
+                        <p class="sidebar-solution-name"><strong>[Solution Name]</strong></p>
+                        <div class="sidebar-actions">
+                            <button class="icon-button" onclick="cloneSolution(event)" title="Clone Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                            <button class="icon-button delete-icon" onclick="deleteSidebarSolution(event)" title="Delete Solution">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tag-container">
+                        <div class="base-tag">Tag Example</div>
+                    </div>
+                
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                    <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
+                </div>
 
             </div>
             
         </div>
+
+
+
+        <!-- tab content (main screen) -->
 
         <div id="Tab1" class="tab-content" >
             <h2>Create & Edit Solutions</h2>
@@ -137,10 +205,7 @@
                         </svg>
                     </button> -->
                 </div>
-                <input type="text" id="component-1" class="styled-input" placeholder="Enter Component...">
-                <!-- add space -->
-                <div style="margin-bottom: 10px;">
-                </div>
+                <input type="text" id="component-1" class="styled-input" placeholder="Enter Component..." style="margin-bottom: 10px;">
                 <div style="display: flex;">
                     <div class="col" style="flex: 3; margin-right: 20px;">
                         <label class="input-label">Amount</label>
@@ -148,6 +213,8 @@
                     </div>
                     <div class="col" style="flex: 1; margin-left: 20px;">
                     <label class="input-label">Unit</label>
+
+                    <!-- dropdown data for unit -->
                     <select id="unit-1" class="styled-input">
                         <option value="" disabled selected>Select Unit...</option>
                         <optgroup label="Mass">

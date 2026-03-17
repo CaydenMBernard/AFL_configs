@@ -2,14 +2,16 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 #screen-container{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
-.template-existing-stcock-creationpage{
+.template-existing-stock-creationpage{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -19,11 +21,11 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.template-existing-stcock-creationpage:hover{
+.template-existing-stock-creationpage:hover{
    border: #b1b1b1 2px solid;
 }
 
-.template-existing-stcock-creationpage.selected-solution {
+.template-existing-stock-creationpage.selected-solution {
     border: #218838 2px solid;
     background-color: #f0f8ff;
     box-shadow: 0 4px 8px rgba(0, 165, 8, 0.15);
@@ -31,18 +33,23 @@ body {
 
 .sidebar {
     background-color: #f1f1f1;
-    max-height: calc(100vh - 180px) ;
+    /* max-height: calc(100vh - 180px) ; */
+    display: flex;
+    height: calc(100vh - 78px);
+    flex-direction: column;
+    max-width: 25vw;
 }
 
 #sidebar-solution-list{
     padding: 20px;
-    width: 22vw;
+    /* width: 22vw; */
     overflow: scroll;
     gap: 10px;
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 180px) ;
     overflow-x: hidden;
+
+    scrollbar-color: #b3b3b3 transparent;
 }
 
 #sidebar-solution-creator-buttons{
@@ -58,17 +65,6 @@ body {
 
 .nav-link-current{
     text-decoration: underline;
-}
-
-.sidebar-tag{
-    display: flex;
-    background-color: red;
-    color: white;
-    border-radius: 25px;
-    width: fit-content;
-    padding: 5px;
-    font-size: 12px;
-    margin-top: 2px;
 }
 
 .sidebar-solution-name{
@@ -249,7 +245,7 @@ body {
 .delete-button {
     background: none;
     border: none;
-    color: #888888; /* Grey default state */
+    color: #888888;
     cursor: pointer;
     padding: 4px;
     display: flex;
@@ -270,72 +266,17 @@ body {
 }
 
 
-/* Tag Styles */
 
-/* Tag System */
-.add-tag-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 0 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-    white-space: nowrap;
-}
-
-.add-tag-button:hover {
-    background-color: #218838;
-}
-
-.tag-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-}
-
-.tag-pill {
-    background-color: #ff0000;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    font-weight: 500;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.tag-remove {
-    color: #ffffff;
-    margin-left: 8px;
-    cursor: pointer;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1;
-    transition: color 0.2s;
-}
-
-.tag-remove:hover {
-    color: #afafaf;
-}
-
-
-
-
-/* Sidebar Header Flexbox */
-.sidebar-header {
+.sidebar-solution-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Aligns items to the top */
+    align-items: flex-start;
     margin-top: 5px;
 }
 
 .sidebar-solution-name {
     margin: 0; 
-    padding-right: 10px; /* Keeps text from bumping into icons */
+    padding-right: 10px;
 }
 
 /* Hide actions by default, reveal on card hover */
@@ -346,7 +287,7 @@ body {
     transition: opacity 0.2s ease;
 }
 
-.template-existing-stcock-creationpage:hover .sidebar-actions {
+.template-existing-stock-creationpage:hover .sidebar-actions {
     opacity: 1;
 }
 
@@ -391,8 +332,7 @@ body {
 
 
 /* Sidebar Header */
-/* Sidebar Header Stack */
-#sidebarHeaderStack {
+#sidebar-header-top {
     background-color: #333;
     padding: 15px;
     display: flex;
@@ -414,7 +354,7 @@ body {
 
 .sidebar-search-row {
     display: flex;
-    gap: 8px; /* Space between search and button */
+    gap: 8px;
     align-items: center;
 }
 
@@ -423,7 +363,7 @@ body {
     flex-grow: 1;
     padding: 8px 12px;
     font-size: 13px;
-    margin-bottom: 0; /* Overrides any default input margins */
+    margin-bottom: 0;
 }
 
 /* Adjusted button styling to match the height of the search bar */
@@ -447,42 +387,96 @@ body {
     background-color: #218838;
 }
 
-/* Horizontally scrolling tag container */
-.sidebar-filter-row {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding-bottom: 4px; /* Space for the scrollbar */
-    scrollbar-width: thin; /* Firefox */
-}
 
-.sidebar-filter-row::-webkit-scrollbar {
-    height: 4px;
-}
-.sidebar-filter-row::-webkit-scrollbar-thumb {
-    background-color: #666;
-    border-radius: 4px;
-}
 
-/* Filter Tags */
-.filter-tag {
-    background-color: #555;
-    color: #ccc;
-    padding: 4px 10px;
+/* ------------- Tag Styles ------------- */
+
+.base-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
     border-radius: 50px;
     font-size: 12px;
+    font-weight: 500;
+    width: fit-content;
     white-space: nowrap;
-    cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+
+    background-color: #ff0000;
+    color: white;
+    border: none
 }
 
-.filter-tag:hover {
+/* Modifier: filterbackgrounds */
+.base-tag.unselected {
+    background-color: #555;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.base-tag.unselected:hover {
     background-color: #666;
     color: white;
 }
 
-.filter-tag.active-filter {
+.base-tag.selected {
     background-color: #ff0000;
     color: white;
-    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+    box-shadow: 0 0 5px rgba(156, 55, 55, 0.5);
+}
+
+.base-tag.selected:hover {
+    background-color: #b40000;
+    color: white;
+}
+
+/* tag holders and utilities */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 100%;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.tag-container-Centered {
+    justify-content: center;
+}
+
+
+
+.tag-remove {
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: thin;
+    line-height: 1;
+    display: flex;
+    
+    color: currentColor; 
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.tag-remove:hover {
+    opacity: 1;
+}
+
+/* related buttons */
+.add-tag-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.add-tag-button:hover {
+    background-color: #218838;
 }
