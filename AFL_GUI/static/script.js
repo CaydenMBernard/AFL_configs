@@ -336,16 +336,14 @@ function loadSolutionIntoEditor(solutionJson) {
         tagContainer.innerHTML = ""; // Clear existing tags first
     }
     
+    // create the tags
     if (solutionJson.tags && solutionJson.tags.length > 0) {
         solutionJson.tags.forEach(tagString => {
-            // 1. Create the main wrapper using your new class
             const newTagPill = document.createElement("div");
             newTagPill.className = "base-tag";
             
-            // 2. Add the tag text directly to the pill
             newTagPill.textContent = tagString;
             
-            // 3. Create the remove icon
             const removeIcon = document.createElement("span");
             removeIcon.className = "tag-remove";
             removeIcon.innerHTML = "&times;";
@@ -353,10 +351,8 @@ function loadSolutionIntoEditor(solutionJson) {
                 removeElement(this, 'base-tag');
             };
 
-            // 4. Append the 'x' icon next to the text
             newTagPill.appendChild(removeIcon);
             
-            // 5. Add the finished tag to the container
             tagContainer.appendChild(newTagPill);
         });
     }
@@ -375,7 +371,6 @@ function loadSolutionIntoEditor(solutionJson) {
             const div = document.createElement("div");
             div.className = "content-block";
             
-            // 1. Keep the HTML string clean and easy to edit
             div.innerHTML = `
                 <div class="component-header">
                     <label class="input-label">Component</label>
@@ -419,10 +414,10 @@ function loadSolutionIntoEditor(solutionJson) {
                     </div>
                 </div>`;
             
-            // 2. Insert the block into the container
+            // add the block
             container.insertBefore(div, addButton);
 
-            // 3. Set the dropdown value via JavaScript
+            // do the dropdown options
             const unitSelect = document.getElementById(`unit-${count}`);
             if (unitSelect && comp.unit) {
                 unitSelect.value = comp.unit;
@@ -447,28 +442,25 @@ async function renderSidebarSolutions() {
 
         allSolutions.forEach(solution => {
             const card = document.createElement('div');
-            // FIX: Corrected the spelling from 'stcock' to 'stock'
             card.className = 'template-existing-stock-creationpage';
             
-            // Crucial: attach the ID to the card so we can click it later
+            // attach id to the card
             card.setAttribute('data-solution-id', solution.id);
             
-            // Attach the click event directly
             card.onclick = function() { 
                 selectSidebarSolution(this); 
             };
 
-            // 1. Build the Tags HTML string
+            // make tags
             let tagsHtml = '<div class="tag-container">';
             if (solution.tags && solution.tags.length > 0) {
                 solution.tags.forEach(tag => {
-                    // UPDATE: Now uses the base-tag class
                     tagsHtml += `<div class="base-tag">${escapeHtmlText(tag)}</div>`;
                 });
             }
             tagsHtml += '</div>';
 
-            // 2. Build the Components HTML string
+            // make the componentss
             let componentsHtml = '';
             if (solution.components && solution.components.length > 0) {
                 solution.components.forEach(comp => {
@@ -481,7 +473,7 @@ async function renderSidebarSolutions() {
                 });
             }
 
-            // 3. Assemble the full card template
+            // make the cards
             card.innerHTML = `
                 <div class="sidebar-solution-header">
                     <p class="sidebar-solution-name"><strong>${escapeHtmlText(solution.solutionName) || '[Unnamed Solution]'}</strong></p>
@@ -734,7 +726,7 @@ async function cloneSolution(event, solutionId) {
     // Stop the card's onclick event from firing
     event.stopPropagation();
 
-    // Guardrail: don't wipe out their current work without asking
+    // aask first
     if (hasUnsavedChanges) {
         const confirmLeave = confirm("You have unsaved changes. Do you want to leave without saving?");
         if (!confirmLeave) return;
@@ -764,24 +756,20 @@ async function cloneSolution(event, solutionId) {
         const store = transaction.objectStore(storeName);
         const request = store.put(clonedSolution);
 
-        // UPDATE 1: Make this async so we can await the sidebar render
+        // update backend
         request.onsuccess = async () => {
             console.log("Solution cloned successfully.");
 
-            // UPDATE 2: Track the newly cloned ID globally so saves don't duplicate
             currentSolutionId = newCloneId;
             
-            // UPDATE 3: Use the new helper function to manage the unsaved state and button
             setUnsavedState(false);
             
             // Load the data into the center editor
             loadSolutionIntoEditor(clonedSolution);
 
-            // UPDATE 4: Wait for the sidebar to redraw with the new clone included
             await renderSidebarSolutions();
             await updateGlobalTags();
 
-            // UPDATE 5: Find the new clone by its ID and select it visually
             const allSolutions = document.querySelectorAll('.template-existing-stock-creationpage');
             allSolutions.forEach(card => card.classList.remove('selected-solution'));
             
@@ -803,52 +791,49 @@ async function cloneSolution(event, solutionId) {
 
 
 
-// Updates all tag-related UI based on the current database
+// Updates tag related data (searches through the database)
 async function updateGlobalTags() {
     try {
         const allSolutions = await getAllSolutionsFromDb();
-        const uniqueTags = new Set(); // A Set automatically prevents duplicates!
+        const uniqueTags = new Set();
 
-        // 1. Gather all tags from every solution
+        // get all tags from all solutions
         allSolutions.forEach(solution => {
             if (solution.tags && Array.isArray(solution.tags)) {
                 solution.tags.forEach(tag => {
-                    // Store as lowercase to prevent "Acidic" and "acidic" from duplicating
                     uniqueTags.add(tag.trim().toLowerCase()); 
                 });
             }
         });
 
-        // Convert the Set back to an array and alphabetize it
         const sortedTags = Array.from(uniqueTags).sort();
 
-        // 2. Update the DataList (for the input dropdown)
+        // update datalist
         const dataList = document.getElementById("existingTags");
         if (dataList) {
             dataList.innerHTML = "";
             sortedTags.forEach(tag => {
                 const option = document.createElement("option");
-                option.value = tag; // You could capitalize the first letter here if desired
+                option.value = tag;
                 dataList.appendChild(option);
             });
         }
 
-        // 3. Update the Sidebar Filter Buttons
+        // update the filter
         const filterContainer = document.getElementById("sidebarTagFilters");
         if (filterContainer) {
-            // Remember what the user currently has selected before we wipe the container
+            // keep what was selected
             const currentlySelected = Array.from(filterContainer.querySelectorAll('.selected'))
                 .map(btn => btn.textContent.trim().toLowerCase());
 
-            // Clear the hardcoded HTML buttons
             filterContainer.innerHTML = "";
             
-            // Rebuild the buttons dynamically
+            // build back the tags
             sortedTags.forEach(tag => {
                 const btn = document.createElement("button");
                 btn.textContent = tag;
                 
-                // Re-apply the selected class if they were actively filtering by this
+                // reapply if they were filtering it
                 if (currentlySelected.includes(tag)) {
                     btn.className = "base-tag selected";
                 } else {
