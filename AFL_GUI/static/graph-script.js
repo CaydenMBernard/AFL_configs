@@ -1,11 +1,13 @@
 
-  const btn2d = document.getElementById("2d-btn");
-  const btn3d = document.getElementById("3d-btn");
+  const btntarget = document.getElementById("target-btn");
+  const btnsweep = document.getElementById("sweep-btn");
 
-  const settings2d = document.getElementById("2d-settings");
-  const settings3d = document.getElementById("3d-settings");
+  const settingsTarget = document.getElementById("target-settings");
+  const settingsSweep = document.getElementById("sweep-settings");
 
-  function activateDimension(activeBtn, inactiveBtn, activeSettings, inactiveSettings) {
+  const zTargetBlock = document.getElementById("z-setting-block");
+
+  function activateMode(activeBtn, inactiveBtn, activeSettings, inactiveSettings) {
     // Button classes
     activeBtn.classList.add("dimension-btn-active");
     activeBtn.classList.remove("dimension-btn-not-active");
@@ -21,10 +23,49 @@
     inactiveSettings.classList.remove("dimension-setting-active");
   }
 
-  btn2d.addEventListener("click", () =>
-    activateDimension(btn2d, btn3d, settings2d, settings3d)
+  btntarget.addEventListener("click", () =>
+    activateMode(btntarget, btnsweep, settingsTarget, settingsSweep)
   );
 
-  btn3d.addEventListener("click", () =>
-    activateDimension(btn3d, btn2d, settings3d, settings2d)
+  btnsweep.addEventListener("click", () =>
+    activateMode(btnsweep, btntarget, settingsSweep, settingsTarget)
   );
+
+
+
+
+
+const btn2d = document.getElementById("2d-btn");
+  const btn3d = document.getElementById("3d-btn");
+ 
+  const settings3d = document.getElementById("3d-settings");
+ 
+  // 2D settings are always visible — only 3D settings toggle
+  btn2d.addEventListener("click", () => {
+    btn2d.classList.add("dimension-btn-active");
+    btn2d.classList.remove("dimension-btn-not-active");
+ 
+    btn3d.classList.add("dimension-btn-not-active");
+    btn3d.classList.remove("dimension-btn-active");
+ 
+    settings3d.classList.add("dimension-setting-not-active");
+    settings3d.classList.remove("dimension-setting-active");
+
+    zTargetBlock.classList.add("dimension-setting-not-active");    // ✅ NEW
+    zTargetBlock.classList.remove("dimension-setting-active");     // ✅ NEW
+  });
+ 
+  btn3d.addEventListener("click", () => {
+    btn3d.classList.add("dimension-btn-active");
+    btn3d.classList.remove("dimension-btn-not-active");
+ 
+    btn2d.classList.add("dimension-btn-not-active");
+    btn2d.classList.remove("dimension-btn-active");
+ 
+    settings3d.classList.add("dimension-setting-active");
+    settings3d.classList.remove("dimension-setting-not-active");
+
+    zTargetBlock.classList.add("dimension-setting-active");        // ✅ NEW
+    zTargetBlock.classList.remove("dimension-setting-not-active"); // ✅ NEW
+  });
+ 
