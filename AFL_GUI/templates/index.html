@@ -23,14 +23,13 @@
 
     <div id="screen-container">
 
-
         <div class="sidebar">
 
             <!-- header portion of the sidebar -->
             <div id="sidebar-header-top">
                 <div class="sidebar-search-row">
                     <input type="text" id="solutionSearch" class="styled-input" placeholder="Search solutions..." onkeyup="filterSolutions()">
-                    <button class="add-new-btn" onclick="createNewSolution()" title="Create New Solution">
+                    <button class="primary-button" onclick="createNewSolution()" title="Create New Solution">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/>
                         </svg>
@@ -55,48 +54,106 @@
         <!-- tab content (main screen) -->
 
         <div id="Tab1" class="tab-content" >
-            <h2>Create & Edit Solutions</h2>
+            <!-- <div style="display:inline-flex; width: 100%; margin-bottom: 10px; position: sticky">
+                <h2>Create & Edit Solutions</h2>
+                <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()"> Save Solution</button>
+            </div> -->
+            
+            <!-- <div class="tab-content-header-card">
+                <h2 style="margin: 0;">Create & Edit Solutions</h2>
+                <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()">Save Solution</button>
+            </div> -->
 
-            <div class="input-group">
-                <label class="input-label">Solution Name</label>
-                <input type="text" class="styled-input" placeholder="Enter solution name">
+            <div class="tab-content-header-card">
+                <h2 style="margin: 0;">Create & Edit Solutions</h2>
+                <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="button-icon">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                        <polyline points="7 3 7 8 15 8 15 3"></polyline>
+                    </svg>
+                    Save Solution
+                </button>
             </div>
 
-<!-- tags -->
-            <div class="input-group">
-                <label class="input-label">Tags</label>
-                <div style="display: flex; gap: 10px;">
-                    <input type="text" id="tagInput" class="styled-input" list="existingTags" placeholder="Enter tag..." onkeydown="handleTagEnter(event)">
-                    <datalist id="existingTags"></datalist>
-                    <button type="button" class="add-tag-button" onclick="addTag()">Add Tag</button>
+            <!-- name card -->
+            <!-- <div class="static-card">
+                <div class="input-group">
+                    <label class="input-header">Solution Name</label>
+                    <input type="text" class="styled-input" placeholder="Enter solution name">
                 </div>
-                <div id="tagContainer" class="tag-container">
+            </div> -->
+
+<!-- tags -->
+            <!-- <div class="static-card">
+                <div class="input-group">
+                    <label class="input-header">Tags</label>
+                    <div id="tagContainer" class="tag-container">
+                        <input 
+                            type="text" 
+                            id="tagInput" 
+                            class="seamless-tag-input" 
+                            list="existingTags" 
+                            placeholder="+ Add Tag" 
+                            onkeydown="handleTagEnter(event)"
+                            autocomplete="off"
+                        >
+                        <datalist id="existingTags"></datalist>
                     </div>
+                </div>                
+            </div> -->
+            <div class="header-row">
+
+                <div class="static-card name-card">
+                    <div class="input-group">
+                        <label class="input-header">Solution Name</label>
+                        <input type="text" class="styled-input" placeholder="Enter solution name">
+                    </div>
+                </div>
+
+                <div class="static-card tags-card">
+                    <div class="input-group">
+                        <label class="input-header">Tags</label>
+                        <div id="tagContainer" class="tag-container">
+                            <input 
+                                type="text" 
+                                id="tagInput" 
+                                class="seamless-tag-input" 
+                                list="existingTags" 
+                                placeholder="+ Add Tag" 
+                                onkeydown="handleTagEnter(event)"
+                                autocomplete="off"
+                            >
+                            <datalist id="existingTags"></datalist>
+                        </div>
+                    </div>                
+                </div>
+
             </div>
 
 
             
             <!-- Component Block -->
-            <div class="content-block">
+            <!-- <div class="content-block">
                 <div class="component-header">
                     <label class="input-label">Component</label>
-                    <!-- <button class="delete-button" type="button" onclick="deleteComponent(this)" aria-label="Delete Component">
+                    <button class="delete-button" type="button" onclick="deleteComponent(this)" aria-label="Delete Component">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"">
                             <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12z" fill="currentColor"/>
                             <path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
                         </svg>
-                    </button> -->
+                    </button>
                 </div>
                 <input type="text" id="component-1" class="styled-input" placeholder="Enter Component..." style="margin-bottom: 10px;">
-                <div style="display: flex;">
-                    <div class="col" style="flex: 3; margin-right: 20px;">
+                <div class="row">
+                    <div class="col" style="flex: 3; margin-right: 0px;">
                         <label class="input-label">Amount</label>
                         <input type="text" id="amount-1" class="styled-input" placeholder="Enter Amount...">
                     </div>
                     <div class="col" style="flex: 1; margin-left: 20px;">
                     <label class="input-label">Unit</label>
 
-                    <!-- dropdown data for unit -->
+                    dropdown data for unit
                     <select id="unit-1" class="styled-input">
                         <option value="" disabled selected>Select Unit...</option>
                         <optgroup label="Mass">
@@ -117,8 +174,63 @@
                     </div>
                 </div>
             </div>
-            <button class="add-row-button" onclick="addComponent()"> + Add Component</button>
-            <button class="save-solution-button" onclick="saveSolution()"> Save Solution</button>
+            <button id="addComponentButton" class="secondary-button" onclick="addComponent()"> + Add Component</button> -->
+            <!-- <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()"> Save Solution</button> -->
+            <div class="static-card">
+                <div class="input-header" style="color: var(--primary-color); font-weight: bold; margin-bottom: 24px;">
+                    CHEMICAL COMPONENTS
+                </div>
+                
+                <div id="componentsList">
+                        <div class="component-row">
+                            <div class="component-col-name">
+                                <label class="input-label">Component Name</label>
+                                <input type="text" id="component-${count}" class="styled-input" placeholder="NaCl" value="${comp.name || ''}">
+                            </div>
+                            
+                            <div class="component-col-amount">
+                                <label class="input-label">Amount</label>
+                                <input type="text" id="amount-${count}" class="styled-input" placeholder="0.00" value="${comp.amount || ''}" type="number">
+                            </div>
+                            
+                            <div class="component-col-unit">
+                                <label class="input-label">Unit</label>
+                                <select id="unit-${count}" class="styled-input">
+                                    <option value="" disabled selected>Unit...</option>
+                                    <optgroup label="Mass">
+                                        <option value="mg">mg</option>
+                                        <option value="g">g</option>
+                                        <option value="kg">kg</option>
+                                    </optgroup>
+                                    <optgroup label="Volume">
+                                        <option value="ul">ul</option>
+                                        <option value="ml">ml</option>
+                                        <option value="L">L</option>
+                                    </optgroup>
+                                    <optgroup label="Concentration">
+                                        <option value="mg/ml">mg/ml</option>
+                                        <option value="g/L">g/L</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="component-col-action"></div>
+                        </div>
+
+                </div>
+                
+                <button id="addComponentButton" type="button" class="icon-button" style="color: var(--primary-color); font-weight: 600; margin-top: 16px; width: fit-content; gap: 8px; font-size: 14px;" onclick="addComponent()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Add Component
+                </button>
+            </div>
+
+
+
+
         </div>
     </div>
     <script src="../static/script.js"></script>
