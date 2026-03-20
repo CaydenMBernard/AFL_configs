@@ -69,3 +69,166 @@ const btn2d = document.getElementById("2d-btn");
     zTargetBlock.classList.remove("dimension-setting-not-active"); // ✅ NEW
   });
  
+
+
+
+
+  async function renderGraphSidebar() {
+    const allSolutions = await getAllSolutionsFromDb();
+    const sidebarList = document.getElementById('sidebar-solution-list');
+    sidebarList.innerHTML = '';
+
+    allSolutions.forEach(solution => {
+        const card = document.createElement('div');
+        card.className = 'template-existing-stock-creationpage';
+
+        let tagsHtml = '<div class="tag-container">';
+        if (solution.tags && solution.tags.length > 0) {
+            solution.tags.forEach(tag => {
+                tagsHtml += `<div class="base-tag">${escapeHtmlText(tag)}</div>`;
+            });
+        }
+        tagsHtml += '</div>';
+
+        let componentsHtml = '';
+        if (solution.components && solution.components.length > 0) {
+            solution.components.forEach(comp => {
+                componentsHtml += `
+                <p class="sidebar-component-info">
+                    <span class="sidebar-component-NAME">${escapeHtmlText(comp.name)}:</span>
+                    <span class="sidebar-component-AMNT">${escapeHtmlText(comp.amount)}</span>
+                    <span class="sidebar-component-UNIT">${escapeHtmlText(comp.unit)}</span>
+                </p>`;
+            });
+        }
+
+        card.innerHTML = `
+            <p class="sidebar-solution-name"><strong>${escapeHtmlText(solution.solutionName) || '[Unnamed]'}</strong></p>
+            ${tagsHtml}
+            ${componentsHtml}
+        `;
+
+        card.addEventListener('click', () => toggleGraphSolutionSelection(card, solution));
+
+        sidebarList.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initDb().then(() => {
+      renderGraphSidebar();
+      updateGlobalTags();
+    });
+  });
+
+function escapeHtmlText(unsafe) {
+    if (!unsafe) return "";
+    return unsafe.toString()
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ── Axis dropdown helpers ─────────────────────────────────────────────────
+ 
+  const PLACEHOLDER = {
+    x: "--Select X-Axis Component--",
+    y: "--Select Y-Axis Component--",
+    z: "--Select Z-Axis Component--",
+  };
+ 
+  function buildDropdownOptions(components, placeholderText) {
+    let html = `<option value="">${placeholderText}</option>`;
+    components.forEach(comp => {
+      if (comp.name && comp.name.trim() !== "") {
+        const safe = escapeHtmlText(comp.name.trim());
+        html += `<option value="${safe}">${safe}</option>`;
+      }
+    });
+    return html;
+  }
+ 
+  function populateAxisDropdowns(components) {
+    document.getElementById("x-axis-dropdown").innerHTML =
+      buildDropdownOptions(components, PLACEHOLDER.x);
+    document.getElementById("y-axis-dropdown").innerHTML =
+      buildDropdownOptions(components, PLACEHOLDER.y);
+    document.getElementById("z-axis-dropdown").innerHTML =
+      buildDropdownOptions(components, PLACEHOLDER.z);
+    updateTargetBlockLabels();
+  }
+ 
+  function resetAxisDropdowns() {
+    document.getElementById("x-axis-dropdown").innerHTML =
+      `<option value="">${PLACEHOLDER.x}</option>`;
+    document.getElementById("y-axis-dropdown").innerHTML =
+      `<option value="">${PLACEHOLDER.y}</option>`;
+    document.getElementById("z-axis-dropdown").innerHTML =
+      `<option value="">${PLACEHOLDER.z}</option>`;
+    updateTargetBlockLabels();
+  }
+ 
+  // Keep target-block labels in sync with whatever axis is chosen
+  function updateTargetBlockLabels() {
+    const xVal = document.getElementById("x-axis-dropdown").value || "X-Axis Component";
+    const yVal = document.getElementById("y-axis-dropdown").value || "Y-Axis Component";
+    const zVal = document.getElementById("z-axis-dropdown").value || "Z-Axis Component";
+    document.getElementById("X-target-block-component").textContent = xVal;
+    document.getElementById("Y-target-block-component").textContent = yVal;
+    document.getElementById("Z-target-block-component").textContent = zVal;
+  }
+ 
+  ["x-axis-dropdown", "y-axis-dropdown", "z-axis-dropdown"].forEach(id => {
+    document.getElementById(id).addEventListener("change", updateTargetBlockLabels);
+  });
+
+
+
+
+
+
+
+
+  let selectedGraphSolutionId = null;
+ 
+  function toggleGraphSolutionSelection(card, solution) {
+    const isAlreadySelected = selectedGraphSolutionId === solution.id;
+ 
+    // Clear all highlights first
+    document.querySelectorAll(".template-existing-stock-creationpage")
+      .forEach(c => c.classList.remove("selected-solution"));
+ 
+    if (isAlreadySelected) {
+      // Clicking the active card again → deselect
+      selectedGraphSolutionId = null;
+      resetAxisDropdowns();
+    } else {
+      // Select the clicked card
+      selectedGraphSolutionId = solution.id;
+      card.classList.add("selected-solution");
+      populateAxisDropdowns(solution.components || []);
+    }
+  }
+
+function toggleTagFilter(tagElement) {
+    tagElement.classList.toggle('unselected');
+    tagElement.classList.toggle('selected');
+    filterSolutions();
+}
