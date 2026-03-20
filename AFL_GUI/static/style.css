@@ -10,7 +10,7 @@
   --card-color: #ffffff;
   --primary-background: #f8f9fa;
   --list-background: #f1f5f9;
-  --list-header-background: #d1d5d9;
+  --list-header-background: #b4c1c2;
   --text-input-background: #e7e8e9;
   --label-color: rgba(0, 0, 0, 0.616);
 }
@@ -442,7 +442,7 @@ body {
 /* Sidebar Header */
 #sidebar-header-top {
     /* background-color: #c9c9c9; */
-    background-color: var(--sidebar-header-background);
+    background-color: var(--list-header-background);
     padding: 8px 14px;
     display: flex;
     flex-direction: column;
