@@ -37,7 +37,7 @@ body {
     display: flex;
     height: calc(100vh - 78px);
     flex-direction: column;
-    max-width: 25vw;
+    min-width: 20vw;
 }
 
 #sidebar-solution-list{

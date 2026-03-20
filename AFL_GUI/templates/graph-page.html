@@ -19,58 +19,20 @@
 
     <div id="screen-container">
         <div class="sidebar">
-            <div id="sidebar-solution-creator-buttons">
-                <p>buttons here</p>
+            <div id="sidebar-header-top">
+                <div class="sidebar-search-row">
+                    <input type="text" id="solutionSearch" class="styled-input" placeholder="Search solutions..." onkeyup="filterSolutions()">
+                </div>
+                <!-- tags section in the header -->
+                <div class="tag-container tag-container-Centered" id="sidebarTagFilters">
+                    <!-- adds in tags automatically -->
+                </div>
             </div>
+            
+            
+            <div id="sidebar-solution-list"></div>
 
-            <div id="sidebar-solution-list">
-                <div class="template-existing-stcock-creationpage">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
             
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-            
-            <div class="template-existing-stcock-creationpage">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-
-            <div class="template-existing-stcock-creationpage">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-
-            <div class="template-existing-stcock-creationpage">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-
-            <div class="template-existing-stcock-creationpage">
-                <p class="sidebar-solution-name"><strong>Solution Name:</strong> [place holder]</p>
-                <p class="sidebar-tag">Tag Example</p>
-            
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-                <p class="sidebar-component-info"><span class="sidebar-component-NAME">[Component Name]:</span> <span class="sidebar-component-AMNT">xx.xx</span> <span class="sidebar-component-UNIT">unit</span></p>
-            </div>
-
-            </div>
             
         </div>
 
@@ -80,17 +42,7 @@
 
                 <div id="graph-lower-left">
                     <div id="code-output-box">
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
-                        <p>c</p>
+                        <p>Output here</p>
                     </div>
 
                     <div id="graph-control-btns">
@@ -225,7 +177,9 @@
             </div>
         </div>
     </div>
+    <script src="../static/db.js"></script>
     <script src="../static/graph-script.js"></script>
+
 </body>
 
 </html>
