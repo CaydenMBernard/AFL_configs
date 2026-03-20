@@ -40,7 +40,7 @@ function removeElement(buttonElement, containerClassName) {
 function setUnsavedState(isUnsaved) {
     hasUnsavedChanges = isUnsaved;
     
-    const saveBtn = document.querySelector('.save-solution-button');
+    const saveBtn = document.querySelector('#saveSolutionButton');
     if (saveBtn) {
         if (isUnsaved) {
             saveBtn.classList.add('unsaved');
@@ -54,43 +54,29 @@ function setUnsavedState(isUnsaved) {
 
 // add new component block
 function addComponent() {
-
-    // set something changed
     setUnsavedState(true);
 
-    var container = document.getElementById("Tab1");
-    var button = document.querySelector("#Tab1 .add-row-button");
-    var count = document.querySelectorAll("#Tab1 .content-block").length + 1;
+    const container = document.getElementById("componentsList");
+    const count = container.querySelectorAll(".component-row").length + 1;
 
-    var div = document.createElement("div");
-    div.className = "content-block";
+    const div = document.createElement("div");
+    div.className = "component-row";
+    
     div.innerHTML = `
-        <div class="component-header">
-            <label class="input-label">Component</label>
-
-            ${count > 1 ? `
-            <button class="delete-button" type="button" onclick="removeElement(this, 'content-block')" aria-label="Delete Component">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12z" fill="currentColor"/>
-                    <path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
-                </svg>
-            </button>
-            ` : ''}
-
+        <div class="component-col-name">
+            <label class="input-label">Component Name</label>
+            <input type="text" id="component-${count}" class="styled-input" placeholder="NaCl">
         </div>
-        <input type="text" id="component-${count}" class="styled-input" placeholder="Enter Component...">
-        <!-- add space -->
-        <div style="margin-bottom: 10px;">
+        
+        <div class="component-col-amount">
+            <label class="input-label">Amount</label>
+            <input type="number" id="amount-${count}" class="styled-input" placeholder="0.00">
         </div>
-        <div style="display: flex;">
-            <div class="col" style="flex: 3; margin-right: 20px;">
-                <label class="input-label">Amount</label>
-                <input type="text" id="amount-${count}" class="styled-input" placeholder="Enter Amount...">
-            </div>
-            <div class="col" style="flex: 1; margin-left: 20px;">
+        
+        <div class="component-col-unit">
             <label class="input-label">Unit</label>
             <select id="unit-${count}" class="styled-input">
-                <option value="" disabled selected>Select Unit...</option>
+                <option value="" disabled selected>Unit...</option>
                 <optgroup label="Mass">
                     <option value="mg">mg</option>
                     <option value="g">g</option>
@@ -106,10 +92,19 @@ function addComponent() {
                     <option value="g/L">g/L</option>
                 </optgroup>
             </select>
-            </div>
-        </div>`;
+        </div>
+        
+        <div class="component-col-action">
+            ${count > 1 ? `
+            <button class="delete-button" type="button" onclick="removeElement(this, 'component-row')" aria-label="Delete Component">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                    </svg>
+            </button>
+            ` : '<div style="width: 20px;"></div>'} </div>
+    `;
 
-    container.insertBefore(div, button);
+    container.appendChild(div);
 }
 
 
@@ -141,7 +136,7 @@ function addTag() {
 
 
         newTagPill.appendChild(removeIcon);
-        tagContainer.appendChild(newTagPill);
+        tagContainer.insertBefore(newTagPill, tagInput);
 
         // clear input
         tagInput.value = "";
@@ -257,10 +252,13 @@ function createNewSolution() {
     if (tagInput) tagInput.value = '';
     
     const tagContainer = document.getElementById('tagContainer');
-    if (tagContainer) tagContainer.innerHTML = '';
+    if (tagContainer) {
+        const existingTags = tagContainer.querySelectorAll('.base-tag');
+        existingTags.forEach(tag => tag.remove());
+    }
     
     const tabContainer = document.getElementById("Tab1");
-    const contentBlocks = tabContainer.querySelectorAll('.content-block');
+    const contentBlocks = document.querySelectorAll('#componentsList .component-row');
     
     if (contentBlocks.length > 0) {
         const firstBlock = contentBlocks[0];
@@ -287,12 +285,12 @@ function extractSolutionData() {
 
     // Get Components
     const components = [];
-    const contentBlocks = document.querySelectorAll('#Tab1 .content-block');
+    const contentBlocks = document.querySelectorAll('#componentsList .component-row');
 
     contentBlocks.forEach(block => {
-        const componentInput = block.querySelector('input[placeholder="Enter Component..."]');
-        const amountInput = block.querySelector('input[placeholder="Enter Amount..."]');
-        const unitSelect = block.querySelector('select');
+        const componentInput = block.querySelector('.component-col-name input');
+        const amountInput = block.querySelector('.component-col-amount input');
+        const unitSelect = block.querySelector('.component-col-unit select');
 
         if (componentInput && componentInput.value.trim() !== "") {
             components.push({
@@ -332,8 +330,10 @@ function loadSolutionIntoEditor(solutionJson) {
 
     // get Tags
     const tagContainer = document.getElementById("tagContainer");
+    const tagInput = document.getElementById("tagInput");
     if (tagContainer) {
-        tagContainer.innerHTML = ""; // Clear existing tags first
+        const existingTags = tagContainer.querySelectorAll('.base-tag');
+        existingTags.forEach(tag => tag.remove()); // make sure only the tags are removed
     }
     
     // create the tags
@@ -353,77 +353,74 @@ function loadSolutionIntoEditor(solutionJson) {
 
             newTagPill.appendChild(removeIcon);
             
-            tagContainer.appendChild(newTagPill);
+            tagContainer.insertBefore(newTagPill, tagInput);
         });
     }
 
     // do components
-    const existingBlocks = document.querySelectorAll('#Tab1 .content-block');
+    const existingBlocks = document.querySelectorAll('#componentsList .component-row');
     // clear them out first
     existingBlocks.forEach(block => block.remove());
 
-    const container = document.getElementById("Tab1");
-    const addButton = document.querySelector("#Tab1 .add-row-button");
+    const container = document.getElementById("componentsList");
 
     if (solutionJson.components && solutionJson.components.length > 0) {
         solutionJson.components.forEach((comp, index) => {
             const count = index + 1;
             const div = document.createElement("div");
-            div.className = "content-block";
+            div.className = "component-row";
             
             div.innerHTML = `
-                <div class="component-header">
-                    <label class="input-label">Component</label>
-
-                    ${count > 1 ? `
-                    <button class="delete-button" type="button" onclick="removeElement(this, 'content-block')" aria-label="Delete Component">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12z" fill="currentColor"/>
-                            <path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
-                        </svg>
-                    </button>
-                    ` : ''}
-
+                <div class="component-col-name">
+                    <label class="input-label">Component Name</label>
+                    <input type="text" id="component-${count}" class="styled-input" placeholder="NaCl" value="${comp.name || ''}">
                 </div>
-                <input type="text" id="component-${count}" class="styled-input" placeholder="Enter Component..." value="${comp.name || ''}">
-                <div style="margin-bottom: 10px;"></div>
-                <div style="display: flex;">
-                    <div class="col" style="flex: 3; margin-right: 20px;">
-                        <label class="input-label">Amount</label>
-                        <input type="text" id="amount-${count}" class="styled-input" placeholder="Enter Amount..." value="${comp.amount || ''}">
-                    </div>
-                    <div class="col" style="flex: 1; margin-left: 20px;">
-                        <label class="input-label">Unit</label>
-                        <select id="unit-${count}" class="styled-input">
-                            <option value="" disabled selected>Select Unit...</option>
-                            <optgroup label="Mass">
-                                <option value="mg">mg</option>
-                                <option value="g">g</option>
-                                <option value="kg">kg</option>
-                            </optgroup>
-                            <optgroup label="Volume">
-                                <option value="ul">ul</option>
-                                <option value="ml">ml</option>
-                                <option value="L">L</option>
-                            </optgroup>
-                            <optgroup label="Concentration">
-                                <option value="mg/ml">mg/ml</option>
-                                <option value="g/L">g/L</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                </div>`;
+                
+                <div class="component-col-amount">
+                    <label class="input-label">Amount</label>
+                    <input type="number" id="amount-${count}" class="styled-input" placeholder="0.00" value="${comp.amount || ''}" type="number">
+                </div>
+                
+                <div class="component-col-unit">
+                    <label class="input-label">Unit</label>
+                    <select id="unit-${count}" class="styled-input">
+                        <option value="" disabled selected>Unit...</option>
+                        <optgroup label="Mass">
+                            <option value="mg">mg</option>
+                            <option value="g">g</option>
+                            <option value="kg">kg</option>
+                        </optgroup>
+                        <optgroup label="Volume">
+                            <option value="ul">ul</option>
+                            <option value="ml">ml</option>
+                            <option value="L">L</option>
+                        </optgroup>
+                        <optgroup label="Concentration">
+                            <option value="mg/ml">mg/ml</option>
+                            <option value="g/L">g/L</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="component-col-action">
+                    ${count > 1 ? `
+                    <button class="delete-button" type="button" onclick="removeElement(this, 'component-row')" aria-label="Delete Component">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                            </svg>
+                    </button>
+                    ` : '<div style="width: 20px;"></div>'} </div>
+            `;
             
             // add the block
-            container.insertBefore(div, addButton);
+            container.appendChild(div);
 
-            // do the dropdown options
             const unitSelect = document.getElementById(`unit-${count}`);
             if (unitSelect && comp.unit) {
                 unitSelect.value = comp.unit;
             }
         });
-    }else {
+    } else {
         // If there are no components for some reason, just add an empty row
         addComponent(); 
     }
@@ -466,7 +463,8 @@ async function renderSidebarSolutions() {
                 solution.components.forEach(comp => {
                     componentsHtml += `
                     <p class="sidebar-component-info">
-                        <span class="sidebar-component-NAME">${escapeHtmlText(comp.name)}:</span> 
+                        <span class="sidebar-component-NAME">${escapeHtmlText(comp.name)}</span> 
+                        <span class="div"></span>
                         <span class="sidebar-component-AMNT">${escapeHtmlText(comp.amount)}</span> 
                         <span class="sidebar-component-UNIT">${escapeHtmlText(comp.unit)}</span>
                     </p>`;
@@ -474,7 +472,7 @@ async function renderSidebarSolutions() {
             }
 
             // make the cards
-            card.innerHTML = `
+            card.innerHTML = /*html*/ `
                 <div class="sidebar-solution-header">
                     <p class="sidebar-solution-name"><strong>${escapeHtmlText(solution.solutionName) || '[Unnamed Solution]'}</strong></p>
                     <div class="sidebar-actions">
@@ -491,7 +489,9 @@ async function renderSidebarSolutions() {
                     </div>
                 </div>
                 ${tagsHtml}
-                ${componentsHtml}
+                <div class="components-container">
+                    ${componentsHtml}
+                </div>
             `;
 
             sidebarList.appendChild(card);
