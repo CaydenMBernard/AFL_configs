@@ -85,3 +85,102 @@ async function saveSolution() {
   const data = await res.json();
   alert(JSON.stringify(data, null, 2));
 }
+
+async function addStockFromValues(name, location, masses) {
+  const payload = { name, location, masses };
+
+  try {
+    const res = await fetch("/api/add_stock", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    console.log("add_stock response:", data);
+    return data;
+  } catch (err) {
+    console.error("Error calling /api/add_stock:", err);
+    return { ok: false, error: err.message };
+  }
+}
+
+
+async function addTargetsFromValues({
+  // Possible needed values
+  total_vol,
+  fill_fraction,
+  swept_conc_name,
+  swept_stock_name,
+  filler_name,
+  conc_min,
+  conc_max,
+  conc_steps,
+  stock_vol_min,
+  stock_vol_max,
+  stock_vol_steps,
+  vol_unit = "ul",
+  conc_unit = "mg/ml"
+}) {
+  const payload = {
+  // Possible needed values
+    total_vol,
+    fill_fraction,
+    swept_conc_name,
+    swept_stock_name,
+    filler_name,
+    conc_min,
+    conc_max,
+    conc_steps,
+    stock_vol_min,
+    stock_vol_max,
+    stock_vol_steps,
+    vol_unit,
+    conc_unit
+  };
+
+  try {
+    const res = await fetch("/api/add_targets", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    console.log("add_targets response:", data);
+    return data;
+  } catch (err) {
+    console.error("Error calling /api/add_targets:", err);
+    return { ok: false, error: err.message };
+  }
+}
+
+async function runBalance() {
+  try {
+    const res = await fetch("/api/balance", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+
+    const data = await res.json();
+    console.log("balance response:", data);
+
+    if (!data.ok) {
+      alert(JSON.stringify(data, null, 2));
+      return data;
+    }
+
+    alert(`${data.num_balanced} / ${data.num_total} targets balanced`);
+    return data;
+
+  } catch (err) {
+    console.error("Error calling /api/balance:", err);
+    return { ok: false, error: err.message };
+  }
+}
