@@ -768,12 +768,13 @@ body {
 #graph-output-box{
     background-color: white;
     border-radius: 20px;
-    border: solid black 2px;
+    border: solid #00676d 1px;
     width: 90%;
     height: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #graph-lower-left{
@@ -788,13 +789,13 @@ body {
 
 #code-output-box{
     background-color: white;
-    /* border-radius: 20px; */
-    border: solid black 2px;
+    border: solid #00676d 1px;
     padding: 5px;
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
     width: 70%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #graph-control-btns{
@@ -804,7 +805,7 @@ body {
 }
 
 
-#download-graph-btn{
+/* #download-graph-btn{
     color: white;
     background-color: red;
     display: flex;
@@ -813,9 +814,9 @@ body {
     padding: 7px;
     border-radius: 10px;
     font-weight: 650;
-}
+} */
 
-#gen-graph-btn{
+/* #gen-graph-btn{
     color: white;
     background-color: blue;
     display: flex;
@@ -824,7 +825,7 @@ body {
     padding: 7px;
     border-radius: 10px;
     font-weight: 650;
-}
+} */
 
 .dimension-btn{
     margin-left: 0px;
@@ -834,13 +835,18 @@ body {
 }
 
 .dimension-btn-active {
-  background-color: #4a90e2;
+  background-color: #00464a;
   color: white;
+  border: #00464a 2px solid;
+  border-radius: 6px;
 }
 
 .dimension-btn-not-active {
   background-color: gray;
   color: white;
+   border-radius: 6px;
+   border: gray 2px solid;
+
 }
 
 .dimension-setting-active {
@@ -869,10 +875,11 @@ body {
 }
 
 .target-setting-block{
-    border: black, solid, 2px;
-    padding: 10px;
     
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    background-color: white;
 }
 
 .target-input{
