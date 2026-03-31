@@ -206,26 +206,67 @@ function escapeHtmlText(unsafe) {
 
 
 
-  let selectedGraphSolutionId = null;
+  // let selectedGraphSolutionId = null;
  
-  function toggleGraphSolutionSelection(card, solution) {
-    const isAlreadySelected = selectedGraphSolutionId === solution.id;
+  // function toggleGraphSolutionSelection(card, solution) {
+  //   const isAlreadySelected = selectedGraphSolutionId === solution.id;
  
-    // Clear all highlights first
-    document.querySelectorAll(".template-existing-stock-creationpage")
-      .forEach(c => c.classList.remove("selected-solution"));
+  //   // Clear all highlights first
+  //   document.querySelectorAll(".template-existing-stock-creationpage")
+  //     .forEach(c => c.classList.remove("selected-solution"));
  
-    if (isAlreadySelected) {
-      // Clicking the active card again → deselect
-      selectedGraphSolutionId = null;
-      resetAxisDropdowns();
+  //   if (isAlreadySelected) {
+  //     // Clicking the active card again → deselect
+  //     selectedGraphSolutionId = null;
+  //     resetAxisDropdowns();
+  //   } else {
+  //     // Select the clicked card
+  //     selectedGraphSolutionId = solution.id;
+  //     card.classList.add("selected-solution");
+  //     populateAxisDropdowns(solution.components || []);
+  //   }
+  // }
+
+let selectedGraphSolutions = []; 
+
+function toggleGraphSolutionSelection(card, solution) {
+    // check if in array
+    const existingIndex = selectedGraphSolutions.findIndex(s => s.id === solution.id);
+
+    // if in, remove
+    if (existingIndex > -1) {
+        selectedGraphSolutions.splice(existingIndex, 1);
+        card.classList.remove("selected-solution");
     } else {
-      // Select the clicked card
-      selectedGraphSolutionId = solution.id;
-      card.classList.add("selected-solution");
-      populateAxisDropdowns(solution.components || []);
+        // If it wasn't selected, add it to the array and add the highlight
+        selectedGraphSolutions.push(solution);
+        card.classList.add("selected-solution");
     }
-  }
+
+    // update dropdowns
+    if (selectedGraphSolutions.length === 0) {
+        resetAxisDropdowns();
+    } else {
+      // get unitque componentes for all the selected cards
+        const uniqueComponentsMap = new Map();
+
+        selectedGraphSolutions.forEach(sol => {
+            if (sol.components && sol.components.length > 0) {
+                sol.components.forEach(comp => {
+                    if (comp.name && comp.name.trim() !== "") {
+                        uniqueComponentsMap.set(comp.name.trim().toLowerCase(), comp);
+                    }
+                });
+            }
+        });
+
+        // convert back into an array
+        const combinedComponents = Array.from(uniqueComponentsMap.values());
+        populateAxisDropdowns(combinedComponents);
+    }
+}
+
+
 
 function toggleTagFilter(tagElement) {
     tagElement.classList.toggle('unselected');

@@ -247,6 +247,9 @@ function createNewSolution() {
     // clear data from editor
     const nameInput = document.querySelector('.styled-input[placeholder="Enter solution name"]');
     if (nameInput) nameInput.value = '';
+
+    const locationInput = document.getElementById('locationInput');
+    if (locationInput) locationInput.value = '';
     
     const tagInput = document.getElementById('tagInput');
     if (tagInput) tagInput.value = '';
@@ -279,6 +282,10 @@ function extractSolutionData() {
     const nameInput = document.querySelector('input[placeholder="Enter solution name"]');
     const solutionName = nameInput ? nameInput.value.trim() : "";
 
+    // location
+    const locationInput = document.getElementById('locationInput');
+    const locationValue = locationInput ? locationInput.value.trim() : "";
+
     // get tags
     const tagElements = document.querySelectorAll('#tagContainer .base-tag');
     const tags = Array.from(tagElements).map(tag => tag.childNodes[0].textContent.trim());
@@ -307,6 +314,7 @@ function extractSolutionData() {
     return {
         id: finalId,
         solutionName: solutionName,
+        location: locationValue,
         tags: tags,
         components: components,
     };
@@ -326,6 +334,12 @@ function loadSolutionIntoEditor(solutionJson) {
     const nameInput = document.querySelector('input[placeholder="Enter solution name"]');
     if (nameInput) {
         nameInput.value = solutionJson.solutionName || "";
+    }
+
+    // get location
+    const locationInput = document.getElementById('locationInput');
+    if (locationInput) {
+        locationInput.value = solutionJson.location || "";
     }
 
     // get Tags
@@ -474,7 +488,15 @@ async function renderSidebarSolutions() {
             // make the cards
             card.innerHTML = /*html*/ `
                 <div class="sidebar-solution-header">
+                    <div>
                     <p class="sidebar-solution-name"><strong>${escapeHtmlText(solution.solutionName) || '[Unnamed Solution]'}</strong></p>
+                    ${solution.location ? `<p style="margin: 0; font-size: 12px; color: #666; padding: 5px 5px; display: flex; align-items: center; gap: 4px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" flex-shrink="0">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                        </svg>
+                        <span>${escapeHtmlText(solution.location)}</span>
+                        </p>` : ''}
+                    </div>
                     <div class="sidebar-actions">
                         <button class="icon-button" onclick="cloneSolution(event, '${solution.id}')" title="Clone Solution">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -588,6 +610,19 @@ async function saveSolution() {
         // make sure indexdb is ready
         if (!dbInstance) {
             await initDb();
+        }
+
+        // check for name duplicate
+        const allSolutions = await getAllSolutionsFromDb();
+        
+        const duplicateExists = allSolutions.some(sol => 
+            sol.solutionName.toLowerCase().trim() === solutionJson.solutionName.toLowerCase().trim() && 
+            sol.id !== solutionJson.id
+        );
+
+        if (duplicateExists) {
+            alert("A solution with this name already exists. Please choose a different name.");
+            return; // Stop the save process
         }
 
         const transaction = dbInstance.transaction([storeName], "readwrite");
