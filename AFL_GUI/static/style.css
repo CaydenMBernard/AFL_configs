@@ -802,6 +802,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -860,6 +861,7 @@ body {
 #graph-page-right{
     display: flex;
     flex-direction: column;
+    gap:15px;
 }
 
 #dimensions{
@@ -871,10 +873,21 @@ body {
 }
 
 #target-vs-sweep{
-    min-height:50%
+    height:70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .target-setting-block{
+    
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #b4c1c2;
+}
+
+
+.white-block{
     
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -915,3 +928,6 @@ body {
     width: 100%;
 }
 
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
