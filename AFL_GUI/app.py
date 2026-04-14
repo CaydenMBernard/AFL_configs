@@ -108,7 +108,6 @@ def parse_numeric_value(value):
         return float(match.group())
     return None
 
-
 def extract_axis_value(balanced_target, axis_name):
     concentrations = balanced_target.get("concentrations", {}) or {}
     volumes = balanced_target.get("volumes", {}) or {}
@@ -125,11 +124,9 @@ def extract_axis_value(balanced_target, axis_name):
 def index():
     return render_template("index.html")
 
-
 @app.route("/graph")
 def index_graph():
     return render_template("graph-page.html")
-
 
 @app.route("/api/add_stock", methods=["POST"])
 def add_stock():
@@ -151,7 +148,6 @@ def add_stock():
         return jsonify({"ok": True, "response": qid})
     except Exception as e:
         return jsonify({"ok": False, "error": str(e)}), 500
-
 
 @app.route("/api/add_targets", methods=["POST"])
 def add_targets():
@@ -216,7 +212,6 @@ def add_targets():
     except Exception as e:
         return jsonify({"ok": False, "error": str(e)}), 500
 
-
 @app.route("/api/balance", methods=["POST"])
 def api_balance():
     robot, error_response = get_robot_or_error()
@@ -249,22 +244,22 @@ def api_generate_graph():
 
     x_axis = data.get("x_axis")
     y_axis = data.get("y_axis")
-    z_axis = data.get("z_axis")  # optional
+    z_axis = data.get("z_axis")
 
     if not x_axis or not y_axis:
         return jsonify({"ok": False, "error": "x_axis and y_axis are required"}), 400
 
     try:
-        #**ACTUAL BALANCING CODE**
-        #result = robot.enqueue(
-        #    task_name="balance",
-        #    return_report=True,
-        #    interactive=True
-        #)
+        # **ACTUAL BALANCING CODE**
+        # result = robot.enqueue(
+        #     task_name="balance",
+        #     return_report=True,
+        #     interactive=True
+        # )
+        #
+        # report = result["return_val"]
+        # balanced = [s for s in report if s.get("balanced_target") is not None]
 
-        #report = result["return_val"]
-        #balanced = [s for s in report if s.get("balanced_target") is not None]
-        
         # TEMPORARY OFFLINE TEST DATA
         report = FAKE_BALANCED
         balanced = [s for s in report if s.get("balanced_target") is not None]
@@ -341,10 +336,16 @@ def api_generate_graph():
                 template="plotly_white"
             )
 
+        fig.update_layout(
+            autosize=True,
+            margin=dict(l=20, r=20, t=40, b=20)
+        )
+
         graph_html = to_html(
             fig,
             full_html=False,
-            include_plotlyjs=True
+            include_plotlyjs=True,
+            config={"responsive": True}
         )
 
         return jsonify({

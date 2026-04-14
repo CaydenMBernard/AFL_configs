@@ -1,5 +1,3 @@
-// graph-script.js
-
 let selectedGraphSolutionId = null;
 
 function escapeHtmlText(unsafe) {
