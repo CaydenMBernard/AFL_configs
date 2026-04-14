@@ -46,7 +46,7 @@
                     </div>
 
                     <div id="graph-control-btns">
-                        <button id="gen-graph-btn" class="primary-button">Generate Graph</button>
+                        <button id="gen-graph-btn" class="primary-button"><img height="20px" src="../static/Icons/generate-arrow.png">Generate Graph</button>
                         <button id="download-graph-btn" class="primary-button"><img height="20px" src="../static/Icons/download-arrow.png">Download Graph</button>
                     </div>
 
@@ -55,114 +55,39 @@
 
             </div>
             <div id="graph-page-right">
+                <div id="dim" class="white-block">
                     <div id="dimesion-options">
                         <button id="2d-btn" class="dimension-btn dimension-btn-active">2D</button>
                         <button id="3d-btn" class="dimension-btn dimension-btn-not-active">3D</button>
                     </div>
-                <div id="dimensions">
-                    <!-- <div id="2d-settings"> -->
-                        <select id="x-axis-dropdown" class="axis-dropdown styled-input">
-                            <option value="">--Select X-Axis Component--</option>
-                            <option value="test1">Test1</option>
-                            <option value="test1">Test1</option>
-                            <option value="test1">Test1</option>
-                        </select>
-                        <select id="y-axis-dropdown" class="axis-dropdown styled-input">
-                            <option value="">--Select Y-Axis Component--</option>
-                            <option value="test1">Test1</option>
-                            <option value="test1">Test1</option>
-                            <option value="test1">Test1</option>
-                        </select>
-                    <!-- </div> -->
-                    <div id="3d-settings" class="dimension-setting-not-active">
-                        <select id="z-axis-dropdown" class="styled-input axis-dropdown">
-                            <option value="">--Select Z-Axis Component--</option>
-                            <option value="test1">Test1</option>
-                            <option value="test1">Test1</option>
-                            <option value="test1">Test1</option>
-                        </select>
+                    <div id="dimensions">
+                        
+                            <select id="x-axis-dropdown" class="axis-dropdown styled-input">
+                                <option value="">--Select X-Axis Component--</option>
+                            </select>
+
+                            <select id="y-axis-dropdown" class="axis-dropdown styled-input">
+                                <option value="">--Select Y-Axis Component--</option>
+                            </select>
+                    
+                        <div id="3d-settings" class="dimension-setting-not-active">
+                            <select id="z-axis-dropdown" class="styled-input axis-dropdown">
+                                <option value="">--Select Z-Axis Component--</option>
+                                
+                            </select>
+                        </div>
                     </div>
                 </div>
 
 
-                <div id="target-vs-sweep">
-                    <div id="mode-options">
-                        <button id="target-btn" class="dimension-btn dimension-btn-active">Target</button>
-                        <button id="sweep-btn" class="dimension-btn dimension-btn-not-active">Sweep</button>
-                    </div>
+                <div id="target-vs-sweep" class="white-block">
+                    <p style="background-color:#00464a;padding:6px;border-radius: 6px;color:white;width: fit-content;margin-top: 5px;"><strong>Sweep</strong></p>
 
-                    <div id="target-settings" class="dimension-setting-active">
+                    <div id="target-settings" class="dimension-setting-active target-block-template">
                         <div id="target-blocks-all">
-                            <div class="target-setting-block">
-                                <p id="X-target-block-component" class="target-component-title">Match X-Axis Dropdown</p>
-                                <div class="target-block-row">
-                                <div class="target-block-min">
-                                    <p class="target-label">Min</p>
-                                    <input class="styled-input target-input" type="text">
-
-                                </div>
-
-                                <div class="target-block-max">
-                                    <p class="target-label">Max</p>
-                                    <input class="styled-input target-input" type="text">
-                                </div>
-
-                                <div class="target-block-step">
-                                    <p class="target-label">Step</p>
-                                    <input class="styled-input target-input" type="text">
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="target-setting-block">
-                                <p id="Y-target-block-component" class="target-component-title">Match Y-Axis Dropdown</p>
-                                <div class="target-block-row">
-                                <div class="target-block-min">
-                                    <p class="target-label">Min</p>
-                                    <input class="styled-input target-input" type="text">
-
-                                </div>
-
-                                <div class="target-block-max">
-                                    <p class="target-label">Max</p>
-                                    <input class="styled-input target-input" type="text">
-                                </div>
-
-                                <div class="target-block-step">
-                                    <p class="target-label">Step</p>
-                                    <input class="styled-input target-input" type="text">
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="target-setting-block dimension-setting-not-active" id="z-setting-block">
-                                <p id="Z-target-block-component" class="target-component-title">Match Z-Axis Dropdown</p>
-                                <div class="target-block-row">
-                                <div class="target-block-min">
-                                    <p class="target-label">Min</p>
-                                    <input class="styled-input target-input" type="text">
-
-                                </div>
-
-                                <div class="target-block-max">
-                                    <p class="target-label">Max</p>
-                                    <input class="styled-input target-input" type="text">
-                                </div>
-
-                                <div class="target-block-step">
-                                    <p class="target-label">Step</p>
-                                    <input class="styled-input target-input" type="text">
-                                </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
-
-
-
-
-
-
 
 
                     <div id="sweep-settings" class="dimension-setting-not-active">

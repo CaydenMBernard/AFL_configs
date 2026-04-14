@@ -7,88 +7,144 @@ from plotly.io import to_html
 
 app = Flask(__name__)
 
+# Data and functions for fake balanced data, can be removed later
+
+# --------------------------------------------------------------------------------------
+
 FAKE_BALANCED = [
     {
-        "balanced_target": {
-            "name": "NaC8-000mgml-HC8-000ul",
-            "volumes": {"H2O": "960 ul", "HC8": "0 ul"},
-            "concentrations": {"NaC8": "0 mg/ml"},
-            "total_volume": "1200 ul",
-        }
+        "step_fraction": 0.00,
+        "ratios": {
+            "NaC8": 0.10,
+            "HC8": 0.15,
+            "H2O": 0.75,
+        },
     },
     {
-        "balanced_target": {
-            "name": "NaC8-010mgml-HC8-067ul",
-            "volumes": {"H2O": "893 ul", "HC8": "67 ul"},
-            "concentrations": {"NaC8": "10 mg/ml"},
-            "total_volume": "1200 ul",
-        }
+        "step_fraction": 0.25,
+        "ratios": {
+            "NaC8": 0.18,
+            "HC8": 0.22,
+            "H2O": 0.60,
+        },
     },
     {
-        "balanced_target": {
-            "name": "NaC8-020mgml-HC8-133ul",
-            "volumes": {"H2O": "827 ul", "HC8": "133 ul"},
-            "concentrations": {"NaC8": "20 mg/ml"},
-            "total_volume": "1200 ul",
-        }
+        "step_fraction": 0.50,
+        "ratios": {
+            "NaC8": 0.28,
+            "HC8": 0.30,
+            "H2O": 0.42,
+        },
     },
     {
-        "balanced_target": {
-            "name": "NaC8-030mgml-HC8-200ul",
-            "volumes": {"H2O": "760 ul", "HC8": "200 ul"},
-            "concentrations": {"NaC8": "30 mg/ml"},
-            "total_volume": "1200 ul",
-        }
+        "step_fraction": 0.75,
+        "ratios": {
+            "NaC8": 0.40,
+            "HC8": 0.35,
+            "H2O": 0.25,
+        },
     },
     {
-        "balanced_target": {
-            "name": "NaC8-040mgml-HC8-267ul",
-            "volumes": {"H2O": "693 ul", "HC8": "267 ul"},
-            "concentrations": {"NaC8": "40 mg/ml"},
-            "total_volume": "1200 ul",
-        }
+        "step_fraction": 1.00,
+        "ratios": {
+            "NaC8": 0.52,
+            "HC8": 0.38,
+            "H2O": 0.10,
+        },
     },
-    {
-        "balanced_target": {
-            "name": "NaC8-050mgml-HC8-333ul",
-            "volumes": {"H2O": "627 ul", "HC8": "333 ul"},
-            "concentrations": {"NaC8": "50 mg/ml"},
-            "total_volume": "1200 ul",
-        }
-    },
-    {
-        "balanced_target": {
-            "name": "NaC8-060mgml-HC8-400ul",
-            "volumes": {"H2O": "560 ul", "HC8": "400 ul"},
-            "concentrations": {"NaC8": "60 mg/ml"},
-            "total_volume": "1200 ul",
-        }
-    },
-    {
-        "balanced_target": {
-            "name": "NaC8-070mgml-HC8-467ul",
-            "volumes": {"H2O": "493 ul", "HC8": "467 ul"},
-            "concentrations": {"NaC8": "70 mg/ml"},
-            "total_volume": "1200 ul",
-        }
-    },
-    {
-        "balanced_target": {
-            "name": "NaC8-080mgml-HC8-533ul",
-            "volumes": {"H2O": "427 ul", "HC8": "533 ul"},
-            "concentrations": {"NaC8": "80 mg/ml"},
-            "total_volume": "1200 ul",
-        }
-    },
-    {
-        "balanced_target": {
-            "name": "NaC8-090mgml-HC8-600ul",
-            "volumes": {"H2O": "360 ul", "HC8": "600 ul"},
-            "concentrations": {"NaC8": "90 mg/ml"},
-            "total_volume": "1200 ul",
-        }
-    }
 ]
+
+def interpolate_fake_profile(step_fraction):
+    if not FAKE_BALANCED:
+        return {}
+
+    ordered = sorted(FAKE_BALANCED, key=lambda row: row["step_fraction"])
+
+    if step_fraction <= ordered[0]["step_fraction"]:
+        return dict(ordered[0]["ratios"])
+
+    if step_fraction >= ordered[-1]["step_fraction"]:
+        return dict(ordered[-1]["ratios"])
+
+    for left, right in zip(ordered, ordered[1:]):
+        left_f = left["step_fraction"]
+        right_f = right["step_fraction"]
+
+        if left_f <= step_fraction <= right_f:
+            span = right_f - left_f
+            t = 0.0 if span == 0 else (step_fraction - left_f) / span
+
+            all_components = set(left["ratios"].keys()) | set(right["ratios"].keys())
+            interpolated = {}
+
+            for comp in all_components:
+                left_val = left["ratios"].get(comp, 0.0)
+                right_val = right["ratios"].get(comp, 0.0)
+                interpolated[comp] = left_val + t * (right_val - left_val)
+
+            return interpolated
+
+    return dict(ordered[-1]["ratios"])
+
+def build_fake_balanced_report(selected_solutions, sweep_configs):
+    report = []
+
+    sweep_map = {
+        str(cfg.get("id")): {
+            "solutionName": cfg.get("solutionName", ""),
+            "start": float(cfg.get("start", 0)),
+            "stop": float(cfg.get("stop", 0)),
+            "step": float(cfg.get("step", 1)),
+        }
+        for cfg in sweep_configs
+    }
+
+    for solution_index, solution in enumerate(selected_solutions):
+        solution_id = str(solution.get("id", ""))
+        cfg = sweep_map.get(solution_id)
+        if not cfg:
+            continue
+
+        start = cfg["start"]
+        stop = cfg["stop"]
+        step = cfg["step"]
+        solution_name = cfg["solutionName"] or solution.get("solutionName") or f"Solution {solution_id}"
+
+        step_values = build_step_values(start, stop, step)
+        if not step_values:
+            continue
+
+        solution_scale = 1.0 + (solution_index * 0.08)
+
+        for actual_step in step_values:
+            if stop == start:
+                step_fraction = 0.0
+            else:
+                step_fraction = (actual_step - start) / (stop - start)
+
+            ratios = interpolate_fake_profile(step_fraction)
+
+            concentrations = {
+                component: f"{(ratio * 100.0 * solution_scale):.3f} mass%"
+                for component, ratio in ratios.items()
+            }
+
+            report.append({
+                "source_solution_id": solution_id,
+                "solution_name": solution_name,
+                "step_value": actual_step,
+                "step_fraction": step_fraction,
+                "balanced_target": {
+                    "name": f"{solution_name}-step-{actual_step:g}",
+                    "concentrations": concentrations,
+                    "volumes": {},
+                    "total_volume": "100 mass-units",
+                }
+            })
+
+    return report
+
+# --------------------------------------------------------------------------------------
 
 def get_robot_or_error():
     robot = make_robot_client()
@@ -119,6 +175,19 @@ def extract_axis_value(balanced_target, axis_name):
         return parse_numeric_value(volumes[axis_name])
 
     return None
+
+def build_step_values(start, stop, step):
+    if step <= 0:
+        return []
+
+    values = []
+    current = start
+
+    while current <= stop + 1e-9:
+        values.append(round(current, 10))
+        current += step
+
+    return values
 
 @app.route("/")
 def index():
@@ -245,12 +314,92 @@ def api_generate_graph():
     x_axis = data.get("x_axis")
     y_axis = data.get("y_axis")
     z_axis = data.get("z_axis")
+    selected_solutions = data.get("selected_solutions", [])
+    sweep_configs = data.get("sweep_configs", [])
 
     if not x_axis or not y_axis:
         return jsonify({"ok": False, "error": "x_axis and y_axis are required"}), 400
 
+    if not selected_solutions:
+        return jsonify({"ok": False, "error": "At least one solution must be selected"}), 400
+
     try:
-        # **ACTUAL BALANCING CODE**
+        # ACTUAL FUNCTIONAL BALANCING CODE
+        # robot, error_response = get_robot_or_error()
+        # if error_response:
+        #     return error_response
+        #
+        # robot.enqueue(task_name="reset_targets")
+        #
+        # sweep_map = {
+        #     str(cfg.get("id")): {
+        #         "solutionName": cfg.get("solutionName", ""),
+        #         "start": float(cfg.get("start", 0)),
+        #         "stop": float(cfg.get("stop", 0)),
+        #         "step": float(cfg.get("step", 1)),
+        #     }
+        #     for cfg in sweep_configs
+        # }
+        #
+        # for solution in selected_solutions:
+        #     masses = {}
+        #
+        #     for comp in solution.get("components", []):
+        #         comp_name = (comp.get("name") or "").strip()
+        #         comp_amount = str(comp.get("amount") or "").strip()
+        #         comp_unit = (comp.get("unit") or "").strip()
+        #
+        #         if not comp_name or not comp_amount or not comp_unit:
+        #             continue
+        #
+        #         masses[comp_name] = f"{comp_amount}{comp_unit}"
+        #
+        #     if not masses:
+        #         continue
+        #
+        #     robot.enqueue(
+        #         task_name="add_stock",
+        #         solution=dict(
+        #             name=solution.get("solutionName", "Unnamed Solution"),
+        #             masses=masses,
+        #             location=solution.get("location", ""),
+        #         )
+        #     )
+        #
+        # targets = []
+        #
+        # for solution in selected_solutions:
+        #     solution_id = str(solution.get("id", ""))
+        #     cfg = sweep_map.get(solution_id)
+        #     if not cfg:
+        #         continue
+        #
+        #     start = cfg["start"]
+        #     stop = cfg["stop"]
+        #     step = cfg["step"]
+        #     solution_name = cfg["solutionName"] or solution.get("solutionName") or f"Solution {solution_id}"
+        #
+        #     step_values = build_step_values(start, stop, step)
+        #     if not step_values:
+        #         continue
+        #
+        #     for actual_step in step_values:
+        #         targets.append({
+        #             "name": f"{solution_name}-step-{actual_step:g}",
+        #             "volumes": {
+        #                 solution_name: f"{actual_step:g}ul"
+        #             },
+        #             "total_volume": f"{actual_step:g} ul",
+        #         })
+        #
+        # if not targets:
+        #     return jsonify({
+        #         "ok": False,
+        #         "error": "No valid targets could be created from the selected solutions"
+        #     }), 400
+        #
+        # robot.enqueue(task_name="add_targets", targets=targets)
+        #
         # result = robot.enqueue(
         #     task_name="balance",
         #     return_report=True,
@@ -261,7 +410,7 @@ def api_generate_graph():
         # balanced = [s for s in report if s.get("balanced_target") is not None]
 
         # TEMPORARY OFFLINE TEST DATA
-        report = FAKE_BALANCED
+        report = build_fake_balanced_report(selected_solutions, sweep_configs)
         balanced = [s for s in report if s.get("balanced_target") is not None]
 
         x_vals = []
@@ -278,6 +427,12 @@ def api_generate_graph():
             if x_val is None or y_val is None:
                 continue
 
+            label = (
+                f"{s.get('solution_name', 'Unknown Solution')}<br>"
+                f"step={s.get('step_value')}<br>"
+                f"{bt.get('name', '')}"
+            )
+
             if z_axis:
                 z_val = extract_axis_value(bt, z_axis)
                 if z_val is None:
@@ -286,7 +441,13 @@ def api_generate_graph():
 
             x_vals.append(x_val)
             y_vals.append(y_val)
-            point_labels.append(bt.get("name", ""))
+            point_labels.append(label)
+
+        if not x_vals:
+            return jsonify({
+                "ok": False,
+                "error": "No graphable points found for the selected axes and sweep settings"
+            }), 400
 
         fig = go.Figure()
 

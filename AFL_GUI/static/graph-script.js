@@ -1,4 +1,11 @@
-let selectedGraphSolutionId = null;
+let selectedGraphSolutionIds = new Set();
+const graphSolutionMap = new Map();
+
+const PLACEHOLDER = {
+  x: "--Select X-Axis Component--",
+  y: "--Select Y-Axis Component--",
+  z: "--Select Z-Axis Component--",
+};
 
 function escapeHtmlText(unsafe) {
   if (!unsafe) return "";
@@ -11,11 +18,183 @@ function escapeHtmlText(unsafe) {
     .replace(/'/g, "&#039;");
 }
 
-const PLACEHOLDER = {
-  x: "--Select X-Axis Component--",
-  y: "--Select Y-Axis Component--",
-  z: "--Select Z-Axis Component--",
-};
+function is3DMode() {
+  const btn3d = document.getElementById("3d-btn");
+  return btn3d && btn3d.classList.contains("dimension-btn-active");
+}
+
+function buildDropdownOptions(components, placeholderText) {
+  let html = `<option value="">${placeholderText}</option>`;
+
+  components.forEach((comp) => {
+    const name = comp?.name?.trim();
+    if (name) {
+      const safe = escapeHtmlText(name);
+      html += `<option value="${safe}">${safe}</option>`;
+    }
+  });
+
+  return html;
+}
+
+function getMergedSelectedComponents() {
+  const seen = new Set();
+  const merged = [];
+
+  selectedGraphSolutionIds.forEach((id) => {
+    const solution = graphSolutionMap.get(id);
+    if (!solution || !Array.isArray(solution.components)) return;
+
+    solution.components.forEach((comp) => {
+      const key = comp?.name?.trim()?.toLowerCase();
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      merged.push(comp);
+    });
+  });
+
+  return merged;
+}
+
+function getSelectedSolutions() {
+  const selectedSolutions = [];
+
+  selectedGraphSolutionIds.forEach((id) => {
+    const solution = graphSolutionMap.get(id);
+    if (solution) {
+      selectedSolutions.push(solution);
+    }
+  });
+
+  return selectedSolutions;
+}
+
+function populateAxisDropdowns(components) {
+  const xDropdown = document.getElementById("x-axis-dropdown");
+  const yDropdown = document.getElementById("y-axis-dropdown");
+  const zDropdown = document.getElementById("z-axis-dropdown");
+
+  if (!xDropdown || !yDropdown || !zDropdown) return;
+
+  const previousX = xDropdown.value;
+  const previousY = yDropdown.value;
+  const previousZ = zDropdown.value;
+
+  xDropdown.innerHTML = buildDropdownOptions(components, PLACEHOLDER.x);
+  yDropdown.innerHTML = buildDropdownOptions(components, PLACEHOLDER.y);
+  zDropdown.innerHTML = buildDropdownOptions(components, PLACEHOLDER.z);
+
+  if ([...xDropdown.options].some((opt) => opt.value === previousX)) {
+    xDropdown.value = previousX;
+  }
+  if ([...yDropdown.options].some((opt) => opt.value === previousY)) {
+    yDropdown.value = previousY;
+  }
+  if ([...zDropdown.options].some((opt) => opt.value === previousZ)) {
+    zDropdown.value = previousZ;
+  }
+}
+
+function resetAxisDropdowns() {
+  const xDropdown = document.getElementById("x-axis-dropdown");
+  const yDropdown = document.getElementById("y-axis-dropdown");
+  const zDropdown = document.getElementById("z-axis-dropdown");
+
+  if (xDropdown) xDropdown.innerHTML = `<option value="">${PLACEHOLDER.x}</option>`;
+  if (yDropdown) yDropdown.innerHTML = `<option value="">${PLACEHOLDER.y}</option>`;
+  if (zDropdown) zDropdown.innerHTML = `<option value="">${PLACEHOLDER.z}</option>`;
+}
+
+function rebuildAxisDropdowns() {
+  if (selectedGraphSolutionIds.size === 0) {
+    resetAxisDropdowns();
+    return;
+  }
+
+  populateAxisDropdowns(getMergedSelectedComponents());
+}
+
+function rebuildSweepBlocks() {
+  const container = document.getElementById("target-blocks-all");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  if (selectedGraphSolutionIds.size === 0) {
+    container.innerHTML = `
+      <p style="color:#888; font-size:13px; margin:8px 4px;">
+        Select solutions from the sidebar to configure sweep ranges.
+      </p>
+    `;
+    return;
+  }
+
+  selectedGraphSolutionIds.forEach((id) => {
+    const solution = graphSolutionMap.get(id);
+    if (!solution) return;
+
+    const safeName = escapeHtmlText(solution.solutionName || "Unnamed Solution");
+
+    const block = document.createElement("div");
+    block.className = "target-setting-block";
+    block.setAttribute("data-sweep-solution-id", id);
+
+    block.innerHTML = `
+      <p class="target-component-title">${safeName}</p>
+      <div class="target-block-row">
+        <div class="target-block-min">
+          <p class="target-label">Start</p>
+          <input class="styled-input target-input" type="number" placeholder="0" value="0">
+        </div>
+        <div class="target-block-max">
+          <p class="target-label">Stop</p>
+          <input class="styled-input target-input" type="number" placeholder="100" value="100">
+        </div>
+        <div class="target-block-step">
+          <p class="target-label">Step</p>
+          <input class="styled-input target-input" type="number" placeholder="10" value="10">
+        </div>
+      </div>
+    `;
+
+    container.appendChild(block);
+  });
+}
+
+function getSweepConfigs() {
+  const configs = [];
+
+  document.querySelectorAll("#target-blocks-all .target-setting-block").forEach((block) => {
+    const id = block.getAttribute("data-sweep-solution-id");
+    const solution = graphSolutionMap.get(id);
+    const inputs = block.querySelectorAll("input");
+
+    configs.push({
+      id,
+      solutionName: solution?.solutionName || "",
+      start: parseFloat(inputs[0]?.value) || 0,
+      stop: parseFloat(inputs[1]?.value) || 0,
+      step: parseFloat(inputs[2]?.value) || 1,
+    });
+  });
+
+  return configs;
+}
+
+function toggleGraphSolutionSelection(card, solution) {
+  if (!solution?.id) return;
+
+  if (selectedGraphSolutionIds.has(solution.id)) {
+    selectedGraphSolutionIds.delete(solution.id);
+    card.classList.remove("selected-solution");
+  } else {
+    selectedGraphSolutionIds.add(solution.id);
+    card.classList.add("selected-solution");
+  }
+
+  rebuildAxisDropdowns();
+  rebuildSweepBlocks();
+}
 
 async function renderGraphSidebar() {
   try {
@@ -24,8 +203,12 @@ async function renderGraphSidebar() {
     if (!sidebarList) return;
 
     sidebarList.innerHTML = "";
+    graphSolutionMap.clear();
+    selectedGraphSolutionIds.clear();
 
     allSolutions.forEach((solution) => {
+      graphSolutionMap.set(solution.id, solution);
+
       const card = document.createElement("div");
       card.className = "template-existing-stock-creationpage";
       card.setAttribute("data-solution-id", solution.id || "");
@@ -65,169 +248,119 @@ async function renderGraphSidebar() {
   }
 }
 
-function buildDropdownOptions(components, placeholderText) {
-  let html = `<option value="">${placeholderText}</option>`;
-  components.forEach((comp) => {
-    if (comp.name && comp.name.trim() !== "") {
-      const safe = escapeHtmlText(comp.name.trim());
-      html += `<option value="${safe}">${safe}</option>`;
-    }
-  });
-  return html;
-}
+function set2DMode() {
+  const btn2d = document.getElementById("2d-btn");
+  const btn3d = document.getElementById("3d-btn");
+  const settings3d = document.getElementById("3d-settings");
+  const zDropdown = document.getElementById("z-axis-dropdown");
 
-function populateAxisDropdowns(components) {
-  const x = document.getElementById("x-axis-dropdown");
-  const y = document.getElementById("y-axis-dropdown");
-  const z = document.getElementById("z-axis-dropdown");
-
-  if (!x || !y || !z) return;
-
-  x.innerHTML = buildDropdownOptions(components, PLACEHOLDER.x);
-  y.innerHTML = buildDropdownOptions(components, PLACEHOLDER.y);
-  z.innerHTML = buildDropdownOptions(components, PLACEHOLDER.z);
-
-  updateTargetBlockLabels();
-}
-
-function resetAxisDropdowns() {
-  const x = document.getElementById("x-axis-dropdown");
-  const y = document.getElementById("y-axis-dropdown");
-  const z = document.getElementById("z-axis-dropdown");
-
-  if (!x || !y || !z) return;
-
-  x.innerHTML = `<option value="">${PLACEHOLDER.x}</option>`;
-  y.innerHTML = `<option value="">${PLACEHOLDER.y}</option>`;
-  z.innerHTML = `<option value="">${PLACEHOLDER.z}</option>`;
-
-  updateTargetBlockLabels();
-}
-
-function updateTargetBlockLabels() {
-  const xVal = document.getElementById("x-axis-dropdown")?.value || "X-Axis Component";
-  const yVal = document.getElementById("y-axis-dropdown")?.value || "Y-Axis Component";
-  const zVal = document.getElementById("z-axis-dropdown")?.value || "Z-Axis Component";
-
-  const xLabel = document.getElementById("X-target-block-component");
-  const yLabel = document.getElementById("Y-target-block-component");
-  const zLabel = document.getElementById("Z-target-block-component");
-
-  if (xLabel) xLabel.textContent = xVal;
-  if (yLabel) yLabel.textContent = yVal;
-  if (zLabel) zLabel.textContent = zVal;
-}
-
-function toggleGraphSolutionSelection(card, solution) {
-  const isAlreadySelected = selectedGraphSolutionId === solution.id;
-
-  document.querySelectorAll(".template-existing-stock-creationpage")
-    .forEach((c) => c.classList.remove("selected-solution"));
-
-  if (isAlreadySelected) {
-    selectedGraphSolutionId = null;
-    resetAxisDropdowns();
-    return;
+  if (btn2d) {
+    btn2d.classList.add("dimension-btn-active");
+    btn2d.classList.remove("dimension-btn-not-active");
   }
 
-  selectedGraphSolutionId = solution.id;
-  card.classList.add("selected-solution");
-  populateAxisDropdowns(solution.components || []);
+  if (btn3d) {
+    btn3d.classList.add("dimension-btn-not-active");
+    btn3d.classList.remove("dimension-btn-active");
+  }
+
+  if (settings3d) {
+    settings3d.classList.add("dimension-setting-not-active");
+    settings3d.classList.remove("dimension-setting-active");
+  }
+
+  if (zDropdown) {
+    zDropdown.value = "";
+  }
 }
 
-function activateMode(activeBtn, inactiveBtn, activeSettings, inactiveSettings) {
-  if (activeBtn) {
-    activeBtn.classList.add("dimension-btn-active");
-    activeBtn.classList.remove("dimension-btn-not-active");
+function set3DMode() {
+  const btn2d = document.getElementById("2d-btn");
+  const btn3d = document.getElementById("3d-btn");
+  const settings3d = document.getElementById("3d-settings");
+
+  if (btn3d) {
+    btn3d.classList.add("dimension-btn-active");
+    btn3d.classList.remove("dimension-btn-not-active");
   }
 
-  if (inactiveBtn) {
-    inactiveBtn.classList.add("dimension-btn-not-active");
-    inactiveBtn.classList.remove("dimension-btn-active");
+  if (btn2d) {
+    btn2d.classList.add("dimension-btn-not-active");
+    btn2d.classList.remove("dimension-btn-active");
   }
 
-  if (activeSettings) {
-    activeSettings.classList.add("dimension-setting-active");
-    activeSettings.classList.remove("dimension-setting-not-active");
-  }
-
-  if (inactiveSettings) {
-    inactiveSettings.classList.add("dimension-setting-not-active");
-    inactiveSettings.classList.remove("dimension-setting-active");
+  if (settings3d) {
+    settings3d.classList.add("dimension-setting-active");
+    settings3d.classList.remove("dimension-setting-not-active");
   }
 }
 
 function setupModeButtons() {
-  const btntarget = document.getElementById("target-btn");
-  const btnsweep = document.getElementById("sweep-btn");
-  const settingsTarget = document.getElementById("target-settings");
-  const settingsSweep = document.getElementById("sweep-settings");
-
-  if (btntarget && btnsweep && settingsTarget && settingsSweep) {
-    btntarget.addEventListener("click", () => {
-      activateMode(btntarget, btnsweep, settingsTarget, settingsSweep);
-    });
-
-    btnsweep.addEventListener("click", () => {
-      activateMode(btnsweep, btntarget, settingsSweep, settingsTarget);
-    });
-  }
-
   const btn2d = document.getElementById("2d-btn");
   const btn3d = document.getElementById("3d-btn");
-  const settings3d = document.getElementById("3d-settings");
-  const zTargetBlock = document.getElementById("z-setting-block");
 
-  if (btn2d && btn3d && settings3d && zTargetBlock) {
-    btn2d.addEventListener("click", () => {
-      btn2d.classList.add("dimension-btn-active");
-      btn2d.classList.remove("dimension-btn-not-active");
+  if (btn2d) {
+    btn2d.addEventListener("click", set2DMode);
+  }
 
-      btn3d.classList.add("dimension-btn-not-active");
-      btn3d.classList.remove("dimension-btn-active");
-
-      settings3d.classList.add("dimension-setting-not-active");
-      settings3d.classList.remove("dimension-setting-active");
-
-      zTargetBlock.classList.add("dimension-setting-not-active");
-      zTargetBlock.classList.remove("dimension-setting-active");
-    });
-
-    btn3d.addEventListener("click", () => {
-      btn3d.classList.add("dimension-btn-active");
-      btn3d.classList.remove("dimension-btn-not-active");
-
-      btn2d.classList.add("dimension-btn-not-active");
-      btn2d.classList.remove("dimension-btn-active");
-
-      settings3d.classList.add("dimension-setting-active");
-      settings3d.classList.remove("dimension-setting-not-active");
-
-      zTargetBlock.classList.add("dimension-setting-active");
-      zTargetBlock.classList.remove("dimension-setting-not-active");
-    });
+  if (btn3d) {
+    btn3d.addEventListener("click", set3DMode);
   }
 }
 
-function toggleTagFilter(tagElement) {
-  tagElement.classList.toggle("unselected");
-  tagElement.classList.toggle("selected");
-  filterSolutions();
+function renderGraphResultFromHtml(graphHtml) {
+  const graphBox = document.getElementById("graph-output-box");
+  if (!graphBox) {
+    console.error("Missing #graph-output-box");
+    return;
+  }
+
+  graphBox.innerHTML = graphHtml || "";
+
+  const scripts = graphBox.querySelectorAll("script");
+  scripts.forEach((oldScript) => {
+    const newScript = document.createElement("script");
+
+    if (oldScript.src) {
+      newScript.src = oldScript.src;
+    } else {
+      newScript.textContent = oldScript.textContent;
+    }
+
+    document.body.appendChild(newScript);
+    oldScript.remove();
+  });
+}
+
+function renderStatusText(data) {
+  const codeOutputBox = document.getElementById("code-output-box");
+  if (!codeOutputBox) return;
+
+  const lines = [
+    `${data.num_points ?? 0} plotted points`,
+    `${data.num_balanced ?? 0} / ${data.num_total ?? 0} targets balanced`,
+    data.is_3d ? "3D graph" : "2D graph",
+  ];
+
+  codeOutputBox.innerHTML = lines.map((line) => `<p>${escapeHtmlText(line)}</p>`).join("");
 }
 
 async function generateGraph() {
   const xAxis = document.getElementById("x-axis-dropdown")?.value || "";
   const yAxis = document.getElementById("y-axis-dropdown")?.value || "";
-  const zAxis = document.getElementById("z-axis-dropdown")?.value || "";
+  const zAxis = is3DMode() ? (document.getElementById("z-axis-dropdown")?.value || "") : "";
 
-  const is3D = document.getElementById("3d-btn")?.classList.contains("dimension-btn-active");
+  if (selectedGraphSolutionIds.size === 0) {
+    alert("Select at least one solution from the sidebar.");
+    return;
+  }
 
   if (!xAxis || !yAxis) {
     alert("Please select both X and Y axes.");
     return;
   }
 
-  if (is3D && !zAxis) {
+  if (is3DMode() && !zAxis) {
     alert("Please select a Z axis for 3D mode.");
     return;
   }
@@ -235,10 +368,12 @@ async function generateGraph() {
   try {
     const payload = {
       x_axis: xAxis,
-      y_axis: yAxis
+      y_axis: yAxis,
+      selected_solutions: getSelectedSolutions(),
+      sweep_configs: getSweepConfigs(),
     };
 
-    if (is3D) {
+    if (is3DMode()) {
       payload.z_axis = zAxis;
     }
 
@@ -254,39 +389,12 @@ async function generateGraph() {
 
     if (!data.ok) {
       console.error("Graph generation failed:", data);
-      alert(JSON.stringify(data, null, 2));
+      alert(data.error || "Graph generation failed.");
       return;
     }
 
-    const graphBox = document.getElementById("graph-output-box");
-    const outputBox = document.getElementById("code-output-box");
-
-    if (!graphBox) {
-      console.error("Missing #graph-output-box");
-      return;
-    }
-
-    graphBox.innerHTML = data.graph_html || "";
-
-    const scripts = graphBox.querySelectorAll("script");
-    scripts.forEach((oldScript) => {
-      const newScript = document.createElement("script");
-      if (oldScript.src) {
-        newScript.src = oldScript.src;
-      } else {
-        newScript.textContent = oldScript.textContent;
-      }
-      document.body.appendChild(newScript);
-      oldScript.remove();
-    });
-
-    if (outputBox) {
-      outputBox.innerHTML = `
-        <p>${data.num_points ?? 0} plotted points</p>
-        <p>${data.num_balanced ?? 0} / ${data.num_total ?? 0} targets balanced</p>
-        <p>${data.is_3d ? "3D graph" : "2D graph"}</p>
-      `;
-    }
+    renderGraphResultFromHtml(data.graph_html || "");
+    renderStatusText(data);
 
     console.log("Graph generated successfully:", data);
   } catch (err) {
@@ -308,13 +416,6 @@ function downloadGraph() {
 document.addEventListener("DOMContentLoaded", () => {
   setupModeButtons();
 
-  ["x-axis-dropdown", "y-axis-dropdown", "z-axis-dropdown"].forEach((id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.addEventListener("change", updateTargetBlockLabels);
-    }
-  });
-
   const graphBtn = document.getElementById("gen-graph-btn");
   if (graphBtn) {
     graphBtn.addEventListener("click", generateGraph);
@@ -329,10 +430,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(() => {
       renderGraphSidebar();
       updateGlobalTags();
+      resetAxisDropdowns();
+      rebuildSweepBlocks();
+      set2DMode();
     })
     .catch((error) => {
       console.error("Failed to initialize database on graph page:", error);
     });
-
-  updateTargetBlockLabels();
 });
