@@ -245,13 +245,11 @@ def api_balance():
 
 @app.route("/api/generate_graph", methods=["POST"])
 def api_generate_graph():
-    robot, error_response = get_robot_or_error()
-    if error_response:
-        return error_response
-
     data = request.get_json(force=True)
+
     x_axis = data.get("x_axis")
     y_axis = data.get("y_axis")
+    z_axis = data.get("z_axis")  # optional
 
     if not x_axis or not y_axis:
         return jsonify({"ok": False, "error": "x_axis and y_axis are required"}), 400
@@ -266,13 +264,14 @@ def api_generate_graph():
 
         #report = result["return_val"]
         #balanced = [s for s in report if s.get("balanced_target") is not None]
-
-        #Using fake data
+        
+        # TEMPORARY OFFLINE TEST DATA
         report = FAKE_BALANCED
         balanced = [s for s in report if s.get("balanced_target") is not None]
 
         x_vals = []
         y_vals = []
+        z_vals = []
         point_labels = []
 
         for s in balanced:
@@ -284,26 +283,63 @@ def api_generate_graph():
             if x_val is None or y_val is None:
                 continue
 
+            if z_axis:
+                z_val = extract_axis_value(bt, z_axis)
+                if z_val is None:
+                    continue
+                z_vals.append(z_val)
+
             x_vals.append(x_val)
             y_vals.append(y_val)
             point_labels.append(bt.get("name", ""))
 
         fig = go.Figure()
 
-        fig.add_trace(go.Scatter(
-            x=x_vals,
-            y=y_vals,
-            mode="markers",
-            text=point_labels,
-            hovertemplate=f"{x_axis}: %{{x}}<br>{y_axis}: %{{y}}<br>%{{text}}<extra></extra>"
-        ))
+        if z_axis:
+            fig.add_trace(go.Scatter3d(
+                x=x_vals,
+                y=y_vals,
+                z=z_vals,
+                mode="markers",
+                text=point_labels,
+                hovertemplate=(
+                    f"{x_axis}: %{{x}}<br>"
+                    f"{y_axis}: %{{y}}<br>"
+                    f"{z_axis}: %{{z}}<br>"
+                    "%{text}<extra></extra>"
+                ),
+                marker=dict(size=5)
+            ))
 
-        fig.update_layout(
-            title=f"{y_axis} vs {x_axis}",
-            xaxis_title=x_axis,
-            yaxis_title=y_axis,
-            template="plotly_white"
-        )
+            fig.update_layout(
+                title=f"{y_axis} vs {x_axis} vs {z_axis}",
+                scene=dict(
+                    xaxis_title=x_axis,
+                    yaxis_title=y_axis,
+                    zaxis_title=z_axis,
+                ),
+                template="plotly_white"
+            )
+        else:
+            fig.add_trace(go.Scatter(
+                x=x_vals,
+                y=y_vals,
+                mode="markers",
+                text=point_labels,
+                hovertemplate=(
+                    f"{x_axis}: %{{x}}<br>"
+                    f"{y_axis}: %{{y}}<br>"
+                    "%{text}<extra></extra>"
+                ),
+                marker=dict(size=8)
+            ))
+
+            fig.update_layout(
+                title=f"{y_axis} vs {x_axis}",
+                xaxis_title=x_axis,
+                yaxis_title=y_axis,
+                template="plotly_white"
+            )
 
         graph_html = to_html(
             fig,
@@ -313,12 +349,25 @@ def api_generate_graph():
 
         return jsonify({
             "ok": True,
-            "figure": fig.to_dict(),
+            "graph_html": graph_html,
             "num_points": len(x_vals),
             "num_balanced": len(balanced),
-            "num_total": len(report)
+            "num_total": len(report),
+            "is_3d": bool(z_axis)
         })
 
+    except Exception as e:
+        return jsonify({"ok": False, "error": str(e)}), 500
+
+@app.route("/api/clear_queue", methods=["POST"])
+def clear_queue():
+    robot, error_response = get_robot_or_error()
+    if error_response:
+        return error_response
+
+    try:
+        robot.enqueue(task_name="clear_queue")
+        return jsonify({"ok": True, "message": "Queue cleared"})
     except Exception as e:
         return jsonify({"ok": False, "error": str(e)}), 500
 
