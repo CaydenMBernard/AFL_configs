@@ -111,24 +111,32 @@
                     </div>
                 </div>
 
-                <div class="static-card tags-card">
+                
+                <div class="static-card location-card">
                     <div class="input-group">
-                        <label class="input-header">Tags</label>
-                        <div id="tagContainer" class="tag-container">
-                            <input 
-                                type="text" 
-                                id="tagInput" 
-                                class="seamless-tag-input" 
-                                list="existingTags" 
-                                placeholder="+ Add Tag" 
-                                onkeydown="handleTagEnter(event)"
-                                autocomplete="off"
-                            >
-                            <datalist id="existingTags"></datalist>
-                        </div>
-                    </div>                
+                        <label class="input-header">Location</label>
+                        <input type="text" id="locationInput" class="styled-input" placeholder="Enter location">
+                    </div>
                 </div>
-
+                
+            </div>
+            
+            <div class="static-card tags-card">
+                <div class="input-group">
+                    <label class="input-header">Tags</label>
+                    <div id="tagContainer" class="tag-container">
+                        <input 
+                            type="text" 
+                            id="tagInput" 
+                            class="seamless-tag-input" 
+                            list="existingTags" 
+                            placeholder="+ Add Tag" 
+                            onkeydown="handleTagEnter(event)"
+                            autocomplete="off"
+                        >
+                        <datalist id="existingTags"></datalist>
+                    </div>
+                </div>                
             </div>
 
 

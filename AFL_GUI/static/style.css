@@ -380,6 +380,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 5px;
+    max-width: 95%;
 }
 
 .sidebar-solution-name {
@@ -732,10 +733,12 @@ body {
 }
 
 .tags-card {
-    flex: 1.5; /* Takes up 1.5 parts of the available space (roughly 60%) */
+    flex: 1; /* Takes up 1.5 parts of the available space (roughly 60%) */
 }
 
-
+.location-card {
+    flex: 1;
+}
 
 
 
