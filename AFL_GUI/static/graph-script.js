@@ -1,325 +1,440 @@
+let selectedGraphSolutionIds = new Set();
+const graphSolutionMap = new Map();
 
-  // const btntarget = document.getElementById("target-btn");
-  // const btnsweep = document.getElementById("sweep-btn");
-
-  // const settingsTarget = document.getElementById("target-settings");
-  // const settingsSweep = document.getElementById("sweep-settings");
-
-  const zTargetBlock = document.getElementById("z-setting-block");
-
-  function activateMode(activeBtn, inactiveBtn, activeSettings, inactiveSettings) {
-    // Button classes
-    activeBtn.classList.add("dimension-btn-active");
-    activeBtn.classList.remove("dimension-btn-not-active");
-
-    inactiveBtn.classList.add("dimension-btn-not-active");
-    inactiveBtn.classList.remove("dimension-btn-active");
-
-    // Settings classes
-    activeSettings.classList.add("dimension-setting-active");
-    activeSettings.classList.remove("dimension-setting-not-active");
-
-    inactiveSettings.classList.add("dimension-setting-not-active");
-    inactiveSettings.classList.remove("dimension-setting-active");
-  }
-
-  // btntarget.addEventListener("click", () =>
-  //   activateMode(btntarget, btnsweep, settingsTarget, settingsSweep)
-  // );
-
-  // btnsweep.addEventListener("click", () =>
-  //   activateMode(btnsweep, btntarget, settingsSweep, settingsTarget)
-  // );
-
-
-
-
-
-const btn2d = document.getElementById("2d-btn");
-  const btn3d = document.getElementById("3d-btn");
- 
-  const settings3d = document.getElementById("3d-settings");
- 
-  // 2D settings are always visible — only 3D settings toggle
-  btn2d.addEventListener("click", () => {
-    btn2d.classList.add("dimension-btn-active");
-    btn2d.classList.remove("dimension-btn-not-active");
- 
-    btn3d.classList.add("dimension-btn-not-active");
-    btn3d.classList.remove("dimension-btn-active");
- 
-    settings3d.classList.add("dimension-setting-not-active");
-    settings3d.classList.remove("dimension-setting-active");
-
-    // zTargetBlock.classList.add("dimension-setting-not-active");    // ✅ NEW
-    // zTargetBlock.classList.remove("dimension-setting-active");     // ✅ NEW
-  });
- 
-  btn3d.addEventListener("click", () => {
-    btn3d.classList.add("dimension-btn-active");
-    btn3d.classList.remove("dimension-btn-not-active");
- 
-    btn2d.classList.add("dimension-btn-not-active");
-    btn2d.classList.remove("dimension-btn-active");
- 
-    settings3d.classList.add("dimension-setting-active");
-    settings3d.classList.remove("dimension-setting-not-active");
-
-    // zTargetBlock.classList.add("dimension-setting-active");        // ✅ NEW
-    // zTargetBlock.classList.remove("dimension-setting-not-active"); // ✅ NEW
-  });
- 
-
-
-
-
-  async function renderGraphSidebar() {
-    const allSolutions = await getAllSolutionsFromDb();
-    const sidebarList = document.getElementById('sidebar-solution-list');
-    sidebarList.innerHTML = '';
-
-    // Rebuild the solution map on each render
-    _graphSolutionMap.clear();
-
-    allSolutions.forEach(solution => {
-      _graphSolutionMap.set(solution.id, solution);
-
-        const card = document.createElement('div');
-        card.className = 'template-existing-stock-creationpage';
-        card.setAttribute('data-solution-id', solution.id);
-
-        let tagsHtml = '<div class="tag-container">';
-        if (solution.tags && solution.tags.length > 0) {
-            solution.tags.forEach(tag => {
-                tagsHtml += `<div class="base-tag">${escapeHtmlText(tag)}</div>`;
-            });
-        }
-        tagsHtml += '</div>';
-
-        let componentsHtml = '';
-        if (solution.components && solution.components.length > 0) {
-            solution.components.forEach(comp => {
-                componentsHtml += `
-                <p class="sidebar-component-info">
-                    <span class="sidebar-component-NAME">${escapeHtmlText(comp.name)}:</span>
-                    <span class="sidebar-component-AMNT">${escapeHtmlText(comp.amount)}</span>
-                    <span class="sidebar-component-UNIT">${escapeHtmlText(comp.unit)}</span>
-                </p>`;
-            });
-        }
-
-        card.innerHTML = `
-            <p class="sidebar-solution-name"><strong>${escapeHtmlText(solution.solutionName) || '[Unnamed]'}</strong></p>
-            ${tagsHtml}
-            ${componentsHtml}
-        `;
-
-        card.addEventListener('click', () => toggleGraphSolutionSelection(card, solution));
-
-        sidebarList.appendChild(card);
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    initDb().then(() => {
-      renderGraphSidebar();
-      updateGlobalTags();
-    });
-  });
+const PLACEHOLDER = {
+  x: "--Select X-Axis Component--",
+  y: "--Select Y-Axis Component--",
+  z: "--Select Z-Axis Component--",
+};
 
 function escapeHtmlText(unsafe) {
-    if (!unsafe) return "";
-    return unsafe.toString()
-        .replace(/&/g, "&amp;").replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;").replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+  if (!unsafe) return "";
+  return unsafe
+    .toString()
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
+function is3DMode() {
+  const btn3d = document.getElementById("3d-btn");
+  return btn3d && btn3d.classList.contains("dimension-btn-active");
+}
 
+function buildDropdownOptions(components, placeholderText) {
+  let html = `<option value="">${placeholderText}</option>`;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ── Axis dropdown helpers ─────────────────────────────────────────────────
- 
-  const PLACEHOLDER = {
-    x: "--Select X-Axis Component--",
-    y: "--Select Y-Axis Component--",
-    z: "--Select Z-Axis Component--",
-  };
- 
-  function buildDropdownOptions(components, placeholderText) {
-    let html = `<option value="">${placeholderText}</option>`;
-    components.forEach(comp => {
-      if (comp.name && comp.name.trim() !== "") {
-        const safe = escapeHtmlText(comp.name.trim());
-        html += `<option value="${safe}">${safe}</option>`;
-      }
-    });
-    return html;
-  }
- 
-  function populateAxisDropdowns(components) {
-    document.getElementById("x-axis-dropdown").innerHTML =
-      buildDropdownOptions(components, PLACEHOLDER.x);
-    document.getElementById("y-axis-dropdown").innerHTML =
-      buildDropdownOptions(components, PLACEHOLDER.y);
-    document.getElementById("z-axis-dropdown").innerHTML =
-      buildDropdownOptions(components, PLACEHOLDER.z);
-    // updateTargetBlockLabels();
-  }
- 
-  function resetAxisDropdowns() {
-    document.getElementById("x-axis-dropdown").innerHTML =
-      `<option value="">${PLACEHOLDER.x}</option>`;
-    document.getElementById("y-axis-dropdown").innerHTML =
-      `<option value="">${PLACEHOLDER.y}</option>`;
-    document.getElementById("z-axis-dropdown").innerHTML =
-      `<option value="">${PLACEHOLDER.z}</option>`;
-    // updateTargetBlockLabels();
-  }
- 
-  // Keep target-block labels in sync with whatever axis is chosen
-  // function updateTargetBlockLabels() {
-  //   const xVal = document.getElementById("x-axis-dropdown").value || "X-Axis Component";
-  //   const yVal = document.getElementById("y-axis-dropdown").value || "Y-Axis Component";
-  //   const zVal = document.getElementById("z-axis-dropdown").value || "Z-Axis Component";
-  //   document.getElementById("X-target-block-component").textContent = xVal;
-  //   document.getElementById("Y-target-block-component").textContent = yVal;
-  //   document.getElementById("Z-target-block-component").textContent = zVal;
-  // }
- 
-  // ["x-axis-dropdown", "y-axis-dropdown", "z-axis-dropdown"].forEach(id => {
-  //   document.getElementById(id).addEventListener("change", updateTargetBlockLabels);
-  // });
-
-
-    function rebuildSweepBlocks() {
-    const container = document.getElementById("target-blocks-all");
-    container.innerHTML = "";
- 
-    if (selectedGraphSolutionIds.size === 0) {
-      // Show an empty-state hint
-      container.innerHTML = `<p style="color:#888; font-size:13px; margin:8px 4px;">Select solutions from the sidebar to configure sweep ranges.</p>`;
-      return;
+  components.forEach((comp) => {
+    const name = comp?.name?.trim();
+    if (name) {
+      const safe = escapeHtmlText(name);
+      html += `<option value="${safe}">${safe}</option>`;
     }
- 
-    selectedGraphSolutionIds.forEach(id => {
-      const sol = _graphSolutionMap.get(id);
-      if (!sol) return;
- 
-      const safeName = escapeHtmlText(sol.solutionName || "Unnamed Solution");
- 
-      const block = document.createElement("div");
-      block.className = "target-setting-block";
-      block.setAttribute("data-sweep-solution-id", id);
- 
-      block.innerHTML = `
-        <p class="target-component-title">${safeName}</p>
-        <div class="target-block-row">
-          <div class="target-block-min">
-            <p class="target-label">Start</p>
-            <input class="styled-input target-input" type="number" placeholder="0">
-          </div>
-          <div class="target-block-max">
-            <p class="target-label">Stop</p>
-            <input class="styled-input target-input" type="number" placeholder="100">
-          </div>
-          <div class="target-block-step">
-            <p class="target-label">Step</p>
-            <input class="styled-input target-input" type="number" placeholder="1">
-          </div>
+  });
+
+  return html;
+}
+
+function getMergedSelectedComponents() {
+  const seen = new Set();
+  const merged = [];
+
+  selectedGraphSolutionIds.forEach((id) => {
+    const solution = graphSolutionMap.get(id);
+    if (!solution || !Array.isArray(solution.components)) return;
+
+    solution.components.forEach((comp) => {
+      const key = comp?.name?.trim()?.toLowerCase();
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      merged.push(comp);
+    });
+  });
+
+  return merged;
+}
+
+function getSelectedSolutions() {
+  const selectedSolutions = [];
+
+  selectedGraphSolutionIds.forEach((id) => {
+    const solution = graphSolutionMap.get(id);
+    if (solution) {
+      selectedSolutions.push(solution);
+    }
+  });
+
+  return selectedSolutions;
+}
+
+function populateAxisDropdowns(components) {
+  const xDropdown = document.getElementById("x-axis-dropdown");
+  const yDropdown = document.getElementById("y-axis-dropdown");
+  const zDropdown = document.getElementById("z-axis-dropdown");
+
+  if (!xDropdown || !yDropdown || !zDropdown) return;
+
+  const previousX = xDropdown.value;
+  const previousY = yDropdown.value;
+  const previousZ = zDropdown.value;
+
+  xDropdown.innerHTML = buildDropdownOptions(components, PLACEHOLDER.x);
+  yDropdown.innerHTML = buildDropdownOptions(components, PLACEHOLDER.y);
+  zDropdown.innerHTML = buildDropdownOptions(components, PLACEHOLDER.z);
+
+  if ([...xDropdown.options].some((opt) => opt.value === previousX)) {
+    xDropdown.value = previousX;
+  }
+  if ([...yDropdown.options].some((opt) => opt.value === previousY)) {
+    yDropdown.value = previousY;
+  }
+  if ([...zDropdown.options].some((opt) => opt.value === previousZ)) {
+    zDropdown.value = previousZ;
+  }
+}
+
+function resetAxisDropdowns() {
+  const xDropdown = document.getElementById("x-axis-dropdown");
+  const yDropdown = document.getElementById("y-axis-dropdown");
+  const zDropdown = document.getElementById("z-axis-dropdown");
+
+  if (xDropdown) xDropdown.innerHTML = `<option value="">${PLACEHOLDER.x}</option>`;
+  if (yDropdown) yDropdown.innerHTML = `<option value="">${PLACEHOLDER.y}</option>`;
+  if (zDropdown) zDropdown.innerHTML = `<option value="">${PLACEHOLDER.z}</option>`;
+}
+
+function rebuildAxisDropdowns() {
+  if (selectedGraphSolutionIds.size === 0) {
+    resetAxisDropdowns();
+    return;
+  }
+
+  populateAxisDropdowns(getMergedSelectedComponents());
+}
+
+function rebuildSweepBlocks() {
+  const container = document.getElementById("target-blocks-all");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  if (selectedGraphSolutionIds.size === 0) {
+    container.innerHTML = `
+      <p style="color:#888; font-size:13px; margin:8px 4px;">
+        Select solutions from the sidebar to configure sweep ranges.
+      </p>
+    `;
+    return;
+  }
+
+  selectedGraphSolutionIds.forEach((id) => {
+    const solution = graphSolutionMap.get(id);
+    if (!solution) return;
+
+    const safeName = escapeHtmlText(solution.solutionName || "Unnamed Solution");
+
+    const block = document.createElement("div");
+    block.className = "target-setting-block";
+    block.setAttribute("data-sweep-solution-id", id);
+
+    block.innerHTML = `
+      <p class="target-component-title">${safeName}</p>
+      <div class="target-block-row">
+        <div class="target-block-min">
+          <p class="target-label">Start</p>
+          <input class="styled-input target-input" type="number" placeholder="0" value="0">
         </div>
-      `;
- 
-      container.appendChild(block);
+        <div class="target-block-max">
+          <p class="target-label">Stop</p>
+          <input class="styled-input target-input" type="number" placeholder="100" value="100">
+        </div>
+        <div class="target-block-step">
+          <p class="target-label">Step</p>
+          <input class="styled-input target-input" type="number" placeholder="10" value="10">
+        </div>
+      </div>
+    `;
+
+    container.appendChild(block);
+  });
+}
+
+function getSweepConfigs() {
+  const configs = [];
+
+  document.querySelectorAll("#target-blocks-all .target-setting-block").forEach((block) => {
+    const id = block.getAttribute("data-sweep-solution-id");
+    const solution = graphSolutionMap.get(id);
+    const inputs = block.querySelectorAll("input");
+
+    configs.push({
+      id,
+      solutionName: solution?.solutionName || "",
+      start: parseFloat(inputs[0]?.value) || 0,
+      stop: parseFloat(inputs[1]?.value) || 0,
+      step: parseFloat(inputs[2]?.value) || 1,
     });
-  }
+  });
 
-   /**
-   * Returns an array of sweep config objects — one per selected solution.
-   * { id, solutionName, start, stop, step }
-   */
-  function getSweepConfigs() {
-    const configs = [];
-    document.querySelectorAll("#target-blocks-all .target-setting-block").forEach(block => {
-      const id = block.getAttribute("data-sweep-solution-id");
-      const sol = _graphSolutionMap.get(id);
-      const inputs = block.querySelectorAll("input");
-      configs.push({
-        id,
-        solutionName: sol ? sol.solutionName : "",
-        start: parseFloat(inputs[0]?.value) || 0,
-        stop:  parseFloat(inputs[1]?.value) || 0,
-        step:  parseFloat(inputs[2]?.value) || 1,
-      });
-    });
-    return configs;
-  }
-
-
-
-
-
-  // NEW (replace with this):
-const selectedGraphSolutionIds = new Set();
-const _graphSolutionMap = new Map();
+  return configs;
+}
 
 function toggleGraphSolutionSelection(card, solution) {
-    if (selectedGraphSolutionIds.has(solution.id)) {
-        // Deselect
-        selectedGraphSolutionIds.delete(solution.id);
-        card.classList.remove("selected-solution");
-    } else {
-        // Select
-        selectedGraphSolutionIds.add(solution.id);
-        card.classList.add("selected-solution");
-    }
+  if (!solution?.id) return;
 
-    if (selectedGraphSolutionIds.size === 0) {
-        resetAxisDropdowns();
-    } else {
-        // Merge unique components across all selected solutions
-        const seen = new Set();
-        const mergedComponents = [];
+  if (selectedGraphSolutionIds.has(solution.id)) {
+    selectedGraphSolutionIds.delete(solution.id);
+    card.classList.remove("selected-solution");
+  } else {
+    selectedGraphSolutionIds.add(solution.id);
+    card.classList.add("selected-solution");
+  }
 
-        document.querySelectorAll(".template-existing-stock-creationpage.selected-solution")
-            .forEach(selectedCard => {
-                const id = selectedCard.getAttribute("data-solution-id");
-                // We need the solution data — get it from the stored map
-                const sol = _graphSolutionMap.get(id);
-                if (sol) {
-                    (sol.components || []).forEach(comp => {
-                        const key = comp.name?.trim().toLowerCase();
-                        if (key && !seen.has(key)) {
-                            seen.add(key);
-                            mergedComponents.push(comp);
-                        }
-                    });
-                }
-            });
-
-        populateAxisDropdowns(mergedComponents);
-
-        // Always rebuild the per-solution sweep blocks
-    rebuildSweepBlocks();
-    }
+  rebuildAxisDropdowns();
+  rebuildSweepBlocks();
 }
 
-function toggleTagFilter(tagElement) {
-    tagElement.classList.toggle('unselected');
-    tagElement.classList.toggle('selected');
-    filterSolutions();
+async function renderGraphSidebar() {
+  try {
+    const allSolutions = await getAllSolutionsFromDb();
+    const sidebarList = document.getElementById("sidebar-solution-list");
+    if (!sidebarList) return;
+
+    sidebarList.innerHTML = "";
+    graphSolutionMap.clear();
+    selectedGraphSolutionIds.clear();
+
+    allSolutions.forEach((solution) => {
+      graphSolutionMap.set(solution.id, solution);
+
+      const card = document.createElement("div");
+      card.className = "template-existing-stock-creationpage";
+      card.setAttribute("data-solution-id", solution.id || "");
+
+      let tagsHtml = '<div class="tag-container">';
+      if (solution.tags && solution.tags.length > 0) {
+        solution.tags.forEach((tag) => {
+          tagsHtml += `<div class="base-tag">${escapeHtmlText(tag)}</div>`;
+        });
+      }
+      tagsHtml += "</div>";
+
+      let componentsHtml = "";
+      if (solution.components && solution.components.length > 0) {
+        solution.components.forEach((comp) => {
+          componentsHtml += `
+            <p class="sidebar-component-info">
+              <span class="sidebar-component-NAME">${escapeHtmlText(comp.name)}:</span>
+              <span class="sidebar-component-AMNT">${escapeHtmlText(comp.amount)}</span>
+              <span class="sidebar-component-UNIT">${escapeHtmlText(comp.unit)}</span>
+            </p>
+          `;
+        });
+      }
+
+      card.innerHTML = `
+        <p class="sidebar-solution-name"><strong>${escapeHtmlText(solution.solutionName) || "[Unnamed]"}</strong></p>
+        ${tagsHtml}
+        ${componentsHtml}
+      `;
+
+      card.addEventListener("click", () => toggleGraphSolutionSelection(card, solution));
+      sidebarList.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Error rendering graph sidebar:", error);
+  }
 }
+
+function set2DMode() {
+  const btn2d = document.getElementById("2d-btn");
+  const btn3d = document.getElementById("3d-btn");
+  const settings3d = document.getElementById("3d-settings");
+  const zDropdown = document.getElementById("z-axis-dropdown");
+
+  if (btn2d) {
+    btn2d.classList.add("dimension-btn-active");
+    btn2d.classList.remove("dimension-btn-not-active");
+  }
+
+  if (btn3d) {
+    btn3d.classList.add("dimension-btn-not-active");
+    btn3d.classList.remove("dimension-btn-active");
+  }
+
+  if (settings3d) {
+    settings3d.classList.add("dimension-setting-not-active");
+    settings3d.classList.remove("dimension-setting-active");
+  }
+
+  if (zDropdown) {
+    zDropdown.value = "";
+  }
+}
+
+function set3DMode() {
+  const btn2d = document.getElementById("2d-btn");
+  const btn3d = document.getElementById("3d-btn");
+  const settings3d = document.getElementById("3d-settings");
+
+  if (btn3d) {
+    btn3d.classList.add("dimension-btn-active");
+    btn3d.classList.remove("dimension-btn-not-active");
+  }
+
+  if (btn2d) {
+    btn2d.classList.add("dimension-btn-not-active");
+    btn2d.classList.remove("dimension-btn-active");
+  }
+
+  if (settings3d) {
+    settings3d.classList.add("dimension-setting-active");
+    settings3d.classList.remove("dimension-setting-not-active");
+  }
+}
+
+function setupModeButtons() {
+  const btn2d = document.getElementById("2d-btn");
+  const btn3d = document.getElementById("3d-btn");
+
+  if (btn2d) {
+    btn2d.addEventListener("click", set2DMode);
+  }
+
+  if (btn3d) {
+    btn3d.addEventListener("click", set3DMode);
+  }
+}
+
+function renderGraphResultFromHtml(graphHtml) {
+  const graphBox = document.getElementById("graph-output-box");
+  if (!graphBox) {
+    console.error("Missing #graph-output-box");
+    return;
+  }
+
+  graphBox.innerHTML = graphHtml || "";
+
+  const scripts = graphBox.querySelectorAll("script");
+  scripts.forEach((oldScript) => {
+    const newScript = document.createElement("script");
+
+    if (oldScript.src) {
+      newScript.src = oldScript.src;
+    } else {
+      newScript.textContent = oldScript.textContent;
+    }
+
+    document.body.appendChild(newScript);
+    oldScript.remove();
+  });
+}
+
+function renderStatusText(data) {
+  const codeOutputBox = document.getElementById("code-output-box");
+  if (!codeOutputBox) return;
+
+  const lines = [
+    `${data.num_points ?? 0} plotted points`,
+    `${data.num_balanced ?? 0} / ${data.num_total ?? 0} targets balanced`,
+    data.is_3d ? "3D graph" : "2D graph",
+  ];
+
+  codeOutputBox.innerHTML = lines.map((line) => `<p>${escapeHtmlText(line)}</p>`).join("");
+}
+
+async function generateGraph() {
+  const xAxis = document.getElementById("x-axis-dropdown")?.value || "";
+  const yAxis = document.getElementById("y-axis-dropdown")?.value || "";
+  const zAxis = is3DMode() ? (document.getElementById("z-axis-dropdown")?.value || "") : "";
+
+  if (selectedGraphSolutionIds.size === 0) {
+    alert("Select at least one solution from the sidebar.");
+    return;
+  }
+
+  if (!xAxis || !yAxis) {
+    alert("Please select both X and Y axes.");
+    return;
+  }
+
+  if (is3DMode() && !zAxis) {
+    alert("Please select a Z axis for 3D mode.");
+    return;
+  }
+
+  try {
+    const payload = {
+      x_axis: xAxis,
+      y_axis: yAxis,
+      selected_solutions: getSelectedSolutions(),
+      sweep_configs: getSweepConfigs(),
+    };
+
+    if (is3DMode()) {
+      payload.z_axis = zAxis;
+    }
+
+    const res = await fetch("/api/generate_graph", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+
+    if (!data.ok) {
+      console.error("Graph generation failed:", data);
+      alert(data.error || "Graph generation failed.");
+      return;
+    }
+
+    renderGraphResultFromHtml(data.graph_html || "");
+    renderStatusText(data);
+
+    console.log("Graph generated successfully:", data);
+  } catch (err) {
+    console.error("Error generating graph:", err);
+    alert("Failed to generate graph.");
+  }
+}
+
+function downloadGraph() {
+  const graphBox = document.getElementById("graph-output-box");
+  if (!graphBox || !graphBox.innerHTML.trim()) {
+    alert("Generate a graph first.");
+    return;
+  }
+
+  alert("Download functionality can be added next.");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupModeButtons();
+
+  const graphBtn = document.getElementById("gen-graph-btn");
+  if (graphBtn) {
+    graphBtn.addEventListener("click", generateGraph);
+  }
+
+  const downloadBtn = document.getElementById("download-graph-btn");
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", downloadGraph);
+  }
+
+  initDb()
+    .then(() => {
+      renderGraphSidebar();
+      updateGlobalTags();
+      resetAxisDropdowns();
+      rebuildSweepBlocks();
+      set2DMode();
+    })
+    .catch((error) => {
+      console.error("Failed to initialize database on graph page:", error);
+    });
+});
