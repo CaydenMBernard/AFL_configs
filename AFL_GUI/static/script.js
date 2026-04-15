@@ -25,7 +25,7 @@ function removeElement(buttonElement, containerClassName) {
     const containerToDelete = buttonElement.closest("." + containerClassName);
 
     // something in the edit screen has changed
-    if (containerClassName == "content-block") {
+    if (containerClassName === "component-row") {
         setUnsavedState(true);
     }
     
@@ -245,7 +245,7 @@ function createNewSolution() {
     allSolutions.forEach(card => card.classList.remove('selected-solution'));
 
     // clear data from editor
-    const nameInput = document.querySelector('.styled-input[placeholder="Enter solution name"]');
+    const nameInput = document.querySelector('input[placeholder="Enter solution name"]');
     if (nameInput) nameInput.value = '';
 
     const locationInput = document.getElementById('locationInput');
@@ -649,6 +649,14 @@ async function saveSolution() {
                 savedCard.classList.add('selected-solution');
             }
 
+            const aflResult = await sendSolutionToAFL();
+
+            if (!aflResult.ok) {
+                console.error("AFL add_stock failed:", aflResult);
+                alert("Saved locally, but failed to send to AFL:\n" + JSON.stringify(aflResult, null, 2));
+                return;
+            }
+
             alert("Solution saved successfully!");
         };
 
@@ -885,3 +893,143 @@ async function cloneSolution(event, solutionId) {
 //         console.error("Error updating global tags:", error);
 //     }
 // }
+ //   container.insertBefore(div, button);
+//}
+
+async function sendSolutionToAFL() {
+  try {
+    const nameInput = document.querySelector('input[placeholder="Enter solution name"]');
+    const name = nameInput ? nameInput.value.trim() : "";
+
+    const locationInput = document.getElementById("deck-location");
+    const location = locationInput ? locationInput.value.trim() : "";
+
+    const blocks = document.querySelectorAll("#componentsList .component-row");
+    const masses = {};
+
+    blocks.forEach((block) => {
+      const comp = block.querySelector('.component-col-name input')?.value?.trim() || "";
+      const amt  = block.querySelector('.component-col-amount input')?.value?.trim() || "";
+      const unit = block.querySelector('.component-col-unit select')?.value?.trim() || "";
+
+      if (!comp) return;
+      if (!amt || !unit) return;
+
+      masses[comp] = `${amt} ${unit}`;
+    });
+
+    const payload = { name, location, masses };
+
+    const res = await fetch("/api/add_stock", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await res.json();
+    console.log("AFL add_stock:", data);
+    return data;
+  } catch (err) {
+    console.error("Error calling /api/add_stock:", err);
+    return { ok: false, error: err.message };
+  }
+}
+
+async function addStockFromValues(name, location, masses) {
+  const payload = { name, location, masses };
+
+  try {
+    const res = await fetch("/api/add_stock", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    console.log("add_stock response:", data);
+    return data;
+  } catch (err) {
+    console.error("Error calling /api/add_stock:", err);
+    return { ok: false, error: err.message };
+  }
+}
+
+
+async function addTargetsFromValues({
+  // Possible needed values
+  total_vol,
+  fill_fraction,
+  swept_conc_name,
+  swept_stock_name,
+  filler_name,
+  conc_min,
+  conc_max,
+  conc_steps,
+  stock_vol_min,
+  stock_vol_max,
+  stock_vol_steps,
+  vol_unit = "ul",
+  conc_unit = "mg/ml"
+}) {
+  const payload = {
+  // Possible needed values
+    total_vol,
+    fill_fraction,
+    swept_conc_name,
+    swept_stock_name,
+    filler_name,
+    conc_min,
+    conc_max,
+    conc_steps,
+    stock_vol_min,
+    stock_vol_max,
+    stock_vol_steps,
+    vol_unit,
+    conc_unit
+  };
+
+  try {
+    const res = await fetch("/api/add_targets", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    console.log("add_targets response:", data);
+    return data;
+  } catch (err) {
+    console.error("Error calling /api/add_targets:", err);
+    return { ok: false, error: err.message };
+  }
+}
+
+async function runBalance() {
+  try {
+    const res = await fetch("/api/balance", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+
+    const data = await res.json();
+    console.log("balance response:", data);
+
+    if (!data.ok) {
+      alert(JSON.stringify(data, null, 2));
+      return data;
+    }
+
+    alert(`${data.num_balanced} / ${data.num_total} targets balanced`);
+    return data;
+
+  } catch (err) {
+    console.error("Error calling /api/balance:", err);
+    return { ok: false, error: err.message };
+  }
+}

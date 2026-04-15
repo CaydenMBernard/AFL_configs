@@ -679,7 +679,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 8px; /* Aligns the trash can with the inputs */
+    padding-bottom: 8px;
 }
 
 
@@ -761,6 +761,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    min-width: 0;
+    overflow: visible;
 }
 
 #graph-page-right{
@@ -774,10 +776,22 @@ body {
     border: solid #00676d 1px;
     width: 90%;
     height: 75%;
+    min-height: 560px;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#graph-output-box > div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#graph-output-box .plotly-graph-div {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 #graph-lower-left{
@@ -805,6 +819,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -863,6 +878,7 @@ body {
 #graph-page-right{
     display: flex;
     flex-direction: column;
+    gap:15px;
 }
 
 #dimensions{
@@ -874,10 +890,21 @@ body {
 }
 
 #target-vs-sweep{
-    min-height:50%
+    height:70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .target-setting-block{
+    
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #b4c1c2;
+}
+
+
+.white-block{
     
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -918,3 +945,6 @@ body {
     width: 100%;
 }
 
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
