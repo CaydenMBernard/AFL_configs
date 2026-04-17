@@ -403,14 +403,36 @@ async function generateGraph() {
   }
 }
 
-function downloadGraph() {
+async function downloadGraph() {
   const graphBox = document.getElementById("graph-output-box");
   if (!graphBox || !graphBox.innerHTML.trim()) {
     alert("Generate a graph first.");
     return;
   }
 
-  alert("Download functionality can be added next.");
+  const plotElement = graphBox.querySelector(".js-plotly-plot");
+  if (!plotElement) {
+    alert("Could not find a rendered graph to download.");
+    return;
+  }
+
+  if (typeof Plotly === "undefined") {
+    alert("Plotly is not loaded yet.");
+    return;
+  }
+
+  try {
+    await Plotly.downloadImage(plotElement, {
+      format: "png",
+      filename: "afl-graph",
+      width: 1400,
+      height: 900,
+      scale: 2
+    });
+  } catch (err) {
+    console.error("Error downloading graph:", err);
+    alert("Failed to download graph.");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
