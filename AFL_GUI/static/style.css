@@ -4,8 +4,7 @@
   --primary-color-lightened: #00676d;
   --header-background: #003436;
   --sidebar-header-background: #f8f9fa;
-  /* --sidebar-header-background: #00464a3a; */
-  /* --secondary-background: #eeeeee; */
+
   --secondary-background: #e8eee9;
   --card-color: #ffffff;
   --primary-background: #f8f9fa;
@@ -38,16 +37,13 @@ body {
     border: var(--primary-background) 2px solid;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    /* border: 2px solid #b1b1b1; */
-    /* transform: scale(1); */
-    /* border: #b1b1b188 2px solid; */
+
     position: relative;
 }
 
 .template-existing-stock-creationpage:hover{
    border: #999999 2px solid;
    transform: scale(1.03);
-   /* transform: perspective(10000px) rotateX(10deg) rotateY(10deg) scale(1.05); */
 }
 
 .template-existing-stock-creationpage.selected-solution {
@@ -63,9 +59,6 @@ body {
     right: 8px;
     width: 6px;
     height: calc(100% - 20px);
-    /* top: 50%; */
-    /* height: 50%; */
-    /* transform: translateY(-50%); */
     background-color: var(--primary-color);
     border-radius: 4px;
 }
@@ -79,7 +72,6 @@ body {
     max-width: 500px;
     min-width: 200px;
     flex-shrink: 0;
-    /* border-right: 2px solid #9ba59d; */
 }
 
 #sidebar-solution-list{
@@ -122,7 +114,6 @@ body {
     align-items: center;
     color: #ffffff;
     height: 48px;
-    /* border-bottom: 1px solid #363636; */
 }
 
 #top-nav h1 {
@@ -210,7 +201,6 @@ body {
     box-sizing: border-box;
     font-size: 14px;
     transition: border-color 0.3s, box-shadow 0.3s;
-    /* background-color: #f9f9f9; */
     background-color: var(--text-input-background);
 }
 
@@ -221,14 +211,11 @@ body {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
 }
 
-/* .content-block .styled-input {
-    background-color: var(--primary-background);
-} */
+
 
 /* Content Blocks*/
 .content-block {
     border-radius: 10px;
-    /* border: 1px solid #b1b1b1; */
     background-color: var(--card-color);
     padding: 32px;
     margin-bottom: 10px;
@@ -365,7 +352,6 @@ body {
 
 .delete-button:hover {
     color: #ff4d4d;
-    /* background-color: rgba(255, 77, 77, 0.1); */
 }
 
 .delete-button svg {
@@ -422,12 +408,10 @@ body {
 /* Hover States for Icons */
 .icon-button:hover {
     color: #207c34;
-    /* background-color: #e0e0e0; */
 }
 
 .icon-button.delete-icon:hover {
     color: #ff4d4d;
-    /* background-color: rgba(255, 77, 77, 0.1); */
 }
 
 
@@ -442,13 +426,10 @@ body {
 
 /* Sidebar Header */
 #sidebar-header-top {
-    /* background-color: #c9c9c9; */
     background-color: var(--list-header-background);
     padding: 8px 14px;
     display: flex;
     flex-direction: column;
-    /* gap: 12px; */
-    /* border-bottom: 2px solid #9ba59d; */
 }
 
 .sidebar-top-row {
@@ -503,7 +484,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
     margin-bottom: 10px;
     top: -20px;
     position: sticky;
@@ -513,7 +493,6 @@ body {
     var(--primary-background);
     z-index: 10;
     padding: 20px 20px 10px 20px;
-    /* box-shadow: 0 0 40px 10px rgb(0, 0, 0, 0.2); */
 }
 
 
@@ -544,8 +523,6 @@ body {
 .static-card .base-tag {
     background-color: #00464a23;
     color: #002a2c;
-    /* border: 1px solid #002a2c; */
-    /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05); */
 }
 
 
@@ -581,10 +558,6 @@ body {
     width: 100%;
     align-items: center;
     padding: 5px 0;
-}
-
-.tag-container-Centered {
-    /* justify-content: center; */
 }
 
 
@@ -755,7 +728,6 @@ body {
 }
 
 #graph-page-left{
-    /* background-color: red; */
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -766,7 +738,6 @@ body {
 }
 
 #graph-page-right{
-    /* background-color: blue; */
     width: 35%;
 }
 
@@ -821,29 +792,6 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
-
-/* #download-graph-btn{
-    color: white;
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 7px;
-    border-radius: 10px;
-    font-weight: 650;
-} */
-
-/* #gen-graph-btn{
-    color: white;
-    background-color: blue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 7px;
-    border-radius: 10px;
-    font-weight: 650;
-} */
 
 .dimension-btn{
     margin-left: 0px;

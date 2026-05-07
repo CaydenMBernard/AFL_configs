@@ -54,16 +54,6 @@
         <!-- tab content (main screen) -->
 
         <div id="Tab1" class="tab-content" >
-            <!-- <div style="display:inline-flex; width: 100%; margin-bottom: 10px; position: sticky">
-                <h2>Create & Edit Solutions</h2>
-                <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()"> Save Solution</button>
-            </div> -->
-            
-            <!-- <div class="tab-content-header-card">
-                <h2 style="margin: 0;">Create & Edit Solutions</h2>
-                <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()">Save Solution</button>
-            </div> -->
-
             <div class="tab-content-header-card">
                 <h2 style="margin: 0;">Create & Edit Solutions</h2>
                 <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()">
@@ -76,32 +66,6 @@
                 </button>
             </div>
 
-            <!-- name card -->
-            <!-- <div class="static-card">
-                <div class="input-group">
-                    <label class="input-header">Solution Name</label>
-                    <input type="text" class="styled-input" placeholder="Enter solution name">
-                </div>
-            </div> -->
-
-<!-- tags -->
-            <!-- <div class="static-card">
-                <div class="input-group">
-                    <label class="input-header">Tags</label>
-                    <div id="tagContainer" class="tag-container">
-                        <input 
-                            type="text" 
-                            id="tagInput" 
-                            class="seamless-tag-input" 
-                            list="existingTags" 
-                            placeholder="+ Add Tag" 
-                            onkeydown="handleTagEnter(event)"
-                            autocomplete="off"
-                        >
-                        <datalist id="existingTags"></datalist>
-                    </div>
-                </div>                
-            </div> -->
             <div class="header-row">
 
                 <div class="static-card name-card">
@@ -139,51 +103,7 @@
                 </div>                
             </div>
 
-
-            
-            <!-- Component Block -->
-            <!-- <div class="content-block">
-                <div class="component-header">
-                    <label class="input-label">Component</label>
-                    <button class="delete-button" type="button" onclick="deleteComponent(this)" aria-label="Delete Component">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12z" fill="currentColor"/>
-                            <path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
-                        </svg>
-                    </button>
-                </div>
-                <input type="text" id="component-1" class="styled-input" placeholder="Enter Component..." style="margin-bottom: 10px;">
-                <div class="row">
-                    <div class="col" style="flex: 3; margin-right: 0px;">
-                        <label class="input-label">Amount</label>
-                        <input type="text" id="amount-1" class="styled-input" placeholder="Enter Amount...">
-                    </div>
-                    <div class="col" style="flex: 1; margin-left: 20px;">
-                    <label class="input-label">Unit</label>
-
-                    dropdown data for unit
-                    <select id="unit-1" class="styled-input">
-                        <option value="" disabled selected>Select Unit...</option>
-                        <optgroup label="Mass">
-                            <option value="mg">mg</option>
-                            <option value="g">g</option>
-                            <option value="kg">kg</option>
-                        </optgroup>
-                        <optgroup label="Volume">
-                            <option value="ul">ul</option>
-                            <option value="ml">ml</option>
-                            <option value="L">L</option>
-                        </optgroup>
-                        <optgroup label="Concentration">
-                            <option value="mg/ml">mg/ml</option>
-                            <option value="g/L">g/L</option>
-                        </optgroup>
-                    </select>
-                    </div>
-                </div>
-            </div>
-            <button id="addComponentButton" class="secondary-button" onclick="addComponent()"> + Add Component</button> -->
-            <!-- <button id="saveSolutionButton" class="primary-button" onclick="saveSolution()"> Save Solution</button> -->
+            <!-- first component that can't be deleted -->
             <div class="static-card">
                 <div class="input-header" style="color: var(--primary-color); font-weight: bold; margin-bottom: 24px;">
                     CHEMICAL COMPONENTS
