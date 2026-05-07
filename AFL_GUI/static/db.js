@@ -1,7 +1,11 @@
+// This file handles all interactions with the indexedDB database, including saving, retrieving, and filtering solutions based on tags and search input.
+
+// IndexedDB setup
 const dbName = "solutionDatabase";
 const storeName = "savedSolutions";
 let dbInstance;
 
+// initialize the database and create the object store if it doesn't exist
 function initDb() {
     return new Promise((resolve, reject) => {
         const request = indexedDB.open(dbName, 1);
@@ -9,7 +13,7 @@ function initDb() {
         request.onupgradeneeded = function(event) {
             dbInstance = event.target.result;
             if (!dbInstance.objectStoreNames.contains(storeName)) {
-                // this makes it know to seperate and update based on the id
+                // this makes it know to seperate and update based on the id instead of names or other values
                 dbInstance.createObjectStore(storeName, { keyPath: "id" });
             }
         };
@@ -26,7 +30,7 @@ function initDb() {
     });
 }
 
-// loading the solution from db
+// loads a solution into the database, if the id already exists it will update it instead of creating a new entry 
 async function getSolutionFromDb(solutionId) {
     return new Promise(async (resolve, reject) => {
         if (!dbInstance) {
@@ -49,6 +53,7 @@ async function getSolutionFromDb(solutionId) {
     });
 }
 
+// get all of the solutions from the database, this is used to update all of the solutions on the page when one is added, updated, or deleted
 function getAllSolutionsFromDb() {
     return new Promise(async (resolve, reject) => {
         if (!dbInstance) {
@@ -72,6 +77,7 @@ function getAllSolutionsFromDb() {
     });
 }
 
+// updates all of the tags in the datalist and the filter based on the current solutions in the database, this is called whenever a solution is added, updated, or deleted to make sure the tags are always up to date
 async function updateGlobalTags() {
     try {
         const allSolutions = await getAllSolutionsFromDb();
@@ -132,6 +138,7 @@ async function updateGlobalTags() {
 }
 
 
+// filters the solutions on the page based on the search input and the activated tags, this is called whenever the search input changes or a tag filter is toggled to make sure the displayed solutions are always up to date with the current filters
 function filterSolutions() {
     // get search string
     const searchInput = document.getElementById("solutionSearch");

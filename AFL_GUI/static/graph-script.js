@@ -1,12 +1,18 @@
+// AFL Graph Page Script
+// This script manages the interactive graph generation page of the AFL GUI, allowing users to select solutions, configure graph axes, set sweep ranges, and generate/download graphs based on their data.
+
+// Global state for selected solutions and their components
 let selectedGraphSolutionIds = new Set();
 const graphSolutionMap = new Map();
 
+// placeholder text for dropdowns when no component is selected
 const PLACEHOLDER = {
   x: "--Select X-Axis Component--",
   y: "--Select Y-Axis Component--",
   z: "--Select Z-Axis Component--",
 };
 
+// helper function to escape HTML special characters to prevent XSS and ensure safe rendering of user-generated content
 function escapeHtmlText(unsafe) {
   if (!unsafe) return "";
   return unsafe
@@ -18,11 +24,13 @@ function escapeHtmlText(unsafe) {
     .replace(/'/g, "&#039;");
 }
 
+// checks if the current graph mode is 3D based on the active state of the mode buttons, this is used to determine whether to require a Z-axis selection and how to render the graph
 function is3DMode() {
   const btn3d = document.getElementById("3d-btn");
   return btn3d && btn3d.classList.contains("dimension-btn-active");
 }
 
+// builds the HTML options for the axis dropdowns based on the components of the selected solutions, this is called whenever the selected solutions change to update the available components for graphing
 function buildDropdownOptions(components, placeholderText) {
   let html = `<option value="">${placeholderText}</option>`;
 
@@ -37,6 +45,7 @@ function buildDropdownOptions(components, placeholderText) {
   return html;
 }
 
+// merges the components of all selected solutions into a single list of unique components, this is used to populate the axis dropdowns with all available components from the selected solutions without duplicates
 function getMergedSelectedComponents() {
   const seen = new Set();
   const merged = [];
@@ -56,6 +65,7 @@ function getMergedSelectedComponents() {
   return merged;
 }
 
+// retrieves the currently selected solutions based on the selected IDs in the sidebar, this is used when generating the graph to know which solution data to include in the graphing process
 function getSelectedSolutions() {
   const selectedSolutions = [];
 
@@ -69,6 +79,7 @@ function getSelectedSolutions() {
   return selectedSolutions;
 }
 
+// populates the axis dropdowns with the components from the currently selected solutions, this is called whenever the selected solutions change to update the available options for graph axes
 function populateAxisDropdowns(components) {
   const xDropdown = document.getElementById("x-axis-dropdown");
   const yDropdown = document.getElementById("y-axis-dropdown");
@@ -95,6 +106,7 @@ function populateAxisDropdowns(components) {
   }
 }
 
+// resets the axis dropdowns to only show the placeholder option, this is called when no solutions are selected to clear the available options since there are no components to choose from
 function resetAxisDropdowns() {
   const xDropdown = document.getElementById("x-axis-dropdown");
   const yDropdown = document.getElementById("y-axis-dropdown");
@@ -105,6 +117,7 @@ function resetAxisDropdowns() {
   if (zDropdown) zDropdown.innerHTML = `<option value="">${PLACEHOLDER.z}</option>`;
 }
 
+// Uses resetAxisDropdowns to clear the dropdowns when no solutions are selected, and otherwise populates them with the components from the selected solutions
 function rebuildAxisDropdowns() {
   if (selectedGraphSolutionIds.size === 0) {
     resetAxisDropdowns();
@@ -114,6 +127,7 @@ function rebuildAxisDropdowns() {
   populateAxisDropdowns(getMergedSelectedComponents());
 }
 
+// rebuilds the sweep configuration blocks for each selected solution, this allows users to set custom sweep ranges for each solution when generating graphs, and is called whenever the selected solutions change to update the available sweep configurations
 function rebuildSweepBlocks() {
   const container = document.getElementById("target-blocks-all");
   if (!container) return;
@@ -161,6 +175,7 @@ function rebuildSweepBlocks() {
   });
 }
 
+// gets the sweep configuration values from the input fields for each selected solution, this is used when generating the graph to know what ranges to sweep each solution over if the user has configured any sweeps
 function getSweepConfigs() {
   const configs = [];
 
@@ -181,6 +196,7 @@ function getSweepConfigs() {
   return configs;
 }
 
+// toggles the selection of a solution when its card in the sidebar is clicked, this updates the set of selected solution IDs and triggers a rebuild of the axis dropdowns and sweep configuration blocks to reflect the new selection
 function toggleGraphSolutionSelection(card, solution) {
   if (!solution?.id) return;
 
@@ -196,6 +212,7 @@ function toggleGraphSolutionSelection(card, solution) {
   rebuildSweepBlocks();
 }
 
+// renders the list of solutions in the sidebar with their names, tags, and components, and sets up click handlers for selecting solutions, this is called on page load and whenever the database is updated to ensure the sidebar reflects the current state of the database
 async function renderGraphSidebar() {
   try {
     const allSolutions = await getAllSolutionsFromDb();
@@ -248,6 +265,7 @@ async function renderGraphSidebar() {
   }
 }
 
+// sets the graph mode to 2D, this updates the active state of the mode buttons and hides the Z-axis dropdown since it's not needed for 2D graphs
 function set2DMode() {
   const btn2d = document.getElementById("2d-btn");
   const btn3d = document.getElementById("3d-btn");
@@ -274,6 +292,7 @@ function set2DMode() {
   }
 }
 
+// sets the graph mode to 3D, this updates the active state of the mode buttons and shows the Z-axis dropdown since it's needed for 3D graphs
 function set3DMode() {
   const btn2d = document.getElementById("2d-btn");
   const btn3d = document.getElementById("3d-btn");
@@ -295,6 +314,7 @@ function set3DMode() {
   }
 }
 
+// sets up the event listeners for the 2D and 3D mode buttons, this is called on page load to ensure the buttons are interactive and can toggle the graph mode correctly
 function setupModeButtons() {
   const btn2d = document.getElementById("2d-btn");
   const btn3d = document.getElementById("3d-btn");
@@ -308,6 +328,7 @@ function setupModeButtons() {
   }
 }
 
+// renders the generated graph HTML into the graph output box, and ensures that any scripts included in the graph HTML are executed properly by creating new script elements, this is used to display the generated graph after receiving the HTML from the server
 function renderGraphResultFromHtml(graphHtml) {
   const graphBox = document.getElementById("graph-output-box");
   if (!graphBox) {
@@ -332,6 +353,7 @@ function renderGraphResultFromHtml(graphHtml) {
   });
 }
 
+// renders the status text below the graph with information about the generated graph such as the number of points plotted, how many targets were balanced, and whether it's a 2D or 3D graph, this is called after generating the graph
 function renderStatusText(data) {
   const codeOutputBox = document.getElementById("code-output-box");
   if (!codeOutputBox) return;
@@ -345,6 +367,7 @@ function renderStatusText(data) {
   codeOutputBox.innerHTML = lines.map((line) => `<p>${escapeHtmlText(line)}</p>`).join("");
 }
 
+// generates the graph based on the selected solutions, configured axes, and sweep ranges by sending a request to the server with the necessary data, this is called when the user clicks the "Generate Graph" button
 async function generateGraph() {
   const xAxis = document.getElementById("x-axis-dropdown")?.value || "";
   const yAxis = document.getElementById("y-axis-dropdown")?.value || "";
@@ -403,6 +426,7 @@ async function generateGraph() {
   }
 }
 
+// downloads the currently displayed graph as a PNG image by using Plotly's downloadImage function, this is called when the user clicks the "Download Graph" button
 async function downloadGraph() {
   const graphBox = document.getElementById("graph-output-box");
   if (!graphBox || !graphBox.innerHTML.trim()) {
@@ -435,6 +459,7 @@ async function downloadGraph() {
   }
 }
 
+// initializes the graph page by setting up event listeners, rendering the sidebar, and populating the axis dropdowns based on the current state of the database, this is called when the DOM content is loaded to prepare the page for user interaction
 document.addEventListener("DOMContentLoaded", () => {
   setupModeButtons();
 

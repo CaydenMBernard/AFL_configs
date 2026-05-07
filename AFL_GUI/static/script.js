@@ -1,13 +1,13 @@
+// Solution Editor Script
+// This script manages the functionality of the solution editor page, including loading and saving solutions to IndexedDB, rendering the list of solutions in the sidebar, handling user interactions for adding/removing components and tags, and ensuring that unsaved changes are tracked to prevent data loss.
+
 // UUID that is loaded
 let currentSolutionId = null;
-// database stuff (indexdb)
-// const dbName = "solutionDatabase";
-// const storeName = "savedSolutions";
-// let dbInstance;
 
 // bool to see if you have any unsaved changes
 let hasUnsavedChanges = false;
 
+// helper function to escape HTML special characters to prevent XSS and ensure safe rendering of user-generated content
 function escapeHtmlText(unsafe) {
     if (!unsafe) return "";
     return unsafe
@@ -36,7 +36,7 @@ function removeElement(buttonElement, containerClassName) {
     }
 }
 
-
+// sets the unsaved state and updates the save button's appearance to indicate whether there are unsaved changes, this is called whenever the user makes a change to the solution data to track whether the current state has unsaved changes
 function setUnsavedState(isUnsaved) {
     hasUnsavedChanges = isUnsaved;
     
@@ -52,7 +52,7 @@ function setUnsavedState(isUnsaved) {
     }
 }
 
-// add new component block
+// adds a new component row to the components list in the editor, this is called when the user clicks the "Add Component" button to allow them to input details for an additional component in the solution
 function addComponent() {
     setUnsavedState(true);
 
@@ -108,8 +108,7 @@ function addComponent() {
 }
 
 
-// add new tag
-
+// adds a new tag to the tag container in the editor, this is called when the user inputs a tag and clicks the "Add Tag" button or presses enter while focused on the tag input
 function addTag() {
 
     // set something changed
@@ -143,7 +142,7 @@ function addTag() {
     }
 }
 
-// enter to add tag
+// adds ability to add tag by pressing enter in the tag input
 function handleTagEnter(event) {
     if (event.key === "Enter") {
         event.preventDefault(); 
@@ -153,8 +152,7 @@ function handleTagEnter(event) {
 
 
 
-// tag filters
-
+// updates the tag filter buttons in the sidebar to activate or deactivate filtering by the selected tag
 function toggleTagFilter(tagElement) {
     tagElement.classList.toggle('unselected');
     tagElement.classList.toggle('selected');
@@ -163,38 +161,7 @@ function toggleTagFilter(tagElement) {
 
 
 
-// function filterSolutions() {
-//     // get search string
-//     const searchInput = document.getElementById("solutionSearch");
-//     const searchTerm = searchInput ? searchInput.value.toLowerCase() : "";
-
-//     // get activated tags
-//     const activeFilters = Array.from(document.querySelectorAll("#sidebarTagFilters .base-tag.selected"))
-//         .map(tag => tag.textContent.trim().toLowerCase());
-
-//     // get all solutions
-//     const solutionCards = document.querySelectorAll(".template-existing-stock-creationpage");
-    
-//     // look to see if any of the values are in the card to keep them active or hide them
-//     solutionCards.forEach((card, index) => {
-//         const cardText = card.textContent.toLowerCase();
-//         const matchesSearch = cardText.includes(searchTerm);
-
-//         const cardTags = Array.from(card.querySelectorAll(".tag-container .base-tag"))
-//             .map(tag => tag.textContent.trim().toLowerCase());
-
-//         const matchesTags = activeFilters.length === 0 || activeFilters.every(filter => cardTags.includes(filter));
-
-//         if (matchesSearch && matchesTags) {
-//             card.style.display = "block";
-//         } else {
-//             card.style.display = "none";
-//         }
-//     });
-// }
-
-
-
+// selects a solution from the sidebar and loads it into the editor, this is called when the user clicks on a solution card in the sidebar to view or edit its details
 async function selectSidebarSolution(clickedElement) {
 
     // stop if it is not saved
@@ -226,7 +193,7 @@ async function selectSidebarSolution(clickedElement) {
 }
 
 
-
+// adds a new solution by clearing the editor and resetting the current tracking ID, this is called when the user clicks the "New Solution" button to start creating a new solution from scratch
 function createNewSolution() {
 
     // stop if it is not saved
@@ -277,7 +244,7 @@ function createNewSolution() {
 
 // get data into and out of json format
 
-
+// gets solution data from the editor, formats it into a JSON object, and returns it for saving to the database, this is called when the user clicks the "Save Solution" button to gather all the inputted data into a structured format for storage
 function extractSolutionData() {
     const nameInput = document.querySelector('input[placeholder="Enter solution name"]');
     const solutionName = nameInput ? nameInput.value.trim() : "";
@@ -320,7 +287,7 @@ function extractSolutionData() {
     };
 }
 
-
+// loads solution data from a JSON object into the editor, populating all the input fields, tags, and components based on the provided data, this is called after selecting a solution from the sidebar or after cloning a solution to display its details in the editor for viewing or editing
 function loadSolutionIntoEditor(solutionJson) {
     if (!solutionJson) return;
 
@@ -440,7 +407,7 @@ function loadSolutionIntoEditor(solutionJson) {
     }
 }
 
-
+// renders the list of solutions in the sidebar with their names, tags, and components, and sets up click handlers for selecting solutions, this is called on page load and whenever the database is updated to ensure the sidebar reflects the current state of the database
 async function renderSidebarSolutions() {
     try {
         const allSolutions = await getAllSolutionsFromDb();
@@ -525,35 +492,8 @@ async function renderSidebarSolutions() {
 }
 
 
-// Most database things --------------------------------------------------------------------
 
-// function initDb() {
-//     return new Promise((resolve, reject) => {
-//         const request = indexedDB.open(dbName, 1);
-
-//         request.onupgradeneeded = function(event) {
-//             dbInstance = event.target.result;
-//             if (!dbInstance.objectStoreNames.contains(storeName)) {
-//                 // this makes it know to seperate and update based on the id
-//                 dbInstance.createObjectStore(storeName, { keyPath: "id" });
-//             }
-//         };
-
-//         request.onsuccess = function(event) {
-//             dbInstance = event.target.result;
-//             resolve(dbInstance);
-//         };
-
-//         request.onerror = function(event) {
-//             console.error("IndexedDB initialization error:", event.target.errorCode);
-//             reject(event.target.errorCode);
-//         };
-//     });
-// }
-
-
-
-// Start DB connection when the page loads
+// Start DB connection when the page loads and render the sidebar with the solutions from the database, this ensures that the user sees the most up-to-date list of solutions when they open the editor page. Also prevents changing pages without saving
 document.addEventListener("DOMContentLoaded", () => {
     // load in the database and load the sidebar
     initDb().then(() => {
@@ -595,8 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// saving the solution
-
+// saves the current solution data from the editor to IndexedDB, this is called when the user clicks the "Save Solution" button to persist their changes to the database. It also checks for duplicate solution names and prompts the user if a duplicate is found to prevent using the same name as an existing solution
 async function saveSolution() {
     const solutionJson = extractSolutionData();
 
@@ -664,60 +603,11 @@ async function saveSolution() {
 
 
 
-// // loading the solution from db
-// async function getSolutionFromDb(solutionId) {
-//     return new Promise(async (resolve, reject) => {
-//         if (!dbInstance) {
-//             await initDb();
-//         }
-
-//         const transaction = dbInstance.transaction([storeName], "readonly");
-//         const store = transaction.objectStore(storeName);
-//         const request = store.get(solutionId);
-
-//         request.onsuccess = (event) => {
-//             const solutionJson = event.target.result;
-//             resolve(solutionJson);
-//         };
-
-//         request.onerror = (event) => {
-//             console.error("Failed to fetch solution:", event.target.errorCode);
-//             reject(event.target.errorCode);
-//         };
-//     });
-// }
-
-
-// function getAllSolutionsFromDb() {
-//     return new Promise(async (resolve, reject) => {
-//         if (!dbInstance) {
-//             await initDb();
-//         }
-
-//         const transaction = dbInstance.transaction([storeName], "readonly");
-//         const store = transaction.objectStore(storeName);
-        
-//         // get all of the items
-//         const request = store.getAll();
-
-//         request.onsuccess = (event) => {
-//             resolve(event.target.result);
-//         };
-
-//         request.onerror = (event) => {
-//             console.error("Failed to fetch all solutions:", event.target.errorCode);
-//             reject(event.target.errorCode);
-//         };
-//     });
-// }
 
 
 
 
-
-
-// deleting in the sidebar
-
+// deletes a solution from IndexedDB based on its ID, this is called when the user clicks the delete button on a solution card in the sidebar to remove that solution from the database. It also prompts the user for confirmation before deleting to prevent accidental deletions
 async function deleteSidebarSolution(event, solutionId) {
     // Stop the card's onclick event from firing
     event.stopPropagation(); 
@@ -756,7 +646,7 @@ async function deleteSidebarSolution(event, solutionId) {
     }
 }
 
-
+// clones an existing solution by creating a new solution with the same data but a new unique ID, this is called when the user clicks the clone button on a solution card in the sidebar to create a duplicate of that solution which they can then modify and save as a new solution. It also prompts the user for confirmation if there are unsaved changes to prevent data loss
 async function cloneSolution(event, solutionId) {
     // Stop the card's onclick event from firing
     event.stopPropagation();
@@ -824,66 +714,3 @@ async function cloneSolution(event, solutionId) {
     }
 }
 
-
-
-// Updates tag related data (searches through the database)
-// async function updateGlobalTags() {
-//     try {
-//         const allSolutions = await getAllSolutionsFromDb();
-//         const uniqueTags = new Set();
-
-//         // get all tags from all solutions
-//         allSolutions.forEach(solution => {
-//             if (solution.tags && Array.isArray(solution.tags)) {
-//                 solution.tags.forEach(tag => {
-//                     uniqueTags.add(tag.trim().toLowerCase()); 
-//                 });
-//             }
-//         });
-
-//         const sortedTags = Array.from(uniqueTags).sort();
-
-//         // update datalist
-//         const dataList = document.getElementById("existingTags");
-//         if (dataList) {
-//             dataList.innerHTML = "";
-//             sortedTags.forEach(tag => {
-//                 const option = document.createElement("option");
-//                 option.value = tag;
-//                 dataList.appendChild(option);
-//             });
-//         }
-
-//         // update the filter
-//         const filterContainer = document.getElementById("sidebarTagFilters");
-//         if (filterContainer) {
-//             // keep what was selected
-//             const currentlySelected = Array.from(filterContainer.querySelectorAll('.selected'))
-//                 .map(btn => btn.textContent.trim().toLowerCase());
-
-//             filterContainer.innerHTML = "";
-            
-//             // build back the tags
-//             sortedTags.forEach(tag => {
-//                 const btn = document.createElement("button");
-//                 btn.textContent = tag;
-                
-//                 // reapply if they were filtering it
-//                 if (currentlySelected.includes(tag)) {
-//                     btn.className = "base-tag selected";
-//                 } else {
-//                     btn.className = "base-tag unselected";
-//                 }
-                
-//                 // Attach the click event
-//                 btn.onclick = function() { toggleTagFilter(this); };
-                
-//                 filterContainer.appendChild(btn);
-//             });
-//         }
-//     } catch (error) {
-//         console.error("Error updating global tags:", error);
-//     }
-// }
- //   container.insertBefore(div, button);
-//}
